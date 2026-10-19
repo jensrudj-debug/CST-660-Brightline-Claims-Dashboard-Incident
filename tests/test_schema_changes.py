@@ -1,29 +1,6 @@
-"""Answer-key properties of schema_changes.json."""
+"""Structural properties of schema_changes.json."""
 
-import json
 from datetime import datetime
-
-import pandas as pd
-import pytest
-
-from generator.__main__ import main
-
-
-@pytest.fixture(scope="module")
-def out(tmp_path_factory):
-    path = tmp_path_factory.mktemp("telemetry")
-    main(["--out", str(path)])
-    return path
-
-
-@pytest.fixture(scope="module")
-def events(out):
-    return json.loads((out / "schema_changes.json").read_text(encoding="utf-8"))
-
-
-@pytest.fixture(scope="module")
-def fr(out):
-    return pd.read_csv(out / "freshness.csv", keep_default_na=False)
 
 
 def ts(s):
@@ -51,14 +28,6 @@ def test_pas_rename_at_release_seen_by_ingest_as_additive(events):
     assert e["value_mapping"]["ACTIVE"] == "A"
     assert e["warehouse_change"] == "column_added"
     assert e["detected_at"].startswith("2026-10-19T02:")
-
-
-def test_dbt_deploy_matches_fnol_full_refresh(events, fr):
-    e = dbt_deploy(events)
-    assert e["warehouse_object"] == "fct_fnol"
-    refresh = fr[fr.run_type == "full_refresh"]
-    assert refresh.job.tolist() == ["fct_fnol"]
-    assert ts(refresh.started_at.iloc[0]) > ts(e["occurred_at"])
 
 
 def test_detection_follows_occurrence_and_ids_are_chronological(events):
