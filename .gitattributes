@@ -1,0 +1,3 @@
+# Keep LF everywhere: telemetry outputs must be byte-identical across machines
+* text=auto eol=lf
+*.png binary
