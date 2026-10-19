@@ -75,10 +75,17 @@ The other test files check structural consistency across outputs.
 
 ## Deliverables
 
+1. **[Incident investigation timeline](https://claude.ai/artifact/Vuy5u9GGzoUGQiEJcTStTc)**:
+   symptoms vs six candidate causes, what each telemetry file ruled in or out,
+   a minute-by-minute timeline, and the root cause with five lines of evidence.
+   The answer: PAS release 4.12 renamed `policy_status` to `pol_status_cd`,
+   leaving the old column NULL on policies written after the release, and the
+   `policy_status = 'ACTIVE'` filter in `int_claims_enriched` silently dropped
+   them. The tile showed 926 closed claims against a true 1,462 (−38.0% vs the
+   prior-Monday median of 1,494) while every job ran green and on time.
+
 In progress:
 
-1. Incident investigation timeline: symptoms vs candidate causes, what each
-   signal ruled in or out, root cause with evidence
 2. Value stream map of the analytics delivery flow: lead and process time per
    stage, wait states, rework loops, two largest bottlenecks
 3. Cost driver table: compute, rework, and business-impact costs, two
