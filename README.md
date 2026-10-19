@@ -140,11 +140,6 @@ Priority 1 comes first: it is cheaper, pays back sooner, covers ClaimCenter and 
 - **A12.** Data contract: 60 h to build, 1 h review per PAS release; it prevents 75% of incidents (renames and type changes on contracted columns).
 <!-- cost-table:end -->
 
-In progress:
-
-4. 5–10 minute recorded walkthrough for the VP of Claims Operations and the
-   platform lead
-
 ## Repository layout
 
 ```
