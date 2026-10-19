@@ -84,10 +84,17 @@ The other test files check structural consistency across outputs.
    them. The tile showed 926 closed claims against a true 1,462 (−38.0% vs the
    prior-Monday median of 1,494) while every job ran green and on time.
 
+2. **[Value stream map](deliverables/value_stream_map.png)** (`make deliverables`):
+   the nightly delivery path measured from `freshness.csv`, then the incident
+   response from the timeline, with process and lead time per stage, wait
+   states, rework loops, and the two largest bottlenecks: 8 h 40 min of
+   undetected propagation between scheduled batches, and a 4 h fix-approval
+   queue. Flow efficiency over the 21 h 30 min incident is 24%.
+
+   ![Value stream map](deliverables/value_stream_map.png)
+
 In progress:
 
-2. Value stream map of the analytics delivery flow: lead and process time per
-   stage, wait states, rework loops, two largest bottlenecks
 3. Cost driver table: compute, rework, and business-impact costs, two
    prioritized countermeasures, stated assumptions
 4. 5–10 minute recorded walkthrough for the VP of Claims Operations and the
