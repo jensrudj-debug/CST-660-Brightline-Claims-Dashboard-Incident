@@ -3,8 +3,8 @@
 import argparse
 from pathlib import Path
 
-from . import freshness, pipeline, row_volume
-from .io import write_csv
+from . import freshness, pipeline, row_volume, schema_changes
+from .io import write_csv, write_json
 from .world import simulate
 
 
@@ -17,6 +17,7 @@ def main(argv=None) -> None:
     fresh = freshness.build(counts)
     write_csv(fresh, args.out / "freshness.csv")
     write_csv(row_volume.build(counts, fresh), args.out / "row_volume.csv")
+    write_json(schema_changes.build(fresh), args.out / "schema_changes.json")
 
 
 if __name__ == "__main__":

@@ -37,7 +37,7 @@ def incident(rv, table):
 
 def test_reruns_are_byte_identical(out, tmp_path):
     main(["--out", str(tmp_path)])
-    for name in ("freshness.csv", "row_volume.csv"):
+    for name in ("freshness.csv", "row_volume.csv", "schema_changes.json"):
         assert (tmp_path / name).read_bytes() == (out / name).read_bytes()
 
 
