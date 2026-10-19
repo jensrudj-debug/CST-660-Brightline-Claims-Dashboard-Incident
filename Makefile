@@ -13,6 +13,7 @@ generate:  ## Regenerate every file in telemetry/
 
 deliverables:  ## Render deliverables/ from telemetry/
 	$(PYTHON) -m generator.value_stream --telemetry telemetry --out deliverables/value_stream_map.png
+	$(PYTHON) -m generator.cost_drivers --telemetry telemetry --out deliverables/cost_driver_table.md
 
 test:  ## Run the answer-key and structural tests
 	$(PYTHON) -m pytest
