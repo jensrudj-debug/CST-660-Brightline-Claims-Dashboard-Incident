@@ -1,0 +1,962 @@
+run_id,run_date,table,column,row_count,null_count,null_rate,distinct_count,mean,category_mix
+20260821-raw_policies-1,2026-08-21,raw_policies,policy_status,2833,0,0.0000,3,,"{""ACTIVE"":0.9658,""CANCELLED"":0.0127,""LAPSED"":0.0215}"
+20260821-raw_policies-1,2026-08-21,raw_policies,lob,2833,0,0.0000,5,,"{""Commercial Auto"":0.0882,""Commercial Property"":0.1204,""General Liability"":0.048,""Homeowners"":0.2898,""Personal Auto"":0.4536}"
+20260821-stg_policies-1,2026-08-21,stg_policies,policy_status,163945,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260821-stg_policies-1,2026-08-21,stg_policies,lob,163945,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260821-stg_claims-1,2026-08-21,stg_claims,lob,51231,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1182,""General Liability"":0.0504,""Homeowners"":0.3021,""Personal Auto"":0.4498}"
+20260821-stg_claims-1,2026-08-21,stg_claims,incurred_amount,51231,0,0.0000,50619,15397.9400,
+20260821-stg_claims-1,2026-08-21,stg_claims,claim_status,51231,0,0.0000,2,,"{""CLOSED"":0.8215,""OPEN"":0.1785}"
+20260821-int_claims_enriched-1,2026-08-21,int_claims_enriched,policy_status,10345,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260821-int_claims_enriched-1,2026-08-21,int_claims_enriched,lob,10345,0,0.0000,5,,"{""Commercial Auto"":0.0968,""Commercial Property"":0.1689,""General Liability"":0.0971,""Homeowners"":0.3171,""Personal Auto"":0.3202}"
+20260821-int_claims_enriched-1,2026-08-21,int_claims_enriched,incurred_amount,10345,0,0.0000,10320,18573.9700,
+20260821-int_claims_enriched-1,2026-08-21,int_claims_enriched,claim_status,10345,0,0.0000,2,,"{""CLOSED"":0.141,""OPEN"":0.859}"
+20260821-fct_claims_closed-1,2026-08-21,fct_claims_closed,lob,1459,0,0.0000,5,,"{""Commercial Auto"":0.0877,""Commercial Property"":0.1097,""General Liability"":0.0404,""Homeowners"":0.3023,""Personal Auto"":0.4599}"
+20260821-fct_claims_closed-1,2026-08-21,fct_claims_closed,incurred_amount,1459,0,0.0000,1458,14986.0400,
+20260821-fct_claims_open-1,2026-08-21,fct_claims_open,lob,8886,0,0.0000,5,,"{""Commercial Auto"":0.0982,""Commercial Property"":0.1786,""General Liability"":0.1065,""Homeowners"":0.3195,""Personal Auto"":0.2972}"
+20260821-fct_claims_open-1,2026-08-21,fct_claims_open,incurred_amount,8886,0,0.0000,8869,19163.0800,
+20260821-fct_fnol-1,2026-08-21,fct_fnol,lob,240,0,0.0000,5,,"{""Commercial Auto"":0.0875,""Commercial Property"":0.0958,""General Liability"":0.0625,""Homeowners"":0.3083,""Personal Auto"":0.4458}"
+20260822-raw_policies-1,2026-08-22,raw_policies,policy_status,2869,0,0.0000,3,,"{""ACTIVE"":0.9759,""CANCELLED"":0.0094,""LAPSED"":0.0146}"
+20260822-raw_policies-1,2026-08-22,raw_policies,lob,2869,0,0.0000,5,,"{""Commercial Auto"":0.0722,""Commercial Property"":0.1199,""General Liability"":0.0526,""Homeowners"":0.3032,""Personal Auto"":0.4521}"
+20260822-stg_policies-1,2026-08-22,stg_policies,policy_status,164007,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260822-stg_policies-1,2026-08-22,stg_policies,lob,164007,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260822-stg_claims-1,2026-08-22,stg_claims,lob,51464,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1181,""General Liability"":0.0504,""Homeowners"":0.3023,""Personal Auto"":0.4498}"
+20260822-stg_claims-1,2026-08-22,stg_claims,incurred_amount,51464,0,0.0000,50848,15398.5000,
+20260822-stg_claims-1,2026-08-22,stg_claims,claim_status,51464,0,0.0000,2,,"{""CLOSED"":0.8218,""OPEN"":0.1782}"
+20260822-int_claims_enriched-1,2026-08-22,int_claims_enriched,policy_status,10369,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260822-int_claims_enriched-1,2026-08-22,int_claims_enriched,lob,10369,0,0.0000,5,,"{""Commercial Auto"":0.0967,""Commercial Property"":0.1684,""General Liability"":0.0971,""Homeowners"":0.3167,""Personal Auto"":0.3211}"
+20260822-int_claims_enriched-1,2026-08-22,int_claims_enriched,incurred_amount,10369,0,0.0000,10347,18530.2400,
+20260822-int_claims_enriched-1,2026-08-22,int_claims_enriched,claim_status,10369,0,0.0000,2,,"{""CLOSED"":0.1406,""OPEN"":0.8594}"
+20260822-fct_claims_closed-1,2026-08-22,fct_claims_closed,lob,1458,0,0.0000,5,,"{""Commercial Auto"":0.0885,""Commercial Property"":0.1111,""General Liability"":0.0412,""Homeowners"":0.3025,""Personal Auto"":0.4568}"
+20260822-fct_claims_closed-1,2026-08-22,fct_claims_closed,incurred_amount,1458,0,0.0000,1457,14437.4300,
+20260822-fct_claims_open-1,2026-08-22,fct_claims_open,lob,8911,0,0.0000,5,,"{""Commercial Auto"":0.0981,""Commercial Property"":0.1778,""General Liability"":0.1063,""Homeowners"":0.319,""Personal Auto"":0.2988}"
+20260822-fct_claims_open-1,2026-08-22,fct_claims_open,incurred_amount,8911,0,0.0000,8895,19199.9000,
+20260822-fct_fnol-1,2026-08-22,fct_fnol,lob,235,0,0.0000,5,,"{""Commercial Auto"":0.0723,""Commercial Property"":0.0979,""General Liability"":0.0511,""Homeowners"":0.3277,""Personal Auto"":0.4511}"
+20260823-raw_policies-1,2026-08-23,raw_policies,policy_status,1403,0,0.0000,3,,"{""ACTIVE"":0.9736,""CANCELLED"":0.0071,""LAPSED"":0.0192}"
+20260823-raw_policies-1,2026-08-23,raw_policies,lob,1403,0,0.0000,5,,"{""Commercial Auto"":0.0827,""Commercial Property"":0.1169,""General Liability"":0.0463,""Homeowners"":0.2851,""Personal Auto"":0.469}"
+20260823-stg_policies-1,2026-08-23,stg_policies,policy_status,164072,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260823-stg_policies-1,2026-08-23,stg_policies,lob,164072,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260823-stg_claims-1,2026-08-23,stg_claims,lob,51613,0,0.0000,5,,"{""Commercial Auto"":0.0794,""Commercial Property"":0.1182,""General Liability"":0.0504,""Homeowners"":0.3021,""Personal Auto"":0.4499}"
+20260823-stg_claims-1,2026-08-23,stg_claims,incurred_amount,51613,0,0.0000,50991,15407.2400,
+20260823-stg_claims-1,2026-08-23,stg_claims,claim_status,51613,0,0.0000,2,,"{""CLOSED"":0.8199,""OPEN"":0.1801}"
+20260823-int_claims_enriched-1,2026-08-23,int_claims_enriched,policy_status,10482,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260823-int_claims_enriched-1,2026-08-23,int_claims_enriched,lob,10482,0,0.0000,5,,"{""Commercial Auto"":0.0965,""Commercial Property"":0.1685,""General Liability"":0.0967,""Homeowners"":0.316,""Personal Auto"":0.3224}"
+20260823-int_claims_enriched-1,2026-08-23,int_claims_enriched,incurred_amount,10482,0,0.0000,10460,18545.2400,
+20260823-int_claims_enriched-1,2026-08-23,int_claims_enriched,claim_status,10482,0,0.0000,2,,"{""CLOSED"":0.1385,""OPEN"":0.8615}"
+20260823-fct_claims_closed-1,2026-08-23,fct_claims_closed,lob,1452,0,0.0000,5,,"{""Commercial Auto"":0.0882,""Commercial Property"":0.1123,""General Liability"":0.042,""Homeowners"":0.3017,""Personal Auto"":0.4559}"
+20260823-fct_claims_closed-1,2026-08-23,fct_claims_closed,incurred_amount,1452,0,0.0000,1452,14406.3400,
+20260823-fct_claims_open-1,2026-08-23,fct_claims_open,lob,9030,0,0.0000,5,,"{""Commercial Auto"":0.0978,""Commercial Property"":0.1775,""General Liability"":0.1055,""Homeowners"":0.3183,""Personal Auto"":0.3009}"
+20260823-fct_claims_open-1,2026-08-23,fct_claims_open,incurred_amount,9030,0,0.0000,9013,19210.7600,
+20260823-fct_fnol-1,2026-08-23,fct_fnol,lob,150,0,0.0000,5,,"{""Commercial Auto"":0.0667,""Commercial Property"":0.1667,""General Liability"":0.0467,""Homeowners"":0.26,""Personal Auto"":0.46}"
+20260824-raw_policies-1,2026-08-24,raw_policies,policy_status,1956,0,0.0000,3,,"{""ACTIVE"":0.9714,""CANCELLED"":0.0107,""LAPSED"":0.0179}"
+20260824-raw_policies-1,2026-08-24,raw_policies,lob,1956,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1166,""General Liability"":0.046,""Homeowners"":0.3021,""Personal Auto"":0.456}"
+20260824-stg_policies-1,2026-08-24,stg_policies,policy_status,164146,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260824-stg_policies-1,2026-08-24,stg_policies,lob,164146,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260824-stg_claims-1,2026-08-24,stg_claims,lob,51752,0,0.0000,5,,"{""Commercial Auto"":0.0794,""Commercial Property"":0.1183,""General Liability"":0.0504,""Homeowners"":0.3022,""Personal Auto"":0.4498}"
+20260824-stg_claims-1,2026-08-24,stg_claims,incurred_amount,51752,0,0.0000,51125,15409.8500,
+20260824-stg_claims-1,2026-08-24,stg_claims,claim_status,51752,0,0.0000,2,,"{""CLOSED"":0.8182,""OPEN"":0.1818}"
+20260824-int_claims_enriched-1,2026-08-24,int_claims_enriched,policy_status,10582,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260824-int_claims_enriched-1,2026-08-24,int_claims_enriched,lob,10582,0,0.0000,5,,"{""Commercial Auto"":0.0963,""Commercial Property"":0.1685,""General Liability"":0.0964,""Homeowners"":0.3161,""Personal Auto"":0.3227}"
+20260824-int_claims_enriched-1,2026-08-24,int_claims_enriched,incurred_amount,10582,0,0.0000,10560,18550.7200,
+20260824-int_claims_enriched-1,2026-08-24,int_claims_enriched,claim_status,10582,0,0.0000,2,,"{""CLOSED"":0.1362,""OPEN"":0.8638}"
+20260824-fct_claims_closed-1,2026-08-24,fct_claims_closed,lob,1441,0,0.0000,5,,"{""Commercial Auto"":0.0881,""Commercial Property"":0.1131,""General Liability"":0.0437,""Homeowners"":0.3005,""Personal Auto"":0.4545}"
+20260824-fct_claims_closed-1,2026-08-24,fct_claims_closed,incurred_amount,1441,0,0.0000,1441,14633.2400,
+20260824-fct_claims_open-1,2026-08-24,fct_claims_open,lob,9141,0,0.0000,5,,"{""Commercial Auto"":0.0976,""Commercial Property"":0.1772,""General Liability"":0.1047,""Homeowners"":0.3186,""Personal Auto"":0.3019}"
+20260824-fct_claims_open-1,2026-08-24,fct_claims_open,incurred_amount,9141,0,0.0000,9124,19168.2800,
+20260824-fct_fnol-1,2026-08-24,fct_fnol,lob,137,0,0.0000,5,,"{""Commercial Auto"":0.0876,""Commercial Property"":0.146,""General Liability"":0.0511,""Homeowners"":0.3139,""Personal Auto"":0.4015}"
+20260825-raw_policies-1,2026-08-25,raw_policies,policy_status,3077,0,0.0000,3,,"{""ACTIVE"":0.974,""CANCELLED"":0.0101,""LAPSED"":0.0159}"
+20260825-raw_policies-1,2026-08-25,raw_policies,lob,3077,0,0.0000,5,,"{""Commercial Auto"":0.0777,""Commercial Property"":0.1238,""General Liability"":0.0572,""Homeowners"":0.2935,""Personal Auto"":0.4478}"
+20260825-stg_policies-1,2026-08-25,stg_policies,policy_status,164209,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260825-stg_policies-1,2026-08-25,stg_policies,lob,164209,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260825-stg_claims-1,2026-08-25,stg_claims,lob,52051,0,0.0000,5,,"{""Commercial Auto"":0.0794,""Commercial Property"":0.1183,""General Liability"":0.0504,""Homeowners"":0.3021,""Personal Auto"":0.4499}"
+20260825-stg_claims-1,2026-08-25,stg_claims,incurred_amount,52051,0,0.0000,51419,15389.7100,
+20260825-stg_claims-1,2026-08-25,stg_claims,claim_status,52051,0,0.0000,2,,"{""CLOSED"":0.8242,""OPEN"":0.1758}"
+20260825-int_claims_enriched-1,2026-08-25,int_claims_enriched,policy_status,10277,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260825-int_claims_enriched-1,2026-08-25,int_claims_enriched,lob,10277,0,0.0000,5,,"{""Commercial Auto"":0.0963,""Commercial Property"":0.1709,""General Liability"":0.0986,""Homeowners"":0.3155,""Personal Auto"":0.3188}"
+20260825-int_claims_enriched-1,2026-08-25,int_claims_enriched,incurred_amount,10277,0,0.0000,10255,18583.9600,
+20260825-int_claims_enriched-1,2026-08-25,int_claims_enriched,claim_status,10277,0,0.0000,2,,"{""CLOSED"":0.1354,""OPEN"":0.8646}"
+20260825-fct_claims_closed-1,2026-08-25,fct_claims_closed,lob,1392,0,0.0000,5,,"{""Commercial Auto"":0.0848,""Commercial Property"":0.1343,""General Liability"":0.0524,""Homeowners"":0.2751,""Personal Auto"":0.4533}"
+20260825-fct_claims_closed-1,2026-08-25,fct_claims_closed,incurred_amount,1392,0,0.0000,1392,14909.1500,
+20260825-fct_claims_open-1,2026-08-25,fct_claims_open,lob,8885,0,0.0000,5,,"{""Commercial Auto"":0.0981,""Commercial Property"":0.1766,""General Liability"":0.1058,""Homeowners"":0.3218,""Personal Auto"":0.2977}"
+20260825-fct_claims_open-1,2026-08-25,fct_claims_open,incurred_amount,8885,0,0.0000,8869,19159.6900,
+20260825-fct_fnol-1,2026-08-25,fct_fnol,lob,293,0,0.0000,5,,"{""Commercial Auto"":0.0683,""Commercial Property"":0.1092,""General Liability"":0.0546,""Homeowners"":0.2901,""Personal Auto"":0.4778}"
+20260826-raw_policies-1,2026-08-26,raw_policies,policy_status,2895,0,0.0000,3,,"{""ACTIVE"":0.9696,""CANCELLED"":0.0114,""LAPSED"":0.019}"
+20260826-raw_policies-1,2026-08-26,raw_policies,lob,2895,0,0.0000,5,,"{""Commercial Auto"":0.0857,""Commercial Property"":0.1237,""General Liability"":0.0497,""Homeowners"":0.3036,""Personal Auto"":0.4373}"
+20260826-stg_policies-1,2026-08-26,stg_policies,policy_status,164270,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260826-stg_policies-1,2026-08-26,stg_policies,lob,164270,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260826-stg_claims-1,2026-08-26,stg_claims,lob,52326,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1182,""General Liability"":0.0504,""Homeowners"":0.3021,""Personal Auto"":0.4498}"
+20260826-stg_claims-1,2026-08-26,stg_claims,incurred_amount,52326,0,0.0000,51687,15399.5100,
+20260826-stg_claims-1,2026-08-26,stg_claims,claim_status,52326,0,0.0000,2,,"{""CLOSED"":0.8244,""OPEN"":0.1756}"
+20260826-int_claims_enriched-1,2026-08-26,int_claims_enriched,policy_status,10346,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260826-int_claims_enriched-1,2026-08-26,int_claims_enriched,lob,10346,0,0.0000,5,,"{""Commercial Auto"":0.0961,""Commercial Property"":0.1701,""General Liability"":0.0983,""Homeowners"":0.3165,""Personal Auto"":0.319}"
+20260826-int_claims_enriched-1,2026-08-26,int_claims_enriched,incurred_amount,10346,0,0.0000,10323,18601.3500,
+20260826-int_claims_enriched-1,2026-08-26,int_claims_enriched,claim_status,10346,0,0.0000,2,,"{""CLOSED"":0.1374,""OPEN"":0.8626}"
+20260826-fct_claims_closed-1,2026-08-26,fct_claims_closed,lob,1422,0,0.0000,5,,"{""Commercial Auto"":0.0823,""Commercial Property"":0.1329,""General Liability"":0.0541,""Homeowners"":0.2827,""Personal Auto"":0.448}"
+20260826-fct_claims_closed-1,2026-08-26,fct_claims_closed,incurred_amount,1422,0,0.0000,1422,14513.4700,
+20260826-fct_claims_open-1,2026-08-26,fct_claims_open,lob,8924,0,0.0000,5,,"{""Commercial Auto"":0.0983,""Commercial Property"":0.176,""General Liability"":0.1053,""Homeowners"":0.3219,""Personal Auto"":0.2984}"
+20260826-fct_claims_open-1,2026-08-26,fct_claims_open,incurred_amount,8924,0,0.0000,8907,19252.7400,
+20260826-fct_fnol-1,2026-08-26,fct_fnol,lob,280,0,0.0000,5,,"{""Commercial Auto"":0.0964,""Commercial Property"":0.1179,""General Liability"":0.0536,""Homeowners"":0.3,""Personal Auto"":0.4321}"
+20260827-raw_policies-1,2026-08-27,raw_policies,policy_status,2886,0,0.0000,3,,"{""ACTIVE"":0.9716,""CANCELLED"":0.0087,""LAPSED"":0.0198}"
+20260827-raw_policies-1,2026-08-27,raw_policies,lob,2886,0,0.0000,5,,"{""Commercial Auto"":0.0852,""Commercial Property"":0.1119,""General Liability"":0.0565,""Homeowners"":0.2997,""Personal Auto"":0.4466}"
+20260827-stg_policies-1,2026-08-27,stg_policies,policy_status,164333,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260827-stg_policies-1,2026-08-27,stg_policies,lob,164333,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260827-stg_claims-1,2026-08-27,stg_claims,lob,52561,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1182,""General Liability"":0.0505,""Homeowners"":0.3023,""Personal Auto"":0.4497}"
+20260827-stg_claims-1,2026-08-27,stg_claims,incurred_amount,52561,0,0.0000,51916,15408.1700,
+20260827-stg_claims-1,2026-08-27,stg_claims,claim_status,52561,0,0.0000,2,,"{""CLOSED"":0.8253,""OPEN"":0.1747}"
+20260827-int_claims_enriched-2,2026-08-27,int_claims_enriched,policy_status,10382,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260827-int_claims_enriched-2,2026-08-27,int_claims_enriched,lob,10382,0,0.0000,5,,"{""Commercial Auto"":0.0949,""Commercial Property"":0.1699,""General Liability"":0.0987,""Homeowners"":0.3172,""Personal Auto"":0.3193}"
+20260827-int_claims_enriched-2,2026-08-27,int_claims_enriched,incurred_amount,10382,0,0.0000,10358,18655.3600,
+20260827-int_claims_enriched-2,2026-08-27,int_claims_enriched,claim_status,10382,0,0.0000,2,,"{""CLOSED"":0.1408,""OPEN"":0.8592}"
+20260827-fct_claims_closed-1,2026-08-27,fct_claims_closed,lob,1462,0,0.0000,5,,"{""Commercial Auto"":0.0759,""Commercial Property"":0.1361,""General Liability"":0.0547,""Homeowners"":0.2839,""Personal Auto"":0.4494}"
+20260827-fct_claims_closed-1,2026-08-27,fct_claims_closed,incurred_amount,1462,0,0.0000,1462,14965.5800,
+20260827-fct_claims_open-1,2026-08-27,fct_claims_open,lob,8920,0,0.0000,5,,"{""Commercial Auto"":0.098,""Commercial Property"":0.1754,""General Liability"":0.1059,""Homeowners"":0.3226,""Personal Auto"":0.298}"
+20260827-fct_claims_open-1,2026-08-27,fct_claims_open,incurred_amount,8920,0,0.0000,8903,19260.1200,
+20260827-fct_fnol-1,2026-08-27,fct_fnol,lob,236,0,0.0000,5,,"{""Commercial Auto"":0.0424,""Commercial Property"":0.1186,""General Liability"":0.0593,""Homeowners"":0.3517,""Personal Auto"":0.428}"
+20260828-raw_policies-1,2026-08-28,raw_policies,policy_status,2889,0,0.0000,3,,"{""ACTIVE"":0.9688,""CANCELLED"":0.0107,""LAPSED"":0.0204}"
+20260828-raw_policies-1,2026-08-28,raw_policies,lob,2889,0,0.0000,5,,"{""Commercial Auto"":0.0789,""Commercial Property"":0.1139,""General Liability"":0.0543,""Homeowners"":0.3101,""Personal Auto"":0.4427}"
+20260828-stg_policies-1,2026-08-28,stg_policies,policy_status,164391,0,0.0000,3,,"{""ACTIVE"":0.9681,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260828-stg_policies-1,2026-08-28,stg_policies,lob,164391,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260828-stg_claims-1,2026-08-28,stg_claims,lob,52791,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1183,""General Liability"":0.0504,""Homeowners"":0.3023,""Personal Auto"":0.4496}"
+20260828-stg_claims-1,2026-08-28,stg_claims,incurred_amount,52791,0,0.0000,52143,15405.6800,
+20260828-stg_claims-1,2026-08-28,stg_claims,claim_status,52791,0,0.0000,2,,"{""CLOSED"":0.826,""OPEN"":0.174}"
+20260828-int_claims_enriched-2,2026-08-28,int_claims_enriched,policy_status,10398,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260828-int_claims_enriched-2,2026-08-28,int_claims_enriched,lob,10398,0,0.0000,5,,"{""Commercial Auto"":0.0956,""Commercial Property"":0.17,""General Liability"":0.0985,""Homeowners"":0.3177,""Personal Auto"":0.3182}"
+20260828-int_claims_enriched-2,2026-08-28,int_claims_enriched,incurred_amount,10398,0,0.0000,10373,18651.0500,
+20260828-int_claims_enriched-2,2026-08-28,int_claims_enriched,claim_status,10398,0,0.0000,2,,"{""CLOSED"":0.1421,""OPEN"":0.8579}"
+20260828-fct_claims_closed-1,2026-08-28,fct_claims_closed,lob,1478,0,0.0000,5,,"{""Commercial Auto"":0.0744,""Commercial Property"":0.134,""General Liability"":0.0548,""Homeowners"":0.2848,""Personal Auto"":0.452}"
+20260828-fct_claims_closed-1,2026-08-28,fct_claims_closed,incurred_amount,1478,0,0.0000,1476,14865.0200,
+20260828-fct_claims_open-1,2026-08-28,fct_claims_open,lob,8920,0,0.0000,5,,"{""Commercial Auto"":0.0991,""Commercial Property"":0.176,""General Liability"":0.1057,""Homeowners"":0.3231,""Personal Auto"":0.2961}"
+20260828-fct_claims_open-1,2026-08-28,fct_claims_open,incurred_amount,8920,0,0.0000,8902,19278.3800,
+20260828-fct_fnol-1,2026-08-28,fct_fnol,lob,228,0,0.0000,5,,"{""Commercial Auto"":0.1228,""Commercial Property"":0.1272,""General Liability"":0.0351,""Homeowners"":0.2939,""Personal Auto"":0.4211}"
+20260829-raw_policies-1,2026-08-29,raw_policies,policy_status,2858,0,0.0000,3,,"{""ACTIVE"":0.9675,""CANCELLED"":0.0105,""LAPSED"":0.022}"
+20260829-raw_policies-1,2026-08-29,raw_policies,lob,2858,0,0.0000,5,,"{""Commercial Auto"":0.0843,""Commercial Property"":0.1155,""General Liability"":0.0483,""Homeowners"":0.3069,""Personal Auto"":0.4451}"
+20260829-stg_policies-1,2026-08-29,stg_policies,policy_status,164467,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260829-stg_policies-1,2026-08-29,stg_policies,lob,164467,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260829-stg_claims-1,2026-08-29,stg_claims,lob,53014,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1184,""General Liability"":0.0504,""Homeowners"":0.3023,""Personal Auto"":0.4493}"
+20260829-stg_claims-1,2026-08-29,stg_claims,incurred_amount,53014,0,0.0000,52357,15428.8800,
+20260829-stg_claims-1,2026-08-29,stg_claims,claim_status,53014,0,0.0000,2,,"{""CLOSED"":0.8263,""OPEN"":0.1737}"
+20260829-int_claims_enriched-1,2026-08-29,int_claims_enriched,policy_status,10412,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260829-int_claims_enriched-1,2026-08-29,int_claims_enriched,lob,10412,0,0.0000,5,,"{""Commercial Auto"":0.0959,""Commercial Property"":0.1707,""General Liability"":0.0987,""Homeowners"":0.3171,""Personal Auto"":0.3176}"
+20260829-int_claims_enriched-1,2026-08-29,int_claims_enriched,incurred_amount,10412,0,0.0000,10385,18807.9400,
+20260829-int_claims_enriched-1,2026-08-29,int_claims_enriched,claim_status,10412,0,0.0000,2,,"{""CLOSED"":0.1416,""OPEN"":0.8584}"
+20260829-fct_claims_closed-1,2026-08-29,fct_claims_closed,lob,1474,0,0.0000,5,,"{""Commercial Auto"":0.0726,""Commercial Property"":0.1303,""General Liability"":0.0509,""Homeowners"":0.2815,""Personal Auto"":0.4647}"
+20260829-fct_claims_closed-1,2026-08-29,fct_claims_closed,incurred_amount,1474,0,0.0000,1473,14587.9200,
+20260829-fct_claims_open-1,2026-08-29,fct_claims_open,lob,8938,0,0.0000,5,,"{""Commercial Auto"":0.0997,""Commercial Property"":0.1773,""General Liability"":0.1066,""Homeowners"":0.323,""Personal Auto"":0.2934}"
+20260829-fct_claims_open-1,2026-08-29,fct_claims_open,incurred_amount,8938,0,0.0000,8921,19503.8800,
+20260829-fct_fnol-1,2026-08-29,fct_fnol,lob,224,0,0.0000,5,,"{""Commercial Auto"":0.0804,""Commercial Property"":0.1562,""General Liability"":0.067,""Homeowners"":0.3125,""Personal Auto"":0.3839}"
+20260830-raw_policies-1,2026-08-30,raw_policies,policy_status,1412,0,0.0000,3,,"{""ACTIVE"":0.9731,""CANCELLED"":0.0106,""LAPSED"":0.0163}"
+20260830-raw_policies-1,2026-08-30,raw_policies,lob,1412,0,0.0000,5,,"{""Commercial Auto"":0.0715,""Commercial Property"":0.1204,""General Liability"":0.0496,""Homeowners"":0.2741,""Personal Auto"":0.4844}"
+20260830-stg_policies-1,2026-08-30,stg_policies,policy_status,164528,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0199}"
+20260830-stg_policies-1,2026-08-30,stg_policies,lob,164528,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260830-stg_claims-1,2026-08-30,stg_claims,lob,53159,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1185,""General Liability"":0.0504,""Homeowners"":0.3023,""Personal Auto"":0.4493}"
+20260830-stg_claims-1,2026-08-30,stg_claims,incurred_amount,53159,0,0.0000,52499,15426.9400,
+20260830-stg_claims-1,2026-08-30,stg_claims,claim_status,53159,0,0.0000,2,,"{""CLOSED"":0.8247,""OPEN"":0.1753}"
+20260830-int_claims_enriched-1,2026-08-30,int_claims_enriched,policy_status,10528,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260830-int_claims_enriched-1,2026-08-30,int_claims_enriched,lob,10528,0,0.0000,5,,"{""Commercial Auto"":0.0958,""Commercial Property"":0.1702,""General Liability"":0.098,""Homeowners"":0.3171,""Personal Auto"":0.3189}"
+20260830-int_claims_enriched-1,2026-08-30,int_claims_enriched,incurred_amount,10528,0,0.0000,10502,18774.7400,
+20260830-int_claims_enriched-1,2026-08-30,int_claims_enriched,claim_status,10528,0,0.0000,2,,"{""CLOSED"":0.1406,""OPEN"":0.8594}"
+20260830-fct_claims_closed-1,2026-08-30,fct_claims_closed,lob,1480,0,0.0000,5,,"{""Commercial Auto"":0.0743,""Commercial Property"":0.1284,""General Liability"":0.05,""Homeowners"":0.2824,""Personal Auto"":0.4649}"
+20260830-fct_claims_closed-1,2026-08-30,fct_claims_closed,incurred_amount,1480,0,0.0000,1479,14713.5500,
+20260830-fct_claims_open-1,2026-08-30,fct_claims_open,lob,9048,0,0.0000,5,,"{""Commercial Auto"":0.0994,""Commercial Property"":0.1771,""General Liability"":0.1059,""Homeowners"":0.3227,""Personal Auto"":0.295}"
+20260830-fct_claims_open-1,2026-08-30,fct_claims_open,incurred_amount,9048,0,0.0000,9031,19439.0400,
+20260830-fct_fnol-1,2026-08-30,fct_fnol,lob,146,0,0.0000,5,,"{""Commercial Auto"":0.0822,""Commercial Property"":0.137,""General Liability"":0.0411,""Homeowners"":0.3082,""Personal Auto"":0.4315}"
+20260831-raw_policies-1,2026-08-31,raw_policies,policy_status,1948,0,0.0000,3,,"{""ACTIVE"":0.9713,""CANCELLED"":0.0118,""LAPSED"":0.0169}"
+20260831-raw_policies-1,2026-08-31,raw_policies,lob,1948,0,0.0000,5,,"{""Commercial Auto"":0.0883,""Commercial Property"":0.1237,""General Liability"":0.0441,""Homeowners"":0.3008,""Personal Auto"":0.443}"
+20260831-stg_policies-1,2026-08-31,stg_policies,policy_status,164595,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260831-stg_policies-1,2026-08-31,stg_policies,lob,164595,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260831-stg_claims-1,2026-08-31,stg_claims,lob,53297,0,0.0000,5,,"{""Commercial Auto"":0.0796,""Commercial Property"":0.1186,""General Liability"":0.0504,""Homeowners"":0.3024,""Personal Auto"":0.449}"
+20260831-stg_claims-1,2026-08-31,stg_claims,incurred_amount,53297,0,0.0000,52634,15423.4100,
+20260831-stg_claims-1,2026-08-31,stg_claims,claim_status,53297,0,0.0000,2,,"{""CLOSED"":0.8232,""OPEN"":0.1768}"
+20260831-int_claims_enriched-1,2026-08-31,int_claims_enriched,policy_status,10638,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260831-int_claims_enriched-1,2026-08-31,int_claims_enriched,lob,10638,0,0.0000,5,,"{""Commercial Auto"":0.0961,""Commercial Property"":0.1701,""General Liability"":0.0973,""Homeowners"":0.3175,""Personal Auto"":0.319}"
+20260831-int_claims_enriched-1,2026-08-31,int_claims_enriched,incurred_amount,10638,0,0.0000,10611,18705.7200,
+20260831-int_claims_enriched-1,2026-08-31,int_claims_enriched,claim_status,10638,0,0.0000,2,,"{""CLOSED"":0.1403,""OPEN"":0.8597}"
+20260831-fct_claims_closed-1,2026-08-31,fct_claims_closed,lob,1492,0,0.0000,5,,"{""Commercial Auto"":0.0751,""Commercial Property"":0.1273,""General Liability"":0.0483,""Homeowners"":0.2862,""Personal Auto"":0.4631}"
+20260831-fct_claims_closed-1,2026-08-31,fct_claims_closed,incurred_amount,1492,0,0.0000,1491,14603.0800,
+20260831-fct_claims_open-1,2026-08-31,fct_claims_open,lob,9146,0,0.0000,5,,"{""Commercial Auto"":0.0995,""Commercial Property"":0.1771,""General Liability"":0.1053,""Homeowners"":0.3227,""Personal Auto"":0.2954}"
+20260831-fct_claims_open-1,2026-08-31,fct_claims_open,incurred_amount,9146,0,0.0000,9129,19374.9900,
+20260831-fct_fnol-1,2026-08-31,fct_fnol,lob,131,0,0.0000,5,,"{""Commercial Auto"":0.1221,""Commercial Property"":0.1374,""General Liability"":0.0458,""Homeowners"":0.3206,""Personal Auto"":0.374}"
+20260901-raw_policies-1,2026-09-01,raw_policies,policy_status,3120,0,0.0000,3,,"{""ACTIVE"":0.9676,""CANCELLED"":0.0099,""LAPSED"":0.0224}"
+20260901-raw_policies-1,2026-09-01,raw_policies,lob,3120,0,0.0000,5,,"{""Commercial Auto"":0.0853,""Commercial Property"":0.109,""General Liability"":0.0478,""Homeowners"":0.3048,""Personal Auto"":0.4532}"
+20260901-stg_policies-1,2026-09-01,stg_policies,policy_status,164658,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260901-stg_policies-1,2026-09-01,stg_policies,lob,164658,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0497,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260901-stg_claims-1,2026-09-01,stg_claims,lob,53594,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1187,""General Liability"":0.0504,""Homeowners"":0.3022,""Personal Auto"":0.4491}"
+20260901-stg_claims-1,2026-09-01,stg_claims,incurred_amount,53594,0,0.0000,52921,15420.8400,
+20260901-stg_claims-1,2026-09-01,stg_claims,claim_status,53594,0,0.0000,2,,"{""CLOSED"":0.8295,""OPEN"":0.1705}"
+20260901-int_claims_enriched-1,2026-09-01,int_claims_enriched,policy_status,10375,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260901-int_claims_enriched-1,2026-09-01,int_claims_enriched,lob,10375,0,0.0000,5,,"{""Commercial Auto"":0.0964,""Commercial Property"":0.1704,""General Liability"":0.0982,""Homeowners"":0.3194,""Personal Auto"":0.3156}"
+20260901-int_claims_enriched-1,2026-09-01,int_claims_enriched,incurred_amount,10375,0,0.0000,10349,18782.8100,
+20260901-int_claims_enriched-1,2026-09-01,int_claims_enriched,claim_status,10375,0,0.0000,2,,"{""CLOSED"":0.1452,""OPEN"":0.8548}"
+20260901-fct_claims_closed-1,2026-09-01,fct_claims_closed,lob,1506,0,0.0000,5,,"{""Commercial Auto"":0.0784,""Commercial Property"":0.1122,""General Liability"":0.0452,""Homeowners"":0.3074,""Personal Auto"":0.4568}"
+20260901-fct_claims_closed-1,2026-09-01,fct_claims_closed,incurred_amount,1506,0,0.0000,1505,14497.3500,
+20260901-fct_claims_open-1,2026-09-01,fct_claims_open,lob,8869,0,0.0000,5,,"{""Commercial Auto"":0.0994,""Commercial Property"":0.1803,""General Liability"":0.1072,""Homeowners"":0.3215,""Personal Auto"":0.2916}"
+20260901-fct_claims_open-1,2026-09-01,fct_claims_open,incurred_amount,8869,0,0.0000,8852,19510.5100,
+20260901-fct_fnol-1,2026-09-01,fct_fnol,lob,301,0,0.0000,5,,"{""Commercial Auto"":0.0664,""Commercial Property"":0.1528,""General Liability"":0.0565,""Homeowners"":0.2691,""Personal Auto"":0.4551}"
+20260902-raw_policies-1,2026-09-02,raw_policies,policy_status,2886,0,0.0000,3,,"{""ACTIVE"":0.966,""CANCELLED"":0.0139,""LAPSED"":0.0201}"
+20260902-raw_policies-1,2026-09-02,raw_policies,lob,2886,0,0.0000,5,,"{""Commercial Auto"":0.0835,""Commercial Property"":0.1182,""General Liability"":0.0437,""Homeowners"":0.306,""Personal Auto"":0.4487}"
+20260902-stg_policies-1,2026-09-02,stg_policies,policy_status,164719,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260902-stg_policies-1,2026-09-02,stg_policies,lob,164719,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260902-stg_claims-1,2026-09-02,stg_claims,lob,53856,0,0.0000,5,,"{""Commercial Auto"":0.0795,""Commercial Property"":0.1187,""General Liability"":0.0503,""Homeowners"":0.3022,""Personal Auto"":0.4492}"
+20260902-stg_claims-1,2026-09-02,stg_claims,incurred_amount,53856,0,0.0000,53179,15413.3500,
+20260902-stg_claims-1,2026-09-02,stg_claims,claim_status,53856,0,0.0000,2,,"{""CLOSED"":0.8294,""OPEN"":0.1706}"
+20260902-int_claims_enriched-1,2026-09-02,int_claims_enriched,policy_status,10402,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260902-int_claims_enriched-1,2026-09-02,int_claims_enriched,lob,10402,0,0.0000,5,,"{""Commercial Auto"":0.0958,""Commercial Property"":0.1708,""General Liability"":0.0974,""Homeowners"":0.3194,""Personal Auto"":0.3166}"
+20260902-int_claims_enriched-1,2026-09-02,int_claims_enriched,incurred_amount,10402,0,0.0000,10377,18811.2800,
+20260902-int_claims_enriched-1,2026-09-02,int_claims_enriched,claim_status,10402,0,0.0000,2,,"{""CLOSED"":0.143,""OPEN"":0.857}"
+20260902-fct_claims_closed-1,2026-09-02,fct_claims_closed,lob,1487,0,0.0000,5,,"{""Commercial Auto"":0.0767,""Commercial Property"":0.1264,""General Liability"":0.0424,""Homeowners"":0.3033,""Personal Auto"":0.4512}"
+20260902-fct_claims_closed-1,2026-09-02,fct_claims_closed,incurred_amount,1487,0,0.0000,1486,14911.0900,
+20260902-fct_claims_open-1,2026-09-02,fct_claims_open,lob,8915,0,0.0000,5,,"{""Commercial Auto"":0.099,""Commercial Property"":0.1782,""General Liability"":0.1066,""Homeowners"":0.322,""Personal Auto"":0.2941}"
+20260902-fct_claims_open-1,2026-09-02,fct_claims_open,incurred_amount,8915,0,0.0000,8898,19461.8200,
+20260902-fct_fnol-1,2026-09-02,fct_fnol,lob,264,0,0.0000,5,,"{""Commercial Auto"":0.0682,""Commercial Property"":0.1212,""General Liability"":0.0303,""Homeowners"":0.3106,""Personal Auto"":0.4697}"
+20260903-raw_policies-1,2026-09-03,raw_policies,policy_status,2820,0,0.0000,3,,"{""ACTIVE"":0.9667,""CANCELLED"":0.0124,""LAPSED"":0.0209}"
+20260903-raw_policies-1,2026-09-03,raw_policies,lob,2820,0,0.0000,5,,"{""Commercial Auto"":0.0823,""Commercial Property"":0.117,""General Liability"":0.0539,""Homeowners"":0.3014,""Personal Auto"":0.4454}"
+20260903-stg_policies-1,2026-09-03,stg_policies,policy_status,164771,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260903-stg_policies-1,2026-09-03,stg_policies,lob,164771,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260903-stg_claims-1,2026-09-03,stg_claims,lob,54108,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1189,""General Liability"":0.0503,""Homeowners"":0.3023,""Personal Auto"":0.4493}"
+20260903-stg_claims-1,2026-09-03,stg_claims,incurred_amount,54108,0,0.0000,53422,15414.0600,
+20260903-stg_claims-1,2026-09-03,stg_claims,claim_status,54108,0,0.0000,2,,"{""CLOSED"":0.8294,""OPEN"":0.1706}"
+20260903-int_claims_enriched-1,2026-09-03,int_claims_enriched,policy_status,10411,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260903-int_claims_enriched-1,2026-09-03,int_claims_enriched,lob,10411,0,0.0000,5,,"{""Commercial Auto"":0.0957,""Commercial Property"":0.1707,""General Liability"":0.0971,""Homeowners"":0.3195,""Personal Auto"":0.3171}"
+20260903-int_claims_enriched-1,2026-09-03,int_claims_enriched,incurred_amount,10411,0,0.0000,10386,18746.1100,
+20260903-int_claims_enriched-1,2026-09-03,int_claims_enriched,claim_status,10411,0,0.0000,2,,"{""CLOSED"":0.1398,""OPEN"":0.8602}"
+20260903-fct_claims_closed-1,2026-09-03,fct_claims_closed,lob,1455,0,0.0000,5,,"{""Commercial Auto"":0.0832,""Commercial Property"":0.1244,""General Liability"":0.0405,""Homeowners"":0.3024,""Personal Auto"":0.4495}"
+20260903-fct_claims_closed-1,2026-09-03,fct_claims_closed,incurred_amount,1455,0,0.0000,1455,14767.3400,
+20260903-fct_claims_open-1,2026-09-03,fct_claims_open,lob,8956,0,0.0000,5,,"{""Commercial Auto"":0.0977,""Commercial Property"":0.1782,""General Liability"":0.1063,""Homeowners"":0.3222,""Personal Auto"":0.2956}"
+20260903-fct_claims_open-1,2026-09-03,fct_claims_open,incurred_amount,8956,0,0.0000,8939,19392.5000,
+20260903-fct_fnol-1,2026-09-03,fct_fnol,lob,253,0,0.0000,5,,"{""Commercial Auto"":0.0474,""Commercial Property"":0.1423,""General Liability"":0.0316,""Homeowners"":0.3123,""Personal Auto"":0.4664}"
+20260904-raw_policies-1,2026-09-04,raw_policies,policy_status,2925,0,0.0000,3,,"{""ACTIVE"":0.974,""CANCELLED"":0.0079,""LAPSED"":0.0181}"
+20260904-raw_policies-1,2026-09-04,raw_policies,lob,2925,0,0.0000,5,,"{""Commercial Auto"":0.0807,""Commercial Property"":0.1166,""General Liability"":0.0465,""Homeowners"":0.2954,""Personal Auto"":0.4609}"
+20260904-stg_policies-1,2026-09-04,stg_policies,policy_status,164830,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260904-stg_policies-1,2026-09-04,stg_policies,lob,164830,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260904-stg_claims-1,2026-09-04,stg_claims,lob,54343,0,0.0000,5,,"{""Commercial Auto"":0.0794,""Commercial Property"":0.1188,""General Liability"":0.0502,""Homeowners"":0.3022,""Personal Auto"":0.4493}"
+20260904-stg_claims-1,2026-09-04,stg_claims,incurred_amount,54343,0,0.0000,53650,15421.3600,
+20260904-stg_claims-1,2026-09-04,stg_claims,claim_status,54343,0,0.0000,2,,"{""CLOSED"":0.83,""OPEN"":0.17}"
+20260904-int_claims_enriched-1,2026-09-04,int_claims_enriched,policy_status,10420,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260904-int_claims_enriched-1,2026-09-04,int_claims_enriched,lob,10420,0,0.0000,5,,"{""Commercial Auto"":0.0958,""Commercial Property"":0.1708,""General Liability"":0.0971,""Homeowners"":0.3199,""Personal Auto"":0.3164}"
+20260904-int_claims_enriched-1,2026-09-04,int_claims_enriched,incurred_amount,10420,0,0.0000,10394,18804.2000,
+20260904-int_claims_enriched-1,2026-09-04,int_claims_enriched,claim_status,10420,0,0.0000,2,,"{""CLOSED"":0.1395,""OPEN"":0.8605}"
+20260904-fct_claims_closed-1,2026-09-04,fct_claims_closed,lob,1454,0,0.0000,5,,"{""Commercial Auto"":0.0853,""Commercial Property"":0.1238,""General Liability"":0.0426,""Homeowners"":0.3081,""Personal Auto"":0.4402}"
+20260904-fct_claims_closed-1,2026-09-04,fct_claims_closed,incurred_amount,1454,0,0.0000,1454,14397.9600,
+20260904-fct_claims_open-1,2026-09-04,fct_claims_open,lob,8966,0,0.0000,5,,"{""Commercial Auto"":0.0975,""Commercial Property"":0.1785,""General Liability"":0.106,""Homeowners"":0.3218,""Personal Auto"":0.2963}"
+20260904-fct_claims_open-1,2026-09-04,fct_claims_open,incurred_amount,8966,0,0.0000,8948,19518.7500,
+20260904-fct_fnol-1,2026-09-04,fct_fnol,lob,234,0,0.0000,5,,"{""Commercial Auto"":0.0897,""Commercial Property"":0.1197,""General Liability"":0.0427,""Homeowners"":0.2949,""Personal Auto"":0.453}"
+20260905-raw_policies-1,2026-09-05,raw_policies,policy_status,2839,0,0.0000,3,,"{""ACTIVE"":0.969,""CANCELLED"":0.0109,""LAPSED"":0.0201}"
+20260905-raw_policies-1,2026-09-05,raw_policies,lob,2839,0,0.0000,5,,"{""Commercial Auto"":0.0796,""Commercial Property"":0.1226,""General Liability"":0.0557,""Homeowners"":0.2976,""Personal Auto"":0.4445}"
+20260905-stg_policies-1,2026-09-05,stg_policies,policy_status,164896,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260905-stg_policies-1,2026-09-05,stg_policies,lob,164896,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260905-stg_claims-1,2026-09-05,stg_claims,lob,54600,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1188,""General Liability"":0.0502,""Homeowners"":0.3025,""Personal Auto"":0.4492}"
+20260905-stg_claims-1,2026-09-05,stg_claims,incurred_amount,54600,0,0.0000,53902,15432.0100,
+20260905-stg_claims-1,2026-09-05,stg_claims,claim_status,54600,0,0.0000,2,,"{""CLOSED"":0.83,""OPEN"":0.17}"
+20260905-int_claims_enriched-1,2026-09-05,int_claims_enriched,policy_status,10472,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260905-int_claims_enriched-1,2026-09-05,int_claims_enriched,lob,10472,0,0.0000,5,,"{""Commercial Auto"":0.0955,""Commercial Property"":0.171,""General Liability"":0.0974,""Homeowners"":0.3203,""Personal Auto"":0.3158}"
+20260905-int_claims_enriched-1,2026-09-05,int_claims_enriched,incurred_amount,10472,0,0.0000,10449,18924.7000,
+20260905-int_claims_enriched-1,2026-09-05,int_claims_enriched,claim_status,10472,0,0.0000,2,,"{""CLOSED"":0.1401,""OPEN"":0.8599}"
+20260905-fct_claims_closed-1,2026-09-05,fct_claims_closed,lob,1467,0,0.0000,5,,"{""Commercial Auto"":0.0948,""Commercial Property"":0.1288,""General Liability"":0.0457,""Homeowners"":0.3061,""Personal Auto"":0.4247}"
+20260905-fct_claims_closed-1,2026-09-05,fct_claims_closed,incurred_amount,1467,0,0.0000,1467,14712.6100,
+20260905-fct_claims_open-1,2026-09-05,fct_claims_open,lob,9005,0,0.0000,5,,"{""Commercial Auto"":0.0956,""Commercial Property"":0.1779,""General Liability"":0.1058,""Homeowners"":0.3226,""Personal Auto"":0.2981}"
+20260905-fct_claims_open-1,2026-09-05,fct_claims_open,incurred_amount,9005,0,0.0000,8988,19610.8900,
+20260905-fct_fnol-1,2026-09-05,fct_fnol,lob,258,0,0.0000,5,,"{""Commercial Auto"":0.0543,""Commercial Property"":0.1163,""General Liability"":0.0504,""Homeowners"":0.3411,""Personal Auto"":0.438}"
+20260906-raw_policies-1,2026-09-06,raw_policies,policy_status,1443,0,0.0000,3,,"{""ACTIVE"":0.9723,""CANCELLED"":0.0111,""LAPSED"":0.0166}"
+20260906-raw_policies-1,2026-09-06,raw_policies,lob,1443,0,0.0000,5,,"{""Commercial Auto"":0.0748,""Commercial Property"":0.1178,""General Liability"":0.0513,""Homeowners"":0.3216,""Personal Auto"":0.4345}"
+20260906-stg_policies-1,2026-09-06,stg_policies,policy_status,164955,0,0.0000,3,,"{""ACTIVE"":0.9682,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260906-stg_policies-1,2026-09-06,stg_policies,lob,164955,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260906-stg_claims-1,2026-09-06,stg_claims,lob,54725,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1188,""General Liability"":0.0503,""Homeowners"":0.3023,""Personal Auto"":0.4493}"
+20260906-stg_claims-1,2026-09-06,stg_claims,incurred_amount,54725,0,0.0000,54025,15433.5500,
+20260906-stg_claims-1,2026-09-06,stg_claims,claim_status,54725,0,0.0000,2,,"{""CLOSED"":0.8286,""OPEN"":0.1714}"
+20260906-int_claims_enriched-1,2026-09-06,int_claims_enriched,policy_status,10564,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260906-int_claims_enriched-1,2026-09-06,int_claims_enriched,lob,10564,0,0.0000,5,,"{""Commercial Auto"":0.0953,""Commercial Property"":0.1706,""General Liability"":0.0973,""Homeowners"":0.3194,""Personal Auto"":0.3174}"
+20260906-int_claims_enriched-1,2026-09-06,int_claims_enriched,incurred_amount,10564,0,0.0000,10540,18895.5400,
+20260906-int_claims_enriched-1,2026-09-06,int_claims_enriched,claim_status,10564,0,0.0000,2,,"{""CLOSED"":0.1389,""OPEN"":0.8611}"
+20260906-fct_claims_closed-1,2026-09-06,fct_claims_closed,lob,1467,0,0.0000,5,,"{""Commercial Auto"":0.0934,""Commercial Property"":0.1282,""General Liability"":0.0464,""Homeowners"":0.3054,""Personal Auto"":0.4267}"
+20260906-fct_claims_closed-1,2026-09-06,fct_claims_closed,incurred_amount,1467,0,0.0000,1467,14727.2700,
+20260906-fct_claims_open-1,2026-09-06,fct_claims_open,lob,9097,0,0.0000,5,,"{""Commercial Auto"":0.0956,""Commercial Property"":0.1774,""General Liability"":0.1055,""Homeowners"":0.3216,""Personal Auto"":0.2998}"
+20260906-fct_claims_open-1,2026-09-06,fct_claims_open,incurred_amount,9097,0,0.0000,9080,19567.7200,
+20260906-fct_fnol-1,2026-09-06,fct_fnol,lob,127,0,0.0000,5,,"{""Commercial Auto"":0.0866,""Commercial Property"":0.1102,""General Liability"":0.063,""Homeowners"":0.2598,""Personal Auto"":0.4803}"
+20260907-raw_policies-1,2026-09-07,raw_policies,policy_status,1941,0,0.0000,3,,"{""ACTIVE"":0.9737,""CANCELLED"":0.0067,""LAPSED"":0.0196}"
+20260907-raw_policies-1,2026-09-07,raw_policies,lob,1941,0,0.0000,5,,"{""Commercial Auto"":0.0747,""Commercial Property"":0.1221,""General Liability"":0.0546,""Homeowners"":0.2988,""Personal Auto"":0.4498}"
+20260907-stg_policies-1,2026-09-07,stg_policies,policy_status,165009,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.012,""LAPSED"":0.0198}"
+20260907-stg_policies-1,2026-09-07,stg_policies,lob,165009,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4502}"
+20260907-stg_claims-1,2026-09-07,stg_claims,lob,54861,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1187,""General Liability"":0.0503,""Homeowners"":0.3025,""Personal Auto"":0.4492}"
+20260907-stg_claims-1,2026-09-07,stg_claims,incurred_amount,54861,0,0.0000,54158,15425.1800,
+20260907-stg_claims-1,2026-09-07,stg_claims,claim_status,54861,0,0.0000,2,,"{""CLOSED"":0.827,""OPEN"":0.173}"
+20260907-int_claims_enriched-1,2026-09-07,int_claims_enriched,policy_status,10664,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260907-int_claims_enriched-1,2026-09-07,int_claims_enriched,lob,10664,0,0.0000,5,,"{""Commercial Auto"":0.095,""Commercial Property"":0.1696,""General Liability"":0.0973,""Homeowners"":0.3198,""Personal Auto"":0.3183}"
+20260907-int_claims_enriched-1,2026-09-07,int_claims_enriched,incurred_amount,10664,0,0.0000,10639,18825.0900,
+20260907-int_claims_enriched-1,2026-09-07,int_claims_enriched,claim_status,10664,0,0.0000,2,,"{""CLOSED"":0.1364,""OPEN"":0.8636}"
+20260907-fct_claims_closed-1,2026-09-07,fct_claims_closed,lob,1455,0,0.0000,5,,"{""Commercial Auto"":0.0914,""Commercial Property"":0.1292,""General Liability"":0.0488,""Homeowners"":0.3024,""Personal Auto"":0.4282}"
+20260907-fct_claims_closed-1,2026-09-07,fct_claims_closed,incurred_amount,1455,0,0.0000,1455,14720.6100,
+20260907-fct_claims_open-1,2026-09-07,fct_claims_open,lob,9209,0,0.0000,5,,"{""Commercial Auto"":0.0956,""Commercial Property"":0.176,""General Liability"":0.105,""Homeowners"":0.3225,""Personal Auto"":0.3009}"
+20260907-fct_claims_open-1,2026-09-07,fct_claims_open,incurred_amount,9209,0,0.0000,9191,19473.5900,
+20260907-fct_fnol-1,2026-09-07,fct_fnol,lob,131,0,0.0000,5,,"{""Commercial Auto"":0.084,""Commercial Property"":0.0687,""General Liability"":0.084,""Homeowners"":0.3511,""Personal Auto"":0.4122}"
+20260908-raw_policies-1,2026-09-08,raw_policies,policy_status,3135,0,0.0000,3,,"{""ACTIVE"":0.9662,""CANCELLED"":0.0108,""LAPSED"":0.023}"
+20260908-raw_policies-1,2026-09-08,raw_policies,lob,3135,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1206,""General Liability"":0.0485,""Homeowners"":0.3056,""Personal Auto"":0.4463}"
+20260908-stg_policies-1,2026-09-08,stg_policies,policy_status,165060,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260908-stg_policies-1,2026-09-08,stg_policies,lob,165060,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4502}"
+20260908-stg_claims-1,2026-09-08,stg_claims,lob,55155,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1188,""General Liability"":0.0504,""Homeowners"":0.3021,""Personal Auto"":0.4495}"
+20260908-stg_claims-1,2026-09-08,stg_claims,incurred_amount,55155,0,0.0000,54448,15420.1500,
+20260908-stg_claims-1,2026-09-08,stg_claims,claim_status,55155,0,0.0000,2,,"{""CLOSED"":0.8338,""OPEN"":0.1662}"
+20260908-int_claims_enriched-1,2026-09-08,int_claims_enriched,policy_status,10382,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260908-int_claims_enriched-1,2026-09-08,int_claims_enriched,lob,10382,0,0.0000,5,,"{""Commercial Auto"":0.0955,""Commercial Property"":0.1716,""General Liability"":0.0988,""Homeowners"":0.3181,""Personal Auto"":0.3159}"
+20260908-int_claims_enriched-1,2026-09-08,int_claims_enriched,incurred_amount,10382,0,0.0000,10360,18917.1700,
+20260908-int_claims_enriched-1,2026-09-08,int_claims_enriched,claim_status,10382,0,0.0000,2,,"{""CLOSED"":0.1432,""OPEN"":0.8568}"
+20260908-fct_claims_closed-1,2026-09-08,fct_claims_closed,lob,1487,0,0.0000,5,,"{""Commercial Auto"":0.0827,""Commercial Property"":0.1352,""General Liability"":0.0477,""Homeowners"":0.2898,""Personal Auto"":0.4445}"
+20260908-fct_claims_closed-1,2026-09-08,fct_claims_closed,incurred_amount,1487,0,0.0000,1487,15424.1300,
+20260908-fct_claims_open-1,2026-09-08,fct_claims_open,lob,8895,0,0.0000,5,,"{""Commercial Auto"":0.0976,""Commercial Property"":0.1777,""General Liability"":0.1074,""Homeowners"":0.3229,""Personal Auto"":0.2944}"
+20260908-fct_claims_open-1,2026-09-08,fct_claims_open,incurred_amount,8895,0,0.0000,8880,19501.1100,
+20260908-fct_fnol-1,2026-09-08,fct_fnol,lob,297,0,0.0000,5,,"{""Commercial Auto"":0.0875,""Commercial Property"":0.1313,""General Liability"":0.0572,""Homeowners"":0.2391,""Personal Auto"":0.4848}"
+20260909-raw_policies-1,2026-09-09,raw_policies,policy_status,2958,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0108,""LAPSED"":0.0206}"
+20260909-raw_policies-1,2026-09-09,raw_policies,lob,2958,0,0.0000,5,,"{""Commercial Auto"":0.0774,""Commercial Property"":0.1129,""General Liability"":0.0497,""Homeowners"":0.3218,""Personal Auto"":0.4381}"
+20260909-stg_policies-1,2026-09-09,stg_policies,policy_status,165126,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260909-stg_policies-1,2026-09-09,stg_policies,lob,165126,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4502}"
+20260909-stg_claims-1,2026-09-09,stg_claims,lob,55389,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1188,""General Liability"":0.0504,""Homeowners"":0.302,""Personal Auto"":0.4494}"
+20260909-stg_claims-1,2026-09-09,stg_claims,incurred_amount,55389,0,0.0000,54670,15422.7200,
+20260909-stg_claims-1,2026-09-09,stg_claims,claim_status,55389,0,0.0000,2,,"{""CLOSED"":0.8341,""OPEN"":0.1659}"
+20260909-int_claims_enriched-1,2026-09-09,int_claims_enriched,policy_status,10402,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260909-int_claims_enriched-1,2026-09-09,int_claims_enriched,lob,10402,0,0.0000,5,,"{""Commercial Auto"":0.0953,""Commercial Property"":0.1699,""General Liability"":0.0992,""Homeowners"":0.3182,""Personal Auto"":0.3174}"
+20260909-int_claims_enriched-1,2026-09-09,int_claims_enriched,incurred_amount,10402,0,0.0000,10378,18921.8300,
+20260909-int_claims_enriched-1,2026-09-09,int_claims_enriched,claim_status,10402,0,0.0000,2,,"{""CLOSED"":0.1432,""OPEN"":0.8568}"
+20260909-fct_claims_closed-1,2026-09-09,fct_claims_closed,lob,1490,0,0.0000,5,,"{""Commercial Auto"":0.0819,""Commercial Property"":0.1221,""General Liability"":0.047,""Homeowners"":0.3027,""Personal Auto"":0.4463}"
+20260909-fct_claims_closed-1,2026-09-09,fct_claims_closed,incurred_amount,1490,0,0.0000,1490,15406.1800,
+20260909-fct_claims_open-1,2026-09-09,fct_claims_open,lob,8912,0,0.0000,5,,"{""Commercial Auto"":0.0975,""Commercial Property"":0.1779,""General Liability"":0.1079,""Homeowners"":0.3208,""Personal Auto"":0.2959}"
+20260909-fct_claims_open-1,2026-09-09,fct_claims_open,incurred_amount,8912,0,0.0000,8895,19509.6100,
+20260909-fct_fnol-1,2026-09-09,fct_fnol,lob,234,0,0.0000,5,,"{""Commercial Auto"":0.0812,""Commercial Property"":0.1282,""General Liability"":0.0598,""Homeowners"":0.2778,""Personal Auto"":0.453}"
+20260910-raw_policies-1,2026-09-10,raw_policies,policy_status,2898,0,0.0000,3,,"{""ACTIVE"":0.9651,""CANCELLED"":0.0138,""LAPSED"":0.021}"
+20260910-raw_policies-1,2026-09-10,raw_policies,lob,2898,0,0.0000,5,,"{""Commercial Auto"":0.078,""Commercial Property"":0.1208,""General Liability"":0.0455,""Homeowners"":0.3171,""Personal Auto"":0.4386}"
+20260910-stg_policies-1,2026-09-10,stg_policies,policy_status,165179,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260910-stg_policies-1,2026-09-10,stg_policies,lob,165179,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3008,""Personal Auto"":0.4502}"
+20260910-stg_claims-1,2026-09-10,stg_claims,lob,55645,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1189,""General Liability"":0.0503,""Homeowners"":0.3019,""Personal Auto"":0.4496}"
+20260910-stg_claims-1,2026-09-10,stg_claims,incurred_amount,55645,0,0.0000,54917,15412.9200,
+20260910-stg_claims-1,2026-09-10,stg_claims,claim_status,55645,0,0.0000,2,,"{""CLOSED"":0.8342,""OPEN"":0.1658}"
+20260910-int_claims_enriched-1,2026-09-10,int_claims_enriched,policy_status,10445,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260910-int_claims_enriched-1,2026-09-10,int_claims_enriched,lob,10445,0,0.0000,5,,"{""Commercial Auto"":0.0948,""Commercial Property"":0.1695,""General Liability"":0.0989,""Homeowners"":0.3176,""Personal Auto"":0.3193}"
+20260910-int_claims_enriched-1,2026-09-10,int_claims_enriched,incurred_amount,10445,0,0.0000,10423,18829.6000,
+20260910-int_claims_enriched-1,2026-09-10,int_claims_enriched,claim_status,10445,0,0.0000,2,,"{""CLOSED"":0.1437,""OPEN"":0.8563}"
+20260910-fct_claims_closed-1,2026-09-10,fct_claims_closed,lob,1501,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1126,""General Liability"":0.048,""Homeowners"":0.3091,""Personal Auto"":0.451}"
+20260910-fct_claims_closed-1,2026-09-10,fct_claims_closed,incurred_amount,1501,0,0.0000,1501,15433.5600,
+20260910-fct_claims_open-1,2026-09-10,fct_claims_open,lob,8944,0,0.0000,5,,"{""Commercial Auto"":0.0974,""Commercial Property"":0.179,""General Liability"":0.1074,""Homeowners"":0.319,""Personal Auto"":0.2972}"
+20260910-fct_claims_open-1,2026-09-10,fct_claims_open,incurred_amount,8944,0,0.0000,8928,19399.5300,
+20260910-fct_fnol-1,2026-09-10,fct_fnol,lob,253,0,0.0000,5,,"{""Commercial Auto"":0.0751,""Commercial Property"":0.1344,""General Liability"":0.0316,""Homeowners"":0.2767,""Personal Auto"":0.4822}"
+20260911-raw_policies-1,2026-09-11,raw_policies,policy_status,2852,0,0.0000,3,,"{""ACTIVE"":0.9727,""CANCELLED"":0.0102,""LAPSED"":0.0172}"
+20260911-raw_policies-1,2026-09-11,raw_policies,lob,2852,0,0.0000,5,,"{""Commercial Auto"":0.0831,""Commercial Property"":0.1182,""General Liability"":0.0473,""Homeowners"":0.3054,""Personal Auto"":0.446}"
+20260911-stg_policies-1,2026-09-11,stg_policies,policy_status,165231,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260911-stg_policies-1,2026-09-11,stg_policies,lob,165231,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260911-stg_claims-1,2026-09-11,stg_claims,lob,55881,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1189,""General Liability"":0.0502,""Homeowners"":0.3017,""Personal Auto"":0.4499}"
+20260911-stg_claims-1,2026-09-11,stg_claims,incurred_amount,55881,0,0.0000,55151,15398.1800,
+20260911-stg_claims-1,2026-09-11,stg_claims,claim_status,55881,0,0.0000,2,,"{""CLOSED"":0.8345,""OPEN"":0.1655}"
+20260911-int_claims_enriched-1,2026-09-11,int_claims_enriched,policy_status,10453,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260911-int_claims_enriched-1,2026-09-11,int_claims_enriched,lob,10453,0,0.0000,5,,"{""Commercial Auto"":0.0938,""Commercial Property"":0.1699,""General Liability"":0.0982,""Homeowners"":0.3166,""Personal Auto"":0.3214}"
+20260911-int_claims_enriched-1,2026-09-11,int_claims_enriched,incurred_amount,10453,0,0.0000,10431,18827.6700,
+20260911-int_claims_enriched-1,2026-09-11,int_claims_enriched,claim_status,10453,0,0.0000,2,,"{""CLOSED"":0.1418,""OPEN"":0.8582}"
+20260911-fct_claims_closed-1,2026-09-11,fct_claims_closed,lob,1482,0,0.0000,5,,"{""Commercial Auto"":0.0735,""Commercial Property"":0.1066,""General Liability"":0.0439,""Homeowners"":0.3185,""Personal Auto"":0.4575}"
+20260911-fct_claims_closed-1,2026-09-11,fct_claims_closed,incurred_amount,1482,0,0.0000,1481,15415.2100,
+20260911-fct_claims_open-1,2026-09-11,fct_claims_open,lob,8971,0,0.0000,5,,"{""Commercial Auto"":0.0972,""Commercial Property"":0.1804,""General Liability"":0.1072,""Homeowners"":0.3162,""Personal Auto"":0.299}"
+20260911-fct_claims_open-1,2026-09-11,fct_claims_open,incurred_amount,8971,0,0.0000,8955,19391.4000,
+20260911-fct_fnol-2,2026-09-11,fct_fnol,lob,237,0,0.0000,5,,"{""Commercial Auto"":0.0591,""Commercial Property"":0.1224,""General Liability"":0.0253,""Homeowners"":0.27,""Personal Auto"":0.5232}"
+20260912-raw_policies-1,2026-09-12,raw_policies,policy_status,2933,0,0.0000,3,,"{""ACTIVE"":0.9659,""CANCELLED"":0.0136,""LAPSED"":0.0205}"
+20260912-raw_policies-1,2026-09-12,raw_policies,lob,2933,0,0.0000,5,,"{""Commercial Auto"":0.0846,""Commercial Property"":0.1265,""General Liability"":0.0508,""Homeowners"":0.2782,""Personal Auto"":0.4599}"
+20260912-stg_policies-1,2026-09-12,stg_policies,policy_status,165284,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260912-stg_policies-1,2026-09-12,stg_policies,lob,165284,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260912-stg_claims-1,2026-09-12,stg_claims,lob,56109,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.1189,""General Liability"":0.0502,""Homeowners"":0.3017,""Personal Auto"":0.45}"
+20260912-stg_claims-1,2026-09-12,stg_claims,incurred_amount,56109,0,0.0000,55375,15398.2700,
+20260912-stg_claims-1,2026-09-12,stg_claims,claim_status,56109,0,0.0000,2,,"{""CLOSED"":0.8348,""OPEN"":0.1652}"
+20260912-int_claims_enriched-1,2026-09-12,int_claims_enriched,policy_status,10468,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260912-int_claims_enriched-1,2026-09-12,int_claims_enriched,lob,10468,0,0.0000,5,,"{""Commercial Auto"":0.0929,""Commercial Property"":0.1698,""General Liability"":0.0981,""Homeowners"":0.3162,""Personal Auto"":0.323}"
+20260912-int_claims_enriched-1,2026-09-12,int_claims_enriched,incurred_amount,10468,0,0.0000,10448,18857.2900,
+20260912-int_claims_enriched-1,2026-09-12,int_claims_enriched,claim_status,10468,0,0.0000,2,,"{""CLOSED"":0.1407,""OPEN"":0.8593}"
+20260912-fct_claims_closed-1,2026-09-12,fct_claims_closed,lob,1473,0,0.0000,5,,"{""Commercial Auto"":0.0672,""Commercial Property"":0.1032,""General Liability"":0.0441,""Homeowners"":0.3191,""Personal Auto"":0.4664}"
+20260912-fct_claims_closed-1,2026-09-12,fct_claims_closed,incurred_amount,1473,0,0.0000,1473,15224.6800,
+20260912-fct_claims_open-1,2026-09-12,fct_claims_open,lob,8995,0,0.0000,5,,"{""Commercial Auto"":0.0972,""Commercial Property"":0.1807,""General Liability"":0.1069,""Homeowners"":0.3157,""Personal Auto"":0.2995}"
+20260912-fct_claims_open-1,2026-09-12,fct_claims_open,incurred_amount,8995,0,0.0000,8979,19452.1500,
+20260912-fct_fnol-1,2026-09-12,fct_fnol,lob,230,0,0.0000,5,,"{""Commercial Auto"":0.087,""Commercial Property"":0.1261,""General Liability"":0.0435,""Homeowners"":0.2826,""Personal Auto"":0.4609}"
+20260913-raw_policies-1,2026-09-13,raw_policies,policy_status,1398,0,0.0000,3,,"{""ACTIVE"":0.9628,""CANCELLED"":0.0165,""LAPSED"":0.0207}"
+20260913-raw_policies-1,2026-09-13,raw_policies,lob,1398,0,0.0000,5,,"{""Commercial Auto"":0.0787,""Commercial Property"":0.1245,""General Liability"":0.0508,""Homeowners"":0.2983,""Personal Auto"":0.4478}"
+20260913-stg_policies-1,2026-09-13,stg_policies,policy_status,165353,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0198}"
+20260913-stg_policies-1,2026-09-13,stg_policies,lob,165353,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260913-stg_claims-1,2026-09-13,stg_claims,lob,56252,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0502,""Homeowners"":0.3016,""Personal Auto"":0.4501}"
+20260913-stg_claims-1,2026-09-13,stg_claims,incurred_amount,56252,0,0.0000,55513,15394.0000,
+20260913-stg_claims-1,2026-09-13,stg_claims,claim_status,56252,0,0.0000,2,,"{""CLOSED"":0.8335,""OPEN"":0.1665}"
+20260913-int_claims_enriched-1,2026-09-13,int_claims_enriched,policy_status,10577,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260913-int_claims_enriched-1,2026-09-13,int_claims_enriched,lob,10577,0,0.0000,5,,"{""Commercial Auto"":0.0924,""Commercial Property"":0.1697,""General Liability"":0.0978,""Homeowners"":0.3153,""Personal Auto"":0.3249}"
+20260913-int_claims_enriched-1,2026-09-13,int_claims_enriched,incurred_amount,10577,0,0.0000,10555,18786.0200,
+20260913-int_claims_enriched-1,2026-09-13,int_claims_enriched,claim_status,10577,0,0.0000,2,,"{""CLOSED"":0.1408,""OPEN"":0.8592}"
+20260913-fct_claims_closed-1,2026-09-13,fct_claims_closed,lob,1489,0,0.0000,5,,"{""Commercial Auto"":0.0665,""Commercial Property"":0.1054,""General Liability"":0.0443,""Homeowners"":0.321,""Personal Auto"":0.4627}"
+20260913-fct_claims_closed-1,2026-09-13,fct_claims_closed,incurred_amount,1489,0,0.0000,1489,15058.8000,
+20260913-fct_claims_open-1,2026-09-13,fct_claims_open,lob,9088,0,0.0000,5,,"{""Commercial Auto"":0.0966,""Commercial Property"":0.1802,""General Liability"":0.1065,""Homeowners"":0.3144,""Personal Auto"":0.3023}"
+20260913-fct_claims_open-1,2026-09-13,fct_claims_open,incurred_amount,9088,0,0.0000,9071,19396.7000,
+20260913-fct_fnol-1,2026-09-13,fct_fnol,lob,143,0,0.0000,5,,"{""Commercial Auto"":0.042,""Commercial Property"":0.1399,""General Liability"":0.0559,""Homeowners"":0.2517,""Personal Auto"":0.5105}"
+20260914-raw_policies-1,2026-09-14,raw_policies,policy_status,1826,0,0.0000,3,,"{""ACTIVE"":0.9699,""CANCELLED"":0.0093,""LAPSED"":0.0208}"
+20260914-raw_policies-1,2026-09-14,raw_policies,lob,1826,0,0.0000,5,,"{""Commercial Auto"":0.0619,""Commercial Property"":0.109,""General Liability"":0.0471,""Homeowners"":0.3138,""Personal Auto"":0.4682}"
+20260914-stg_policies-1,2026-09-14,stg_policies,policy_status,165403,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260914-stg_policies-1,2026-09-14,stg_policies,lob,165403,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260914-stg_claims-1,2026-09-14,stg_claims,lob,56401,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3017,""Personal Auto"":0.4499}"
+20260914-stg_claims-1,2026-09-14,stg_claims,incurred_amount,56401,0,0.0000,55658,15395.6200,
+20260914-stg_claims-1,2026-09-14,stg_claims,claim_status,56401,0,0.0000,2,,"{""CLOSED"":0.8318,""OPEN"":0.1682}"
+20260914-int_claims_enriched-1,2026-09-14,int_claims_enriched,policy_status,10696,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260914-int_claims_enriched-1,2026-09-14,int_claims_enriched,lob,10696,0,0.0000,5,,"{""Commercial Auto"":0.0925,""Commercial Property"":0.1694,""General Liability"":0.0967,""Homeowners"":0.3163,""Personal Auto"":0.3252}"
+20260914-int_claims_enriched-1,2026-09-14,int_claims_enriched,incurred_amount,10696,0,0.0000,10674,18768.0900,
+20260914-int_claims_enriched-1,2026-09-14,int_claims_enriched,claim_status,10696,0,0.0000,2,,"{""CLOSED"":0.1398,""OPEN"":0.8602}"
+20260914-fct_claims_closed-1,2026-09-14,fct_claims_closed,lob,1495,0,0.0000,5,,"{""Commercial Auto"":0.0682,""Commercial Property"":0.1043,""General Liability"":0.0428,""Homeowners"":0.3217,""Personal Auto"":0.4629}"
+20260914-fct_claims_closed-1,2026-09-14,fct_claims_closed,incurred_amount,1495,0,0.0000,1495,15143.7000,
+20260914-fct_claims_open-1,2026-09-14,fct_claims_open,lob,9201,0,0.0000,5,,"{""Commercial Auto"":0.0964,""Commercial Property"":0.18,""General Liability"":0.1054,""Homeowners"":0.3154,""Personal Auto"":0.3028}"
+20260914-fct_claims_open-1,2026-09-14,fct_claims_open,incurred_amount,9201,0,0.0000,9184,19356.9900,
+20260914-fct_fnol-1,2026-09-14,fct_fnol,lob,148,0,0.0000,5,,"{""Commercial Auto"":0.0878,""Commercial Property"":0.1419,""General Liability"":0.0203,""Homeowners"":0.3784,""Personal Auto"":0.3716}"
+20260915-raw_policies-1,2026-09-15,raw_policies,policy_status,3162,0,0.0000,3,,"{""ACTIVE"":0.9715,""CANCELLED"":0.0101,""LAPSED"":0.0183}"
+20260915-raw_policies-1,2026-09-15,raw_policies,lob,3162,0,0.0000,5,,"{""Commercial Auto"":0.0781,""Commercial Property"":0.1145,""General Liability"":0.0446,""Homeowners"":0.3008,""Personal Auto"":0.462}"
+20260915-stg_policies-1,2026-09-15,stg_policies,policy_status,165470,0,0.0000,3,,"{""ACTIVE"":0.9683,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260915-stg_policies-1,2026-09-15,stg_policies,lob,165470,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260915-stg_claims-1,2026-09-15,stg_claims,lob,56668,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0502,""Homeowners"":0.3017,""Personal Auto"":0.4499}"
+20260915-stg_claims-1,2026-09-15,stg_claims,incurred_amount,56668,0,0.0000,55915,15389.9500,
+20260915-stg_claims-1,2026-09-15,stg_claims,claim_status,56668,0,0.0000,2,,"{""CLOSED"":0.8392,""OPEN"":0.1608}"
+20260915-int_claims_enriched-1,2026-09-15,int_claims_enriched,policy_status,10360,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260915-int_claims_enriched-1,2026-09-15,int_claims_enriched,lob,10360,0,0.0000,5,,"{""Commercial Auto"":0.0938,""Commercial Property"":0.1704,""General Liability"":0.0985,""Homeowners"":0.3182,""Personal Auto"":0.3191}"
+20260915-int_claims_enriched-1,2026-09-15,int_claims_enriched,incurred_amount,10360,0,0.0000,10340,18766.5100,
+20260915-int_claims_enriched-1,2026-09-15,int_claims_enriched,claim_status,10360,0,0.0000,2,,"{""CLOSED"":0.1465,""OPEN"":0.8535}"
+20260915-fct_claims_closed-1,2026-09-15,fct_claims_closed,lob,1518,0,0.0000,5,,"{""Commercial Auto"":0.0758,""Commercial Property"":0.0975,""General Liability"":0.0487,""Homeowners"":0.33,""Personal Auto"":0.448}"
+20260915-fct_claims_closed-1,2026-09-15,fct_claims_closed,incurred_amount,1518,0,0.0000,1517,15085.9600,
+20260915-fct_claims_open-1,2026-09-15,fct_claims_open,lob,8842,0,0.0000,5,,"{""Commercial Auto"":0.0969,""Commercial Property"":0.1829,""General Liability"":0.107,""Homeowners"":0.3162,""Personal Auto"":0.297}"
+20260915-fct_claims_open-1,2026-09-15,fct_claims_open,incurred_amount,8842,0,0.0000,8826,19398.3900,
+20260915-fct_fnol-1,2026-09-15,fct_fnol,lob,268,0,0.0000,5,,"{""Commercial Auto"":0.0784,""Commercial Property"":0.1119,""General Liability"":0.0634,""Homeowners"":0.3022,""Personal Auto"":0.444}"
+20260916-raw_policies-1,2026-09-16,raw_policies,policy_status,2903,0,0.0000,3,,"{""ACTIVE"":0.9738,""CANCELLED"":0.011,""LAPSED"":0.0152}"
+20260916-raw_policies-1,2026-09-16,raw_policies,lob,2903,0,0.0000,5,,"{""Commercial Auto"":0.082,""Commercial Property"":0.1213,""General Liability"":0.0468,""Homeowners"":0.3135,""Personal Auto"":0.4364}"
+20260916-stg_policies-1,2026-09-16,stg_policies,policy_status,165529,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260916-stg_policies-1,2026-09-16,stg_policies,lob,165529,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260916-stg_claims-1,2026-09-16,stg_claims,lob,56952,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3015,""Personal Auto"":0.4502}"
+20260916-stg_claims-1,2026-09-16,stg_claims,incurred_amount,56952,0,0.0000,56192,15381.4000,
+20260916-stg_claims-1,2026-09-16,stg_claims,claim_status,56952,0,0.0000,2,,"{""CLOSED"":0.8393,""OPEN"":0.1607}"
+20260916-int_claims_enriched-1,2026-09-16,int_claims_enriched,policy_status,10428,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260916-int_claims_enriched-1,2026-09-16,int_claims_enriched,lob,10428,0,0.0000,5,,"{""Commercial Auto"":0.0936,""Commercial Property"":0.1702,""General Liability"":0.0982,""Homeowners"":0.3156,""Personal Auto"":0.3224}"
+20260916-int_claims_enriched-1,2026-09-16,int_claims_enriched,incurred_amount,10428,0,0.0000,10407,18707.7700,
+20260916-int_claims_enriched-1,2026-09-16,int_claims_enriched,claim_status,10428,0,0.0000,2,,"{""CLOSED"":0.1476,""OPEN"":0.8524}"
+20260916-fct_claims_closed-1,2026-09-16,fct_claims_closed,lob,1539,0,0.0000,5,,"{""Commercial Auto"":0.0747,""Commercial Property"":0.0975,""General Liability"":0.0526,""Homeowners"":0.3262,""Personal Auto"":0.449}"
+20260916-fct_claims_closed-1,2026-09-16,fct_claims_closed,incurred_amount,1539,0,0.0000,1537,15407.4800,
+20260916-fct_claims_open-1,2026-09-16,fct_claims_open,lob,8889,0,0.0000,5,,"{""Commercial Auto"":0.0969,""Commercial Property"":0.1828,""General Liability"":0.1061,""Homeowners"":0.3138,""Personal Auto"":0.3005}"
+20260916-fct_claims_open-1,2026-09-16,fct_claims_open,incurred_amount,8889,0,0.0000,8874,19279.1600,
+20260916-fct_fnol-1,2026-09-16,fct_fnol,lob,285,0,0.0000,5,,"{""Commercial Auto"":0.0702,""Commercial Property"":0.1228,""General Liability"":0.0421,""Homeowners"":0.2526,""Personal Auto"":0.5123}"
+20260917-raw_policies-1,2026-09-17,raw_policies,policy_status,2860,0,0.0000,3,,"{""ACTIVE"":0.9717,""CANCELLED"":0.0098,""LAPSED"":0.0185}"
+20260917-raw_policies-1,2026-09-17,raw_policies,lob,2860,0,0.0000,5,,"{""Commercial Auto"":0.0664,""Commercial Property"":0.1108,""General Liability"":0.0483,""Homeowners"":0.3084,""Personal Auto"":0.4661}"
+20260917-stg_policies-1,2026-09-17,stg_policies,policy_status,165599,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260917-stg_policies-1,2026-09-17,stg_policies,lob,165599,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0497,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260917-stg_claims-1,2026-09-17,stg_claims,lob,57203,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1189,""General Liability"":0.0501,""Homeowners"":0.3017,""Personal Auto"":0.4502}"
+20260917-stg_claims-1,2026-09-17,stg_claims,incurred_amount,57203,0,0.0000,56433,15379.3000,
+20260917-stg_claims-1,2026-09-17,stg_claims,claim_status,57203,0,0.0000,2,,"{""CLOSED"":0.8391,""OPEN"":0.1609}"
+20260917-int_claims_enriched-1,2026-09-17,int_claims_enriched,policy_status,10456,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260917-int_claims_enriched-1,2026-09-17,int_claims_enriched,lob,10456,0,0.0000,5,,"{""Commercial Auto"":0.0935,""Commercial Property"":0.1708,""General Liability"":0.0978,""Homeowners"":0.3153,""Personal Auto"":0.3225}"
+20260917-int_claims_enriched-1,2026-09-17,int_claims_enriched,incurred_amount,10456,0,0.0000,10436,18662.5600,
+20260917-int_claims_enriched-1,2026-09-17,int_claims_enriched,claim_status,10456,0,0.0000,2,,"{""CLOSED"":0.1453,""OPEN"":0.8547}"
+20260917-fct_claims_closed-1,2026-09-17,fct_claims_closed,lob,1519,0,0.0000,5,,"{""Commercial Auto"":0.0744,""Commercial Property"":0.1027,""General Liability"":0.0507,""Homeowners"":0.3278,""Personal Auto"":0.4444}"
+20260917-fct_claims_closed-1,2026-09-17,fct_claims_closed,incurred_amount,1519,0,0.0000,1518,15004.3300,
+20260917-fct_claims_open-1,2026-09-17,fct_claims_open,lob,8937,0,0.0000,5,,"{""Commercial Auto"":0.0968,""Commercial Property"":0.1824,""General Liability"":0.1059,""Homeowners"":0.3132,""Personal Auto"":0.3018}"
+20260917-fct_claims_open-1,2026-09-17,fct_claims_open,incurred_amount,8937,0,0.0000,8921,19284.3400,
+20260917-fct_fnol-1,2026-09-17,fct_fnol,lob,247,0,0.0000,5,,"{""Commercial Auto"":0.0769,""Commercial Property"":0.1012,""General Liability"":0.0324,""Homeowners"":0.3441,""Personal Auto"":0.4453}"
+20260918-raw_policies-1,2026-09-18,raw_policies,policy_status,2914,0,0.0000,3,,"{""ACTIVE"":0.9629,""CANCELLED"":0.0161,""LAPSED"":0.0209}"
+20260918-raw_policies-1,2026-09-18,raw_policies,lob,2914,0,0.0000,5,,"{""Commercial Auto"":0.0861,""Commercial Property"":0.1156,""General Liability"":0.0542,""Homeowners"":0.3061,""Personal Auto"":0.4379}"
+20260918-stg_policies-1,2026-09-18,stg_policies,policy_status,165664,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260918-stg_policies-1,2026-09-18,stg_policies,lob,165664,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260918-stg_claims-1,2026-09-18,stg_claims,lob,57439,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1188,""General Liability"":0.05,""Homeowners"":0.3015,""Personal Auto"":0.4503}"
+20260918-stg_claims-1,2026-09-18,stg_claims,incurred_amount,57439,0,0.0000,56664,15372.1400,
+20260918-stg_claims-1,2026-09-18,stg_claims,claim_status,57439,0,0.0000,2,,"{""CLOSED"":0.839,""OPEN"":0.161}"
+20260918-int_claims_enriched-1,2026-09-18,int_claims_enriched,policy_status,10482,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260918-int_claims_enriched-1,2026-09-18,int_claims_enriched,lob,10482,0,0.0000,5,,"{""Commercial Auto"":0.0944,""Commercial Property"":0.1714,""General Liability"":0.0981,""Homeowners"":0.3131,""Personal Auto"":0.323}"
+20260918-int_claims_enriched-1,2026-09-18,int_claims_enriched,incurred_amount,10482,0,0.0000,10461,18690.5300,
+20260918-int_claims_enriched-1,2026-09-18,int_claims_enriched,claim_status,10482,0,0.0000,2,,"{""CLOSED"":0.1435,""OPEN"":0.8565}"
+20260918-fct_claims_closed-1,2026-09-18,fct_claims_closed,lob,1504,0,0.0000,5,,"{""Commercial Auto"":0.0771,""Commercial Property"":0.1144,""General Liability"":0.0559,""Homeowners"":0.3198,""Personal Auto"":0.4328}"
+20260918-fct_claims_closed-1,2026-09-18,fct_claims_closed,incurred_amount,1504,0,0.0000,1503,15659.8500,
+20260918-fct_claims_open-1,2026-09-18,fct_claims_open,lob,8978,0,0.0000,5,,"{""Commercial Auto"":0.0972,""Commercial Property"":0.181,""General Liability"":0.1051,""Homeowners"":0.312,""Personal Auto"":0.3046}"
+20260918-fct_claims_open-1,2026-09-18,fct_claims_open,incurred_amount,8978,0,0.0000,8961,19198.2300,
+20260918-fct_fnol-1,2026-09-18,fct_fnol,lob,236,0,0.0000,5,,"{""Commercial Auto"":0.1102,""Commercial Property"":0.089,""General Liability"":0.0424,""Homeowners"":0.2669,""Personal Auto"":0.4915}"
+20260919-raw_policies-1,2026-09-19,raw_policies,policy_status,2963,0,0.0000,3,,"{""ACTIVE"":0.9679,""CANCELLED"":0.0118,""LAPSED"":0.0202}"
+20260919-raw_policies-1,2026-09-19,raw_policies,lob,2963,0,0.0000,5,,"{""Commercial Auto"":0.0742,""Commercial Property"":0.1117,""General Liability"":0.0483,""Homeowners"":0.3159,""Personal Auto"":0.4499}"
+20260919-stg_policies-1,2026-09-19,stg_policies,policy_status,165720,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260919-stg_policies-1,2026-09-19,stg_policies,lob,165720,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260919-stg_claims-1,2026-09-19,stg_claims,lob,57644,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3013,""Personal Auto"":0.4505}"
+20260919-stg_claims-1,2026-09-19,stg_claims,incurred_amount,57644,0,0.0000,56866,15376.5900,
+20260919-stg_claims-1,2026-09-19,stg_claims,claim_status,57644,0,0.0000,2,,"{""CLOSED"":0.8398,""OPEN"":0.1602}"
+20260919-int_claims_enriched-1,2026-09-19,int_claims_enriched,policy_status,10481,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260919-int_claims_enriched-1,2026-09-19,int_claims_enriched,lob,10481,0,0.0000,5,,"{""Commercial Auto"":0.0935,""Commercial Property"":0.1723,""General Liability"":0.0984,""Homeowners"":0.3122,""Personal Auto"":0.3236}"
+20260919-int_claims_enriched-1,2026-09-19,int_claims_enriched,incurred_amount,10481,0,0.0000,10459,18765.1000,
+20260919-int_claims_enriched-1,2026-09-19,int_claims_enriched,claim_status,10481,0,0.0000,2,,"{""CLOSED"":0.1445,""OPEN"":0.8555}"
+20260919-fct_claims_closed-1,2026-09-19,fct_claims_closed,lob,1514,0,0.0000,5,,"{""Commercial Auto"":0.074,""Commercial Property"":0.1162,""General Liability"":0.0555,""Homeowners"":0.3131,""Personal Auto"":0.4412}"
+20260919-fct_claims_closed-1,2026-09-19,fct_claims_closed,incurred_amount,1514,0,0.0000,1513,15700.4400,
+20260919-fct_claims_open-1,2026-09-19,fct_claims_open,lob,8967,0,0.0000,5,,"{""Commercial Auto"":0.0968,""Commercial Property"":0.1818,""General Liability"":0.1056,""Homeowners"":0.312,""Personal Auto"":0.3038}"
+20260919-fct_claims_open-1,2026-09-19,fct_claims_open,incurred_amount,8967,0,0.0000,8949,19282.5400,
+20260919-fct_fnol-1,2026-09-19,fct_fnol,lob,210,0,0.0000,5,,"{""Commercial Auto"":0.0476,""Commercial Property"":0.1571,""General Liability"":0.0619,""Homeowners"":0.2476,""Personal Auto"":0.4857}"
+20260920-raw_policies-1,2026-09-20,raw_policies,policy_status,1396,0,0.0000,3,,"{""ACTIVE"":0.9735,""CANCELLED"":0.0107,""LAPSED"":0.0158}"
+20260920-raw_policies-1,2026-09-20,raw_policies,lob,1396,0,0.0000,5,,"{""Commercial Auto"":0.0874,""Commercial Property"":0.1275,""General Liability"":0.0516,""Homeowners"":0.2937,""Personal Auto"":0.4398}"
+20260920-stg_policies-1,2026-09-20,stg_policies,policy_status,165783,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260920-stg_policies-1,2026-09-20,stg_policies,lob,165783,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260920-stg_claims-1,2026-09-20,stg_claims,lob,57791,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3015,""Personal Auto"":0.4503}"
+20260920-stg_claims-1,2026-09-20,stg_claims,incurred_amount,57791,0,0.0000,57009,15379.5500,
+20260920-stg_claims-1,2026-09-20,stg_claims,claim_status,57791,0,0.0000,2,,"{""CLOSED"":0.8382,""OPEN"":0.1618}"
+20260920-int_claims_enriched-1,2026-09-20,int_claims_enriched,policy_status,10572,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260920-int_claims_enriched-1,2026-09-20,int_claims_enriched,lob,10572,0,0.0000,5,,"{""Commercial Auto"":0.0935,""Commercial Property"":0.1721,""General Liability"":0.098,""Homeowners"":0.3125,""Personal Auto"":0.324}"
+20260920-int_claims_enriched-1,2026-09-20,int_claims_enriched,incurred_amount,10572,0,0.0000,10550,18762.9100,
+20260920-int_claims_enriched-1,2026-09-20,int_claims_enriched,claim_status,10572,0,0.0000,2,,"{""CLOSED"":0.1416,""OPEN"":0.8584}"
+20260920-fct_claims_closed-1,2026-09-20,fct_claims_closed,lob,1497,0,0.0000,5,,"{""Commercial Auto"":0.0768,""Commercial Property"":0.1136,""General Liability"":0.0574,""Homeowners"":0.3093,""Personal Auto"":0.4429}"
+20260920-fct_claims_closed-1,2026-09-20,fct_claims_closed,incurred_amount,1497,0,0.0000,1497,15806.4500,
+20260920-fct_claims_open-1,2026-09-20,fct_claims_open,lob,9075,0,0.0000,5,,"{""Commercial Auto"":0.0962,""Commercial Property"":0.1817,""General Liability"":0.1047,""Homeowners"":0.3131,""Personal Auto"":0.3044}"
+20260920-fct_claims_open-1,2026-09-20,fct_claims_open,incurred_amount,9075,0,0.0000,9057,19250.6100,
+20260920-fct_fnol-1,2026-09-20,fct_fnol,lob,146,0,0.0000,5,,"{""Commercial Auto"":0.0685,""Commercial Property"":0.1507,""General Liability"":0.0548,""Homeowners"":0.3493,""Personal Auto"":0.3767}"
+20260921-raw_policies-1,2026-09-21,raw_policies,policy_status,1866,0,0.0000,3,,"{""ACTIVE"":0.9668,""CANCELLED"":0.0113,""LAPSED"":0.022}"
+20260921-raw_policies-1,2026-09-21,raw_policies,lob,1866,0,0.0000,5,,"{""Commercial Auto"":0.0825,""Commercial Property"":0.1174,""General Liability"":0.0579,""Homeowners"":0.3162,""Personal Auto"":0.426}"
+20260921-stg_policies-1,2026-09-21,stg_policies,policy_status,165832,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260921-stg_policies-1,2026-09-21,stg_policies,lob,165832,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4502}"
+20260921-stg_claims-1,2026-09-21,stg_claims,lob,57924,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.119,""General Liability"":0.0502,""Homeowners"":0.3015,""Personal Auto"":0.4502}"
+20260921-stg_claims-1,2026-09-21,stg_claims,incurred_amount,57924,0,0.0000,57138,15376.1100,
+20260921-stg_claims-1,2026-09-21,stg_claims,claim_status,57924,0,0.0000,2,,"{""CLOSED"":0.8369,""OPEN"":0.1631}"
+20260921-int_claims_enriched-1,2026-09-21,int_claims_enriched,policy_status,10673,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260921-int_claims_enriched-1,2026-09-21,int_claims_enriched,lob,10673,0,0.0000,5,,"{""Commercial Auto"":0.093,""Commercial Property"":0.1716,""General Liability"":0.0977,""Homeowners"":0.3128,""Personal Auto"":0.3249}"
+20260921-int_claims_enriched-1,2026-09-21,int_claims_enriched,incurred_amount,10673,0,0.0000,10650,18707.7300,
+20260921-int_claims_enriched-1,2026-09-21,int_claims_enriched,claim_status,10673,0,0.0000,2,,"{""CLOSED"":0.1404,""OPEN"":0.8596}"
+20260921-fct_claims_closed-1,2026-09-21,fct_claims_closed,lob,1499,0,0.0000,5,,"{""Commercial Auto"":0.0747,""Commercial Property"":0.1167,""General Liability"":0.0567,""Homeowners"":0.3102,""Personal Auto"":0.4416}"
+20260921-fct_claims_closed-1,2026-09-21,fct_claims_closed,incurred_amount,1499,0,0.0000,1499,15709.8600,
+20260921-fct_claims_open-1,2026-09-21,fct_claims_open,lob,9174,0,0.0000,5,,"{""Commercial Auto"":0.096,""Commercial Property"":0.1805,""General Liability"":0.1044,""Homeowners"":0.3132,""Personal Auto"":0.3059}"
+20260921-fct_claims_open-1,2026-09-21,fct_claims_open,incurred_amount,9174,0,0.0000,9156,19197.5700,
+20260921-fct_fnol-1,2026-09-21,fct_fnol,lob,130,0,0.0000,5,,"{""Commercial Auto"":0.0769,""Commercial Property"":0.1154,""General Liability"":0.0692,""Homeowners"":0.3077,""Personal Auto"":0.4308}"
+20260922-raw_policies-1,2026-09-22,raw_policies,policy_status,3037,0,0.0000,3,,"{""ACTIVE"":0.9677,""CANCELLED"":0.0125,""LAPSED"":0.0198}"
+20260922-raw_policies-1,2026-09-22,raw_policies,lob,3037,0,0.0000,5,,"{""Commercial Auto"":0.0803,""Commercial Property"":0.1202,""General Liability"":0.05,""Homeowners"":0.2838,""Personal Auto"":0.4656}"
+20260922-stg_policies-1,2026-09-22,stg_policies,policy_status,165881,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260922-stg_policies-1,2026-09-22,stg_policies,lob,165881,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4503}"
+20260922-stg_claims-1,2026-09-22,stg_claims,lob,58215,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3014,""Personal Auto"":0.4503}"
+20260922-stg_claims-1,2026-09-22,stg_claims,incurred_amount,58215,0,0.0000,57423,15372.3900,
+20260922-stg_claims-1,2026-09-22,stg_claims,claim_status,58215,0,0.0000,2,,"{""CLOSED"":0.8432,""OPEN"":0.1568}"
+20260922-int_claims_enriched-1,2026-09-22,int_claims_enriched,policy_status,10331,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260922-int_claims_enriched-1,2026-09-22,int_claims_enriched,lob,10331,0,0.0000,5,,"{""Commercial Auto"":0.094,""Commercial Property"":0.1735,""General Liability"":0.0984,""Homeowners"":0.3129,""Personal Auto"":0.3212}"
+20260922-int_claims_enriched-1,2026-09-22,int_claims_enriched,incurred_amount,10331,0,0.0000,10308,18730.0900,
+20260922-int_claims_enriched-1,2026-09-22,int_claims_enriched,claim_status,10331,0,0.0000,2,,"{""CLOSED"":0.1429,""OPEN"":0.8571}"
+20260922-fct_claims_closed-2,2026-09-22,fct_claims_closed,lob,1476,0,0.0000,5,,"{""Commercial Auto"":0.082,""Commercial Property"":0.1233,""General Liability"":0.0508,""Homeowners"":0.2954,""Personal Auto"":0.4485}"
+20260922-fct_claims_closed-2,2026-09-22,fct_claims_closed,incurred_amount,1476,0,0.0000,1476,15360.7100,
+20260922-fct_claims_open-1,2026-09-22,fct_claims_open,lob,8855,0,0.0000,5,,"{""Commercial Auto"":0.096,""Commercial Property"":0.1818,""General Liability"":0.1064,""Homeowners"":0.3159,""Personal Auto"":0.2999}"
+20260922-fct_claims_open-1,2026-09-22,fct_claims_open,incurred_amount,8855,0,0.0000,8837,19291.7100,
+20260922-fct_fnol-1,2026-09-22,fct_fnol,lob,293,0,0.0000,5,,"{""Commercial Auto"":0.099,""Commercial Property"":0.099,""General Liability"":0.0478,""Homeowners"":0.2901,""Personal Auto"":0.4642}"
+20260923-raw_policies-1,2026-09-23,raw_policies,policy_status,2759,0,0.0000,3,,"{""ACTIVE"":0.9732,""CANCELLED"":0.012,""LAPSED"":0.0149}"
+20260923-raw_policies-1,2026-09-23,raw_policies,lob,2759,0,0.0000,5,,"{""Commercial Auto"":0.0783,""Commercial Property"":0.1258,""General Liability"":0.0515,""Homeowners"":0.3034,""Personal Auto"":0.4411}"
+20260923-stg_policies-1,2026-09-23,stg_policies,policy_status,165949,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260923-stg_policies-1,2026-09-23,stg_policies,lob,165949,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4503}"
+20260923-stg_claims-1,2026-09-23,stg_claims,lob,58486,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1188,""General Liability"":0.0501,""Homeowners"":0.3013,""Personal Auto"":0.4506}"
+20260923-stg_claims-1,2026-09-23,stg_claims,incurred_amount,58486,0,0.0000,57683,15368.7500,
+20260923-stg_claims-1,2026-09-23,stg_claims,claim_status,58486,0,0.0000,2,,"{""CLOSED"":0.8434,""OPEN"":0.1566}"
+20260923-int_claims_enriched-1,2026-09-23,int_claims_enriched,policy_status,10359,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260923-int_claims_enriched-1,2026-09-23,int_claims_enriched,lob,10359,0,0.0000,5,,"{""Commercial Auto"":0.094,""Commercial Property"":0.1726,""General Liability"":0.0978,""Homeowners"":0.3114,""Personal Auto"":0.3242}"
+20260923-int_claims_enriched-1,2026-09-23,int_claims_enriched,incurred_amount,10359,0,0.0000,10336,18669.1400,
+20260923-int_claims_enriched-1,2026-09-23,int_claims_enriched,claim_status,10359,0,0.0000,2,,"{""CLOSED"":0.1429,""OPEN"":0.8571}"
+20260923-fct_claims_closed-1,2026-09-23,fct_claims_closed,lob,1480,0,0.0000,5,,"{""Commercial Auto"":0.0858,""Commercial Property"":0.1243,""General Liability"":0.0486,""Homeowners"":0.2831,""Personal Auto"":0.4581}"
+20260923-fct_claims_closed-1,2026-09-23,fct_claims_closed,incurred_amount,1480,0,0.0000,1480,15069.6200,
+20260923-fct_claims_open-1,2026-09-23,fct_claims_open,lob,8879,0,0.0000,5,,"{""Commercial Auto"":0.0954,""Commercial Property"":0.1807,""General Liability"":0.106,""Homeowners"":0.3161,""Personal Auto"":0.3018}"
+20260923-fct_claims_open-1,2026-09-23,fct_claims_open,incurred_amount,8879,0,0.0000,8863,19269.1300,
+20260923-fct_fnol-1,2026-09-23,fct_fnol,lob,267,0,0.0000,5,,"{""Commercial Auto"":0.0674,""Commercial Property"":0.0899,""General Liability"":0.0412,""Homeowners"":0.2846,""Personal Auto"":0.5169}"
+20260924-raw_policies-1,2026-09-24,raw_policies,policy_status,2821,0,0.0000,3,,"{""ACTIVE"":0.967,""CANCELLED"":0.0121,""LAPSED"":0.0209}"
+20260924-raw_policies-1,2026-09-24,raw_policies,lob,2821,0,0.0000,5,,"{""Commercial Auto"":0.0734,""Commercial Property"":0.1202,""General Liability"":0.0493,""Homeowners"":0.3031,""Personal Auto"":0.4541}"
+20260924-stg_policies-1,2026-09-24,stg_policies,policy_status,166012,0,0.0000,3,,"{""ACTIVE"":0.9684,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260924-stg_policies-1,2026-09-24,stg_policies,lob,166012,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4503}"
+20260924-stg_claims-1,2026-09-24,stg_claims,lob,58748,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1188,""General Liability"":0.0501,""Homeowners"":0.3012,""Personal Auto"":0.4508}"
+20260924-stg_claims-1,2026-09-24,stg_claims,incurred_amount,58748,0,0.0000,57933,15369.9900,
+20260924-stg_claims-1,2026-09-24,stg_claims,claim_status,58748,0,0.0000,2,,"{""CLOSED"":0.8434,""OPEN"":0.1566}"
+20260924-int_claims_enriched-1,2026-09-24,int_claims_enriched,policy_status,10411,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260924-int_claims_enriched-1,2026-09-24,int_claims_enriched,lob,10411,0,0.0000,5,,"{""Commercial Auto"":0.0938,""Commercial Property"":0.173,""General Liability"":0.0981,""Homeowners"":0.3092,""Personal Auto"":0.3259}"
+20260924-int_claims_enriched-1,2026-09-24,int_claims_enriched,incurred_amount,10411,0,0.0000,10389,18686.9600,
+20260924-int_claims_enriched-1,2026-09-24,int_claims_enriched,claim_status,10411,0,0.0000,2,,"{""CLOSED"":0.1436,""OPEN"":0.8564}"
+20260924-fct_claims_closed-1,2026-09-24,fct_claims_closed,lob,1495,0,0.0000,5,,"{""Commercial Auto"":0.0816,""Commercial Property"":0.1278,""General Liability"":0.0522,""Homeowners"":0.2736,""Personal Auto"":0.4649}"
+20260924-fct_claims_closed-1,2026-09-24,fct_claims_closed,incurred_amount,1495,0,0.0000,1495,15101.6700,
+20260924-fct_claims_open-1,2026-09-24,fct_claims_open,lob,8916,0,0.0000,5,,"{""Commercial Auto"":0.0959,""Commercial Property"":0.1806,""General Liability"":0.1058,""Homeowners"":0.3152,""Personal Auto"":0.3026}"
+20260924-fct_claims_open-1,2026-09-24,fct_claims_open,incurred_amount,8916,0,0.0000,8900,19288.1300,
+20260924-fct_fnol-1,2026-09-24,fct_fnol,lob,261,0,0.0000,5,,"{""Commercial Auto"":0.0728,""Commercial Property"":0.1264,""General Liability"":0.0498,""Homeowners"":0.272,""Personal Auto"":0.4789}"
+20260925-raw_policies-1,2026-09-25,raw_policies,policy_status,2993,0,0.0000,3,,"{""ACTIVE"":0.9669,""CANCELLED"":0.0137,""LAPSED"":0.0194}"
+20260925-raw_policies-1,2026-09-25,raw_policies,lob,2993,0,0.0000,5,,"{""Commercial Auto"":0.0772,""Commercial Property"":0.1149,""General Liability"":0.0488,""Homeowners"":0.2964,""Personal Auto"":0.4627}"
+20260925-stg_policies-1,2026-09-25,stg_policies,policy_status,166078,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260925-stg_policies-1,2026-09-25,stg_policies,lob,166078,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3009,""Personal Auto"":0.4503}"
+20260925-stg_claims-1,2026-09-25,stg_claims,lob,59002,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1187,""General Liability"":0.05,""Homeowners"":0.3013,""Personal Auto"":0.4507}"
+20260925-stg_claims-1,2026-09-25,stg_claims,incurred_amount,59002,0,0.0000,58174,15355.6200,
+20260925-stg_claims-1,2026-09-25,stg_claims,claim_status,59002,0,0.0000,2,,"{""CLOSED"":0.8434,""OPEN"":0.1566}"
+20260925-int_claims_enriched-1,2026-09-25,int_claims_enriched,policy_status,10464,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260925-int_claims_enriched-1,2026-09-25,int_claims_enriched,lob,10464,0,0.0000,5,,"{""Commercial Auto"":0.0938,""Commercial Property"":0.1716,""General Liability"":0.0974,""Homeowners"":0.3094,""Personal Auto"":0.3277}"
+20260925-int_claims_enriched-1,2026-09-25,int_claims_enriched,incurred_amount,10464,0,0.0000,10440,18569.9100,
+20260925-int_claims_enriched-1,2026-09-25,int_claims_enriched,claim_status,10464,0,0.0000,2,,"{""CLOSED"":0.1458,""OPEN"":0.8542}"
+20260925-fct_claims_closed-1,2026-09-25,fct_claims_closed,lob,1526,0,0.0000,5,,"{""Commercial Auto"":0.0806,""Commercial Property"":0.1252,""General Liability"":0.0491,""Homeowners"":0.268,""Personal Auto"":0.4771}"
+20260925-fct_claims_closed-1,2026-09-25,fct_claims_closed,incurred_amount,1526,0,0.0000,1526,15148.4100,
+20260925-fct_claims_open-1,2026-09-25,fct_claims_open,lob,8938,0,0.0000,5,,"{""Commercial Auto"":0.0961,""Commercial Property"":0.1796,""General Liability"":0.1056,""Homeowners"":0.3165,""Personal Auto"":0.3022}"
+20260925-fct_claims_open-1,2026-09-25,fct_claims_open,incurred_amount,8938,0,0.0000,8921,19154.0700,
+20260925-fct_fnol-1,2026-09-25,fct_fnol,lob,255,0,0.0000,5,,"{""Commercial Auto"":0.0863,""Commercial Property"":0.098,""General Liability"":0.0392,""Homeowners"":0.3216,""Personal Auto"":0.4549}"
+20260926-raw_policies-1,2026-09-26,raw_policies,policy_status,2955,0,0.0000,3,,"{""ACTIVE"":0.9716,""CANCELLED"":0.0108,""LAPSED"":0.0176}"
+20260926-raw_policies-1,2026-09-26,raw_policies,lob,2955,0,0.0000,5,,"{""Commercial Auto"":0.0775,""Commercial Property"":0.131,""General Liability"":0.0504,""Homeowners"":0.2981,""Personal Auto"":0.443}"
+20260926-stg_policies-1,2026-09-26,stg_policies,policy_status,166146,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260926-stg_policies-1,2026-09-26,stg_policies,lob,166146,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260926-stg_claims-1,2026-09-26,stg_claims,lob,59240,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1188,""General Liability"":0.0501,""Homeowners"":0.3013,""Personal Auto"":0.4507}"
+20260926-stg_claims-1,2026-09-26,stg_claims,incurred_amount,59240,0,0.0000,58402,15380.3000,
+20260926-stg_claims-1,2026-09-26,stg_claims,claim_status,59240,0,0.0000,2,,"{""CLOSED"":0.8438,""OPEN"":0.1562}"
+20260926-int_claims_enriched-1,2026-09-26,int_claims_enriched,policy_status,10486,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260926-int_claims_enriched-1,2026-09-26,int_claims_enriched,lob,10486,0,0.0000,5,,"{""Commercial Auto"":0.0941,""Commercial Property"":0.1718,""General Liability"":0.0975,""Homeowners"":0.3104,""Personal Auto"":0.3262}"
+20260926-int_claims_enriched-1,2026-09-26,int_claims_enriched,incurred_amount,10486,0,0.0000,10461,18755.6100,
+20260926-int_claims_enriched-1,2026-09-26,int_claims_enriched,claim_status,10486,0,0.0000,2,,"{""CLOSED"":0.1456,""OPEN"":0.8544}"
+20260926-fct_claims_closed-1,2026-09-26,fct_claims_closed,lob,1527,0,0.0000,5,,"{""Commercial Auto"":0.0845,""Commercial Property"":0.1244,""General Liability"":0.0511,""Homeowners"":0.2737,""Personal Auto"":0.4663}"
+20260926-fct_claims_closed-1,2026-09-26,fct_claims_closed,incurred_amount,1527,0,0.0000,1527,15415.9200,
+20260926-fct_claims_open-1,2026-09-26,fct_claims_open,lob,8959,0,0.0000,5,,"{""Commercial Auto"":0.0958,""Commercial Property"":0.1798,""General Liability"":0.1054,""Homeowners"":0.3167,""Personal Auto"":0.3024}"
+20260926-fct_claims_open-1,2026-09-26,fct_claims_open,incurred_amount,8959,0,0.0000,8941,19324.8400,
+20260926-fct_fnol-1,2026-09-26,fct_fnol,lob,243,0,0.0000,5,,"{""Commercial Auto"":0.0823,""Commercial Property"":0.1358,""General Liability"":0.0535,""Homeowners"":0.3004,""Personal Auto"":0.428}"
+20260927-raw_policies-1,2026-09-27,raw_policies,policy_status,1402,0,0.0000,3,,"{""ACTIVE"":0.9708,""CANCELLED"":0.0086,""LAPSED"":0.0207}"
+20260927-raw_policies-1,2026-09-27,raw_policies,lob,1402,0,0.0000,5,,"{""Commercial Auto"":0.0963,""Commercial Property"":0.1291,""General Liability"":0.0364,""Homeowners"":0.2996,""Personal Auto"":0.4387}"
+20260927-stg_policies-1,2026-09-27,stg_policies,policy_status,166207,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0197}"
+20260927-stg_policies-1,2026-09-27,stg_policies,lob,166207,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260927-stg_claims-1,2026-09-27,stg_claims,lob,59387,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1189,""General Liability"":0.0501,""Homeowners"":0.3014,""Personal Auto"":0.4506}"
+20260927-stg_claims-1,2026-09-27,stg_claims,incurred_amount,59387,0,0.0000,58548,15380.4600,
+20260927-stg_claims-1,2026-09-27,stg_claims,claim_status,59387,0,0.0000,2,,"{""CLOSED"":0.8423,""OPEN"":0.1577}"
+20260927-int_claims_enriched-1,2026-09-27,int_claims_enriched,policy_status,10600,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260927-int_claims_enriched-1,2026-09-27,int_claims_enriched,lob,10600,0,0.0000,5,,"{""Commercial Auto"":0.0935,""Commercial Property"":0.1718,""General Liability"":0.0969,""Homeowners"":0.3108,""Personal Auto"":0.327}"
+20260927-int_claims_enriched-1,2026-09-27,int_claims_enriched,incurred_amount,10600,0,0.0000,10576,18719.7900,
+20260927-int_claims_enriched-1,2026-09-27,int_claims_enriched,claim_status,10600,0,0.0000,2,,"{""CLOSED"":0.1448,""OPEN"":0.8552}"
+20260927-fct_claims_closed-1,2026-09-27,fct_claims_closed,lob,1535,0,0.0000,5,,"{""Commercial Auto"":0.0834,""Commercial Property"":0.1251,""General Liability"":0.0482,""Homeowners"":0.2743,""Personal Auto"":0.4691}"
+20260927-fct_claims_closed-1,2026-09-27,fct_claims_closed,incurred_amount,1535,0,0.0000,1535,15267.8200,
+20260927-fct_claims_open-1,2026-09-27,fct_claims_open,lob,9065,0,0.0000,5,,"{""Commercial Auto"":0.0952,""Commercial Property"":0.1797,""General Liability"":0.1051,""Homeowners"":0.317,""Personal Auto"":0.3029}"
+20260927-fct_claims_open-1,2026-09-27,fct_claims_open,incurred_amount,9065,0,0.0000,9047,19304.3200,
+20260927-fct_fnol-1,2026-09-27,fct_fnol,lob,146,0,0.0000,5,,"{""Commercial Auto"":0.0548,""Commercial Property"":0.137,""General Liability"":0.0616,""Homeowners"":0.3356,""Personal Auto"":0.411}"
+20260928-raw_policies-1,2026-09-28,raw_policies,policy_status,1927,0,0.0000,3,,"{""ACTIVE"":0.9725,""CANCELLED"":0.0109,""LAPSED"":0.0166}"
+20260928-raw_policies-1,2026-09-28,raw_policies,lob,1927,0,0.0000,5,,"{""Commercial Auto"":0.0784,""Commercial Property"":0.1437,""General Liability"":0.0441,""Homeowners"":0.2823,""Personal Auto"":0.4515}"
+20260928-stg_policies-1,2026-09-28,stg_policies,policy_status,166251,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0196}"
+20260928-stg_policies-1,2026-09-28,stg_policies,lob,166251,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260928-stg_claims-1,2026-09-28,stg_claims,lob,59503,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1189,""General Liability"":0.0501,""Homeowners"":0.3013,""Personal Auto"":0.4506}"
+20260928-stg_claims-1,2026-09-28,stg_claims,incurred_amount,59503,0,0.0000,58658,15384.5600,
+20260928-stg_claims-1,2026-09-28,stg_claims,claim_status,59503,0,0.0000,2,,"{""CLOSED"":0.8412,""OPEN"":0.1588}"
+20260928-int_claims_enriched-1,2026-09-28,int_claims_enriched,policy_status,10683,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260928-int_claims_enriched-1,2026-09-28,int_claims_enriched,lob,10683,0,0.0000,5,,"{""Commercial Auto"":0.0932,""Commercial Property"":0.1713,""General Liability"":0.0966,""Homeowners"":0.3105,""Personal Auto"":0.3284}"
+20260928-int_claims_enriched-1,2026-09-28,int_claims_enriched,incurred_amount,10683,0,0.0000,10658,18722.7500,
+20260928-int_claims_enriched-1,2026-09-28,int_claims_enriched,claim_status,10683,0,0.0000,2,,"{""CLOSED"":0.1436,""OPEN"":0.8564}"
+20260928-fct_claims_closed-1,2026-09-28,fct_claims_closed,lob,1534,0,0.0000,5,,"{""Commercial Auto"":0.0847,""Commercial Property"":0.1232,""General Liability"":0.0489,""Homeowners"":0.2751,""Personal Auto"":0.4681}"
+20260928-fct_claims_closed-1,2026-09-28,fct_claims_closed,incurred_amount,1534,0,0.0000,1534,15483.6100,
+20260928-fct_claims_open-1,2026-09-28,fct_claims_open,lob,9149,0,0.0000,5,,"{""Commercial Auto"":0.0947,""Commercial Property"":0.1794,""General Liability"":0.1046,""Homeowners"":0.3164,""Personal Auto"":0.305}"
+20260928-fct_claims_open-1,2026-09-28,fct_claims_open,incurred_amount,9149,0,0.0000,9131,19265.8500,
+20260928-fct_fnol-1,2026-09-28,fct_fnol,lob,115,0,0.0000,5,,"{""Commercial Auto"":0.0522,""Commercial Property"":0.1478,""General Liability"":0.0522,""Homeowners"":0.2696,""Personal Auto"":0.4783}"
+20260929-raw_policies-1,2026-09-29,raw_policies,policy_status,3159,0,0.0000,3,,"{""ACTIVE"":0.968,""CANCELLED"":0.0133,""LAPSED"":0.0187}"
+20260929-raw_policies-1,2026-09-29,raw_policies,lob,3159,0,0.0000,5,,"{""Commercial Auto"":0.0776,""Commercial Property"":0.1168,""General Liability"":0.044,""Homeowners"":0.3029,""Personal Auto"":0.4587}"
+20260929-stg_policies-1,2026-09-29,stg_policies,policy_status,166323,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0196}"
+20260929-stg_policies-1,2026-09-29,stg_policies,lob,166323,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20260929-stg_claims-1,2026-09-29,stg_claims,lob,59791,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1189,""General Liability"":0.05,""Homeowners"":0.3014,""Personal Auto"":0.4507}"
+20260929-stg_claims-1,2026-09-29,stg_claims,incurred_amount,59791,0,0.0000,58943,15391.3600,
+20260929-stg_claims-1,2026-09-29,stg_claims,claim_status,59791,0,0.0000,2,,"{""CLOSED"":0.8471,""OPEN"":0.1529}"
+20260929-int_claims_enriched-1,2026-09-29,int_claims_enriched,policy_status,10362,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260929-int_claims_enriched-1,2026-09-29,int_claims_enriched,lob,10362,0,0.0000,5,,"{""Commercial Auto"":0.0924,""Commercial Property"":0.1725,""General Liability"":0.0978,""Homeowners"":0.3134,""Personal Auto"":0.3241}"
+20260929-int_claims_enriched-1,2026-09-29,int_claims_enriched,incurred_amount,10362,0,0.0000,10338,18834.3600,
+20260929-int_claims_enriched-1,2026-09-29,int_claims_enriched,claim_status,10362,0,0.0000,2,,"{""CLOSED"":0.1463,""OPEN"":0.8537}"
+20260929-fct_claims_closed-1,2026-09-29,fct_claims_closed,lob,1516,0,0.0000,5,,"{""Commercial Auto"":0.0778,""Commercial Property"":0.1168,""General Liability"":0.0396,""Homeowners"":0.2922,""Personal Auto"":0.4736}"
+20260929-fct_claims_closed-1,2026-09-29,fct_claims_closed,incurred_amount,1516,0,0.0000,1516,15145.8600,
+20260929-fct_claims_open-1,2026-09-29,fct_claims_open,lob,8846,0,0.0000,5,,"{""Commercial Auto"":0.0948,""Commercial Property"":0.182,""General Liability"":0.1077,""Homeowners"":0.317,""Personal Auto"":0.2984}"
+20260929-fct_claims_open-1,2026-09-29,fct_claims_open,incurred_amount,8846,0,0.0000,8828,19466.4800,
+20260929-fct_fnol-1,2026-09-29,fct_fnol,lob,284,0,0.0000,5,,"{""Commercial Auto"":0.0739,""Commercial Property"":0.1127,""General Liability"":0.0282,""Homeowners"":0.3169,""Personal Auto"":0.4683}"
+20260930-raw_policies-1,2026-09-30,raw_policies,policy_status,2934,0,0.0000,3,,"{""ACTIVE"":0.968,""CANCELLED"":0.0143,""LAPSED"":0.0177}"
+20260930-raw_policies-1,2026-09-30,raw_policies,lob,2934,0,0.0000,5,,"{""Commercial Auto"":0.0835,""Commercial Property"":0.1183,""General Liability"":0.0504,""Homeowners"":0.2986,""Personal Auto"":0.4492}"
+20260930-stg_policies-1,2026-09-30,stg_policies,policy_status,166385,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0119,""LAPSED"":0.0196}"
+20260930-stg_policies-1,2026-09-30,stg_policies,lob,166385,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20260930-stg_claims-1,2026-09-30,stg_claims,lob,60047,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1188,""General Liability"":0.05,""Homeowners"":0.3015,""Personal Auto"":0.4506}"
+20260930-stg_claims-1,2026-09-30,stg_claims,incurred_amount,60047,0,0.0000,59192,15393.1400,
+20260930-stg_claims-1,2026-09-30,stg_claims,claim_status,60047,0,0.0000,2,,"{""CLOSED"":0.8474,""OPEN"":0.1526}"
+20260930-int_claims_enriched-1,2026-09-30,int_claims_enriched,policy_status,10373,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20260930-int_claims_enriched-1,2026-09-30,int_claims_enriched,lob,10373,0,0.0000,5,,"{""Commercial Auto"":0.092,""Commercial Property"":0.172,""General Liability"":0.0979,""Homeowners"":0.315,""Personal Auto"":0.3231}"
+20260930-int_claims_enriched-1,2026-09-30,int_claims_enriched,incurred_amount,10373,0,0.0000,10350,18838.0700,
+20260930-int_claims_enriched-1,2026-09-30,int_claims_enriched,claim_status,10373,0,0.0000,2,,"{""CLOSED"":0.1453,""OPEN"":0.8547}"
+20260930-fct_claims_closed-1,2026-09-30,fct_claims_closed,lob,1507,0,0.0000,5,,"{""Commercial Auto"":0.0783,""Commercial Property"":0.1161,""General Liability"":0.0431,""Homeowners"":0.294,""Personal Auto"":0.4685}"
+20260930-fct_claims_closed-1,2026-09-30,fct_claims_closed,incurred_amount,1507,0,0.0000,1506,15036.8400,
+20260930-fct_claims_open-1,2026-09-30,fct_claims_open,lob,8866,0,0.0000,5,,"{""Commercial Auto"":0.0943,""Commercial Property"":0.1815,""General Liability"":0.1073,""Homeowners"":0.3186,""Personal Auto"":0.2983}"
+20260930-fct_claims_open-1,2026-09-30,fct_claims_open,incurred_amount,8866,0,0.0000,8847,19484.1800,
+20260930-fct_fnol-1,2026-09-30,fct_fnol,lob,259,0,0.0000,5,,"{""Commercial Auto"":0.0656,""Commercial Property"":0.112,""General Liability"":0.0656,""Homeowners"":0.3359,""Personal Auto"":0.4208}"
+20261001-raw_policies-1,2026-10-01,raw_policies,policy_status,2805,0,0.0000,3,,"{""ACTIVE"":0.974,""CANCELLED"":0.0096,""LAPSED"":0.0164}"
+20261001-raw_policies-1,2026-10-01,raw_policies,lob,2805,0,0.0000,5,,"{""Commercial Auto"":0.0784,""Commercial Property"":0.1127,""General Liability"":0.051,""Homeowners"":0.303,""Personal Auto"":0.4549}"
+20261001-stg_policies-1,2026-10-01,stg_policies,policy_status,166448,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261001-stg_policies-1,2026-10-01,stg_policies,lob,166448,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261001-stg_claims-1,2026-10-01,stg_claims,lob,60305,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1189,""General Liability"":0.05,""Homeowners"":0.3016,""Personal Auto"":0.4505}"
+20261001-stg_claims-1,2026-10-01,stg_claims,incurred_amount,60305,0,0.0000,59446,15395.3700,
+20261001-stg_claims-1,2026-10-01,stg_claims,claim_status,60305,0,0.0000,2,,"{""CLOSED"":0.8473,""OPEN"":0.1527}"
+20261001-int_claims_enriched-1,2026-10-01,int_claims_enriched,policy_status,10414,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261001-int_claims_enriched-1,2026-10-01,int_claims_enriched,lob,10414,0,0.0000,5,,"{""Commercial Auto"":0.0928,""Commercial Property"":0.1718,""General Liability"":0.0975,""Homeowners"":0.3154,""Personal Auto"":0.3225}"
+20261001-int_claims_enriched-1,2026-10-01,int_claims_enriched,incurred_amount,10414,0,0.0000,10391,18848.7500,
+20261001-int_claims_enriched-1,2026-10-01,int_claims_enriched,claim_status,10414,0,0.0000,2,,"{""CLOSED"":0.1446,""OPEN"":0.8554}"
+20261001-fct_claims_closed-1,2026-10-01,fct_claims_closed,lob,1506,0,0.0000,5,,"{""Commercial Auto"":0.0837,""Commercial Property"":0.1155,""General Liability"":0.0432,""Homeowners"":0.2935,""Personal Auto"":0.4641}"
+20261001-fct_claims_closed-1,2026-10-01,fct_claims_closed,incurred_amount,1506,0,0.0000,1505,15376.5500,
+20261001-fct_claims_open-1,2026-10-01,fct_claims_open,lob,8908,0,0.0000,5,,"{""Commercial Auto"":0.0943,""Commercial Property"":0.1813,""General Liability"":0.1066,""Homeowners"":0.3192,""Personal Auto"":0.2986}"
+20261001-fct_claims_open-1,2026-10-01,fct_claims_open,incurred_amount,8908,0,0.0000,8889,19435.7700,
+20261001-fct_fnol-1,2026-10-01,fct_fnol,lob,258,0,0.0000,5,,"{""Commercial Auto"":0.093,""Commercial Property"":0.1318,""General Liability"":0.0349,""Homeowners"":0.3101,""Personal Auto"":0.4302}"
+20261002-raw_policies-1,2026-10-02,raw_policies,policy_status,2928,0,0.0000,3,,"{""ACTIVE"":0.9662,""CANCELLED"":0.0123,""LAPSED"":0.0215}"
+20261002-raw_policies-1,2026-10-02,raw_policies,lob,2928,0,0.0000,5,,"{""Commercial Auto"":0.085,""Commercial Property"":0.1195,""General Liability"":0.0434,""Homeowners"":0.2865,""Personal Auto"":0.4655}"
+20261002-stg_policies-1,2026-10-02,stg_policies,policy_status,166503,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261002-stg_policies-1,2026-10-02,stg_policies,lob,166503,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261002-stg_claims-1,2026-10-02,stg_claims,lob,60536,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1189,""General Liability"":0.0499,""Homeowners"":0.3018,""Personal Auto"":0.4505}"
+20261002-stg_claims-1,2026-10-02,stg_claims,incurred_amount,60536,0,0.0000,59669,15382.7400,
+20261002-stg_claims-1,2026-10-02,stg_claims,claim_status,60536,0,0.0000,2,,"{""CLOSED"":0.8479,""OPEN"":0.1521}"
+20261002-int_claims_enriched-1,2026-10-02,int_claims_enriched,policy_status,10421,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261002-int_claims_enriched-1,2026-10-02,int_claims_enriched,lob,10421,0,0.0000,5,,"{""Commercial Auto"":0.0927,""Commercial Property"":0.1715,""General Liability"":0.097,""Homeowners"":0.3171,""Personal Auto"":0.3218}"
+20261002-int_claims_enriched-1,2026-10-02,int_claims_enriched,incurred_amount,10421,0,0.0000,10398,18746.2400,
+20261002-int_claims_enriched-1,2026-10-02,int_claims_enriched,claim_status,10421,0,0.0000,2,,"{""CLOSED"":0.1447,""OPEN"":0.8553}"
+20261002-fct_claims_closed-1,2026-10-02,fct_claims_closed,lob,1508,0,0.0000,5,,"{""Commercial Auto"":0.0855,""Commercial Property"":0.1134,""General Liability"":0.0464,""Homeowners"":0.2891,""Personal Auto"":0.4655}"
+20261002-fct_claims_closed-1,2026-10-02,fct_claims_closed,incurred_amount,1508,0,0.0000,1508,14890.7800,
+20261002-fct_claims_open-1,2026-10-02,fct_claims_open,lob,8913,0,0.0000,5,,"{""Commercial Auto"":0.0939,""Commercial Property"":0.1813,""General Liability"":0.1056,""Homeowners"":0.3218,""Personal Auto"":0.2974}"
+20261002-fct_claims_open-1,2026-10-02,fct_claims_open,incurred_amount,8913,0,0.0000,8893,19398.5500,
+20261002-fct_fnol-1,2026-10-02,fct_fnol,lob,231,0,0.0000,5,,"{""Commercial Auto"":0.0649,""Commercial Property"":0.1126,""General Liability"":0.026,""Homeowners"":0.355,""Personal Auto"":0.4416}"
+20261003-raw_policies-1,2026-10-03,raw_policies,policy_status,2809,0,0.0000,3,,"{""ACTIVE"":0.9665,""CANCELLED"":0.0153,""LAPSED"":0.0182}"
+20261003-raw_policies-1,2026-10-03,raw_policies,lob,2809,0,0.0000,5,,"{""Commercial Auto"":0.0758,""Commercial Property"":0.1185,""General Liability"":0.0538,""Homeowners"":0.309,""Personal Auto"":0.4429}"
+20261003-stg_policies-1,2026-10-03,stg_policies,policy_status,166554,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261003-stg_policies-1,2026-10-03,stg_policies,lob,166554,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1194,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261003-stg_claims-1,2026-10-03,stg_claims,lob,60772,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1189,""General Liability"":0.0499,""Homeowners"":0.3017,""Personal Auto"":0.4505}"
+20261003-stg_claims-1,2026-10-03,stg_claims,incurred_amount,60772,0,0.0000,59898,15401.7600,
+20261003-stg_claims-1,2026-10-03,stg_claims,claim_status,60772,0,0.0000,2,,"{""CLOSED"":0.8483,""OPEN"":0.1517}"
+20261003-int_claims_enriched-1,2026-10-03,int_claims_enriched,policy_status,10438,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261003-int_claims_enriched-1,2026-10-03,int_claims_enriched,lob,10438,0,0.0000,5,,"{""Commercial Auto"":0.0925,""Commercial Property"":0.1717,""General Liability"":0.0968,""Homeowners"":0.3162,""Personal Auto"":0.3228}"
+20261003-int_claims_enriched-1,2026-10-03,int_claims_enriched,incurred_amount,10438,0,0.0000,10415,18869.5400,
+20261003-int_claims_enriched-1,2026-10-03,int_claims_enriched,claim_status,10438,0,0.0000,2,,"{""CLOSED"":0.1446,""OPEN"":0.8554}"
+20261003-fct_claims_closed-1,2026-10-03,fct_claims_closed,lob,1509,0,0.0000,5,,"{""Commercial Auto"":0.0802,""Commercial Property"":0.1146,""General Liability"":0.0431,""Homeowners"":0.2969,""Personal Auto"":0.4652}"
+20261003-fct_claims_closed-1,2026-10-03,fct_claims_closed,incurred_amount,1509,0,0.0000,1508,15050.8100,
+20261003-fct_claims_open-1,2026-10-03,fct_claims_open,lob,8929,0,0.0000,5,,"{""Commercial Auto"":0.0946,""Commercial Property"":0.1813,""General Liability"":0.1058,""Homeowners"":0.3195,""Personal Auto"":0.2987}"
+20261003-fct_claims_open-1,2026-10-03,fct_claims_open,incurred_amount,8929,0,0.0000,8909,19514.9000,
+20261003-fct_fnol-1,2026-10-03,fct_fnol,lob,237,0,0.0000,5,,"{""Commercial Auto"":0.0886,""Commercial Property"":0.1266,""General Liability"":0.0506,""Homeowners"":0.2658,""Personal Auto"":0.4684}"
+20261004-raw_policies-1,2026-10-04,raw_policies,policy_status,1344,0,0.0000,3,,"{""ACTIVE"":0.9725,""CANCELLED"":0.0104,""LAPSED"":0.0171}"
+20261004-raw_policies-1,2026-10-04,raw_policies,lob,1344,0,0.0000,5,,"{""Commercial Auto"":0.0804,""Commercial Property"":0.1168,""General Liability"":0.0417,""Homeowners"":0.2842,""Personal Auto"":0.4769}"
+20261004-stg_policies-1,2026-10-04,stg_policies,policy_status,166619,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261004-stg_policies-1,2026-10-04,stg_policies,lob,166619,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4504}"
+20261004-stg_claims-1,2026-10-04,stg_claims,lob,60905,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.119,""General Liability"":0.0499,""Homeowners"":0.3015,""Personal Auto"":0.4506}"
+20261004-stg_claims-1,2026-10-04,stg_claims,incurred_amount,60905,0,0.0000,60026,15417.5500,
+20261004-stg_claims-1,2026-10-04,stg_claims,claim_status,60905,0,0.0000,2,,"{""CLOSED"":0.8471,""OPEN"":0.1529}"
+20261004-int_claims_enriched-1,2026-10-04,int_claims_enriched,policy_status,10528,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261004-int_claims_enriched-1,2026-10-04,int_claims_enriched,lob,10528,0,0.0000,5,,"{""Commercial Auto"":0.0925,""Commercial Property"":0.1715,""General Liability"":0.0966,""Homeowners"":0.3155,""Personal Auto"":0.3238}"
+20261004-int_claims_enriched-1,2026-10-04,int_claims_enriched,incurred_amount,10528,0,0.0000,10503,18951.8700,
+20261004-int_claims_enriched-1,2026-10-04,int_claims_enriched,claim_status,10528,0,0.0000,2,,"{""CLOSED"":0.1432,""OPEN"":0.8568}"
+20261004-fct_claims_closed-1,2026-10-04,fct_claims_closed,lob,1508,0,0.0000,5,,"{""Commercial Auto"":0.0802,""Commercial Property"":0.1174,""General Liability"":0.0458,""Homeowners"":0.2964,""Personal Auto"":0.4602}"
+20261004-fct_claims_closed-1,2026-10-04,fct_claims_closed,incurred_amount,1508,0,0.0000,1507,15278.2800,
+20261004-fct_claims_open-1,2026-10-04,fct_claims_open,lob,9020,0,0.0000,5,,"{""Commercial Auto"":0.0946,""Commercial Property"":0.1806,""General Liability"":0.1051,""Homeowners"":0.3187,""Personal Auto"":0.301}"
+20261004-fct_claims_open-1,2026-10-04,fct_claims_open,incurred_amount,9020,0,0.0000,8998,19566.0400,
+20261004-fct_fnol-1,2026-10-04,fct_fnol,lob,135,0,0.0000,5,,"{""Commercial Auto"":0.0889,""Commercial Property"":0.1407,""General Liability"":0.0593,""Homeowners"":0.2296,""Personal Auto"":0.4815}"
+20261005-raw_policies-1,2026-10-05,raw_policies,policy_status,1926,0,0.0000,3,,"{""ACTIVE"":0.9595,""CANCELLED"":0.0151,""LAPSED"":0.0254}"
+20261005-raw_policies-1,2026-10-05,raw_policies,lob,1926,0,0.0000,5,,"{""Commercial Auto"":0.0779,""Commercial Property"":0.1288,""General Liability"":0.0415,""Homeowners"":0.2835,""Personal Auto"":0.4683}"
+20261005-stg_policies-1,2026-10-05,stg_policies,policy_status,166680,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261005-stg_policies-1,2026-10-05,stg_policies,lob,166680,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261005-stg_claims-1,2026-10-05,stg_claims,lob,61023,0,0.0000,5,,"{""Commercial Auto"":0.079,""Commercial Property"":0.1191,""General Liability"":0.0499,""Homeowners"":0.3015,""Personal Auto"":0.4505}"
+20261005-stg_claims-1,2026-10-05,stg_claims,incurred_amount,61023,0,0.0000,60141,15418.5600,
+20261005-stg_claims-1,2026-10-05,stg_claims,claim_status,61023,0,0.0000,2,,"{""CLOSED"":0.846,""OPEN"":0.154}"
+20261005-int_claims_enriched-1,2026-10-05,int_claims_enriched,policy_status,10610,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261005-int_claims_enriched-1,2026-10-05,int_claims_enriched,lob,10610,0,0.0000,5,,"{""Commercial Auto"":0.0924,""Commercial Property"":0.1714,""General Liability"":0.0963,""Homeowners"":0.3151,""Personal Auto"":0.3248}"
+20261005-int_claims_enriched-1,2026-10-05,int_claims_enriched,incurred_amount,10610,0,0.0000,10585,18905.2500,
+20261005-int_claims_enriched-1,2026-10-05,int_claims_enriched,claim_status,10610,0,0.0000,2,,"{""CLOSED"":0.1425,""OPEN"":0.8575}"
+20261005-fct_claims_closed-1,2026-10-05,fct_claims_closed,lob,1512,0,0.0000,5,,"{""Commercial Auto"":0.0794,""Commercial Property"":0.1157,""General Liability"":0.0443,""Homeowners"":0.2983,""Personal Auto"":0.4623}"
+20261005-fct_claims_closed-1,2026-10-05,fct_claims_closed,incurred_amount,1512,0,0.0000,1512,15030.3300,
+20261005-fct_claims_open-1,2026-10-05,fct_claims_open,lob,9098,0,0.0000,5,,"{""Commercial Auto"":0.0945,""Commercial Property"":0.1807,""General Liability"":0.105,""Homeowners"":0.3179,""Personal Auto"":0.3019}"
+20261005-fct_claims_open-1,2026-10-05,fct_claims_open,incurred_amount,9098,0,0.0000,9076,19549.2200,
+20261005-fct_fnol-1,2026-10-05,fct_fnol,lob,116,0,0.0000,5,,"{""Commercial Auto"":0.0776,""Commercial Property"":0.1724,""General Liability"":0.0603,""Homeowners"":0.2845,""Personal Auto"":0.4052}"
+20261006-raw_policies-1,2026-10-06,raw_policies,policy_status,3144,0,0.0000,3,,"{""ACTIVE"":0.9676,""CANCELLED"":0.0162,""LAPSED"":0.0162}"
+20261006-raw_policies-1,2026-10-06,raw_policies,lob,3144,0,0.0000,5,,"{""Commercial Auto"":0.0712,""Commercial Property"":0.1202,""General Liability"":0.0455,""Homeowners"":0.3006,""Personal Auto"":0.4625}"
+20261006-stg_policies-1,2026-10-06,stg_policies,policy_status,166746,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261006-stg_policies-1,2026-10-06,stg_policies,lob,166746,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261006-stg_claims-1,2026-10-06,stg_claims,lob,61271,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.05,""Homeowners"":0.3014,""Personal Auto"":0.4505}"
+20261006-stg_claims-1,2026-10-06,stg_claims,incurred_amount,61271,0,0.0000,60380,15411.0700,
+20261006-stg_claims-1,2026-10-06,stg_claims,claim_status,61271,0,0.0000,2,,"{""CLOSED"":0.8524,""OPEN"":0.1476}"
+20261006-int_claims_enriched-1,2026-10-06,int_claims_enriched,policy_status,10275,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261006-int_claims_enriched-1,2026-10-06,int_claims_enriched,lob,10275,0,0.0000,5,,"{""Commercial Auto"":0.0936,""Commercial Property"":0.1731,""General Liability"":0.0995,""Homeowners"":0.3148,""Personal Auto"":0.3189}"
+20261006-int_claims_enriched-1,2026-10-06,int_claims_enriched,incurred_amount,10275,0,0.0000,10250,19003.1400,
+20261006-int_claims_enriched-1,2026-10-06,int_claims_enriched,claim_status,10275,0,0.0000,2,,"{""CLOSED"":0.1479,""OPEN"":0.8521}"
+20261006-fct_claims_closed-1,2026-10-06,fct_claims_closed,lob,1520,0,0.0000,5,,"{""Commercial Auto"":0.077,""Commercial Property"":0.1184,""General Liability"":0.0526,""Homeowners"":0.2974,""Personal Auto"":0.4546}"
+20261006-fct_claims_closed-1,2026-10-06,fct_claims_closed,incurred_amount,1520,0,0.0000,1520,15251.1200,
+20261006-fct_claims_open-1,2026-10-06,fct_claims_open,lob,8755,0,0.0000,5,,"{""Commercial Auto"":0.0965,""Commercial Property"":0.1826,""General Liability"":0.1076,""Homeowners"":0.3179,""Personal Auto"":0.2954}"
+20261006-fct_claims_open-1,2026-10-06,fct_claims_open,incurred_amount,8755,0,0.0000,8737,19654.5500,
+20261006-fct_fnol-1,2026-10-06,fct_fnol,lob,251,0,0.0000,5,,"{""Commercial Auto"":0.1155,""Commercial Property"":0.0996,""General Liability"":0.0558,""Homeowners"":0.2869,""Personal Auto"":0.4422}"
+20261007-raw_policies-1,2026-10-07,raw_policies,policy_status,2860,0,0.0000,3,,"{""ACTIVE"":0.964,""CANCELLED"":0.0122,""LAPSED"":0.0238}"
+20261007-raw_policies-1,2026-10-07,raw_policies,lob,2860,0,0.0000,5,,"{""Commercial Auto"":0.078,""Commercial Property"":0.1059,""General Liability"":0.0535,""Homeowners"":0.3014,""Personal Auto"":0.4612}"
+20261007-stg_policies-1,2026-10-07,stg_policies,policy_status,166808,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261007-stg_policies-1,2026-10-07,stg_policies,lob,166808,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1196,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261007-stg_claims-1,2026-10-07,stg_claims,lob,61540,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.119,""General Liability"":0.05,""Homeowners"":0.3014,""Personal Auto"":0.4505}"
+20261007-stg_claims-1,2026-10-07,stg_claims,incurred_amount,61540,0,0.0000,60639,15420.4900,
+20261007-stg_claims-1,2026-10-07,stg_claims,claim_status,61540,0,0.0000,2,,"{""CLOSED"":0.8522,""OPEN"":0.1478}"
+20261007-int_claims_enriched-1,2026-10-07,int_claims_enriched,policy_status,10312,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261007-int_claims_enriched-1,2026-10-07,int_claims_enriched,lob,10312,0,0.0000,5,,"{""Commercial Auto"":0.0926,""Commercial Property"":0.173,""General Liability"":0.0991,""Homeowners"":0.3156,""Personal Auto"":0.3197}"
+20261007-int_claims_enriched-1,2026-10-07,int_claims_enriched,incurred_amount,10312,0,0.0000,10286,19068.0200,
+20261007-int_claims_enriched-1,2026-10-07,int_claims_enriched,claim_status,10312,0,0.0000,2,,"{""CLOSED"":0.1454,""OPEN"":0.8546}"
+20261007-fct_claims_closed-1,2026-10-07,fct_claims_closed,lob,1499,0,0.0000,5,,"{""Commercial Auto"":0.0754,""Commercial Property"":0.1134,""General Liability"":0.0507,""Homeowners"":0.3029,""Personal Auto"":0.4576}"
+20261007-fct_claims_closed-1,2026-10-07,fct_claims_closed,incurred_amount,1499,0,0.0000,1499,14956.5100,
+20261007-fct_claims_open-1,2026-10-07,fct_claims_open,lob,8813,0,0.0000,5,,"{""Commercial Auto"":0.0955,""Commercial Property"":0.1831,""General Liability"":0.1073,""Homeowners"":0.3177,""Personal Auto"":0.2963}"
+20261007-fct_claims_open-1,2026-10-07,fct_claims_open,incurred_amount,8813,0,0.0000,8794,19767.3400,
+20261007-fct_fnol-1,2026-10-07,fct_fnol,lob,267,0,0.0000,5,,"{""Commercial Auto"":0.0524,""Commercial Property"":0.1161,""General Liability"":0.0674,""Homeowners"":0.2996,""Personal Auto"":0.4644}"
+20261008-raw_policies-1,2026-10-08,raw_policies,policy_status,3034,0,0.0000,3,,"{""ACTIVE"":0.967,""CANCELLED"":0.0105,""LAPSED"":0.0224}"
+20261008-raw_policies-1,2026-10-08,raw_policies,lob,3034,0,0.0000,5,,"{""Commercial Auto"":0.09,""Commercial Property"":0.1233,""General Liability"":0.0458,""Homeowners"":0.29,""Personal Auto"":0.4509}"
+20261008-stg_policies-1,2026-10-08,stg_policies,policy_status,166870,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261008-stg_policies-1,2026-10-08,stg_policies,lob,166870,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261008-stg_claims-1,2026-10-08,stg_claims,lob,61801,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1189,""General Liability"":0.05,""Homeowners"":0.3013,""Personal Auto"":0.4506}"
+20261008-stg_claims-1,2026-10-08,stg_claims,incurred_amount,61801,0,0.0000,60890,15422.2800,
+20261008-stg_claims-1,2026-10-08,stg_claims,claim_status,61801,0,0.0000,2,,"{""CLOSED"":0.8519,""OPEN"":0.1481}"
+20261008-int_claims_enriched-1,2026-10-08,int_claims_enriched,policy_status,10354,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261008-int_claims_enriched-1,2026-10-08,int_claims_enriched,lob,10354,0,0.0000,5,,"{""Commercial Auto"":0.0928,""Commercial Property"":0.1727,""General Liability"":0.0987,""Homeowners"":0.315,""Personal Auto"":0.3208}"
+20261008-int_claims_enriched-1,2026-10-08,int_claims_enriched,incurred_amount,10354,0,0.0000,10328,19036.6300,
+20261008-int_claims_enriched-1,2026-10-08,int_claims_enriched,claim_status,10354,0,0.0000,2,,"{""CLOSED"":0.1439,""OPEN"":0.8561}"
+20261008-fct_claims_closed-1,2026-10-08,fct_claims_closed,lob,1490,0,0.0000,5,,"{""Commercial Auto"":0.0738,""Commercial Property"":0.1114,""General Liability"":0.0503,""Homeowners"":0.2993,""Personal Auto"":0.4651}"
+20261008-fct_claims_closed-1,2026-10-08,fct_claims_closed,incurred_amount,1490,0,0.0000,1490,14622.3700,
+20261008-fct_claims_open-1,2026-10-08,fct_claims_open,lob,8864,0,0.0000,5,,"{""Commercial Auto"":0.096,""Commercial Property"":0.183,""General Liability"":0.1068,""Homeowners"":0.3176,""Personal Auto"":0.2966}"
+20261008-fct_claims_open-1,2026-10-08,fct_claims_open,incurred_amount,8864,0,0.0000,8846,19778.6500,
+20261008-fct_fnol-1,2026-10-08,fct_fnol,lob,261,0,0.0000,5,,"{""Commercial Auto"":0.1111,""Commercial Property"":0.1149,""General Liability"":0.0383,""Homeowners"":0.272,""Personal Auto"":0.4636}"
+20261009-raw_policies-1,2026-10-09,raw_policies,policy_status,2890,0,0.0000,3,,"{""ACTIVE"":0.9644,""CANCELLED"":0.0111,""LAPSED"":0.0246}"
+20261009-raw_policies-1,2026-10-09,raw_policies,lob,2890,0,0.0000,5,,"{""Commercial Auto"":0.0758,""Commercial Property"":0.126,""General Liability"":0.0436,""Homeowners"":0.3076,""Personal Auto"":0.4471}"
+20261009-stg_policies-1,2026-10-09,stg_policies,policy_status,166931,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261009-stg_policies-1,2026-10-09,stg_policies,lob,166931,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1196,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261009-stg_claims-1,2026-10-09,stg_claims,lob,62080,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1191,""General Liability"":0.05,""Homeowners"":0.3011,""Personal Auto"":0.4506}"
+20261009-stg_claims-1,2026-10-09,stg_claims,incurred_amount,62080,0,0.0000,61154,15433.7100,
+20261009-stg_claims-1,2026-10-09,stg_claims,claim_status,62080,0,0.0000,2,,"{""CLOSED"":0.8515,""OPEN"":0.1485}"
+20261009-int_claims_enriched-1,2026-10-09,int_claims_enriched,policy_status,10402,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261009-int_claims_enriched-1,2026-10-09,int_claims_enriched,lob,10402,0,0.0000,5,,"{""Commercial Auto"":0.0928,""Commercial Property"":0.1732,""General Liability"":0.0981,""Homeowners"":0.3154,""Personal Auto"":0.3205}"
+20261009-int_claims_enriched-1,2026-10-09,int_claims_enriched,incurred_amount,10402,0,0.0000,10371,19134.9700,
+20261009-int_claims_enriched-1,2026-10-09,int_claims_enriched,claim_status,10402,0,0.0000,2,,"{""CLOSED"":0.142,""OPEN"":0.858}"
+20261009-fct_claims_closed-1,2026-10-09,fct_claims_closed,lob,1477,0,0.0000,5,,"{""Commercial Auto"":0.0718,""Commercial Property"":0.1117,""General Liability"":0.0454,""Homeowners"":0.3087,""Personal Auto"":0.4624}"
+20261009-fct_claims_closed-1,2026-10-09,fct_claims_closed,incurred_amount,1477,0,0.0000,1477,14787.1600,
+20261009-fct_claims_open-1,2026-10-09,fct_claims_open,lob,8925,0,0.0000,5,,"{""Commercial Auto"":0.0962,""Commercial Property"":0.1834,""General Liability"":0.1068,""Homeowners"":0.3165,""Personal Auto"":0.297}"
+20261009-fct_claims_open-1,2026-10-09,fct_claims_open,incurred_amount,8925,0,0.0000,8905,19854.4800,
+20261009-fct_fnol-1,2026-10-09,fct_fnol,lob,276,0,0.0000,5,,"{""Commercial Auto"":0.0833,""Commercial Property"":0.1449,""General Liability"":0.0435,""Homeowners"":0.2717,""Personal Auto"":0.4565}"
+20261010-raw_policies-1,2026-10-10,raw_policies,policy_status,2860,0,0.0000,3,,"{""ACTIVE"":0.9717,""CANCELLED"":0.0112,""LAPSED"":0.0171}"
+20261010-raw_policies-1,2026-10-10,raw_policies,lob,2860,0,0.0000,5,,"{""Commercial Auto"":0.0801,""Commercial Property"":0.1178,""General Liability"":0.0514,""Homeowners"":0.3,""Personal Auto"":0.4507}"
+20261010-stg_policies-1,2026-10-10,stg_policies,policy_status,166983,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261010-stg_policies-1,2026-10-10,stg_policies,lob,166983,0,0.0000,5,,"{""Commercial Auto"":0.0799,""Commercial Property"":0.1196,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261010-stg_claims-1,2026-10-10,stg_claims,lob,62317,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.3012,""Personal Auto"":0.4505}"
+20261010-stg_claims-1,2026-10-10,stg_claims,incurred_amount,62317,0,0.0000,61387,15428.0800,
+20261010-stg_claims-1,2026-10-10,stg_claims,claim_status,62317,0,0.0000,2,,"{""CLOSED"":0.8516,""OPEN"":0.1484}"
+20261010-int_claims_enriched-1,2026-10-10,int_claims_enriched,policy_status,10419,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261010-int_claims_enriched-1,2026-10-10,int_claims_enriched,lob,10419,0,0.0000,5,,"{""Commercial Auto"":0.0933,""Commercial Property"":0.1729,""General Liability"":0.0989,""Homeowners"":0.3149,""Personal Auto"":0.3201}"
+20261010-int_claims_enriched-1,2026-10-10,int_claims_enriched,incurred_amount,10419,0,0.0000,10388,19090.5500,
+20261010-int_claims_enriched-1,2026-10-10,int_claims_enriched,claim_status,10419,0,0.0000,2,,"{""CLOSED"":0.1404,""OPEN"":0.8596}"
+20261010-fct_claims_closed-1,2026-10-10,fct_claims_closed,lob,1463,0,0.0000,5,,"{""Commercial Auto"":0.0731,""Commercial Property"":0.11,""General Liability"":0.0472,""Homeowners"":0.2994,""Personal Auto"":0.4703}"
+20261010-fct_claims_closed-1,2026-10-10,fct_claims_closed,incurred_amount,1463,0,0.0000,1463,14817.7200,
+20261010-fct_claims_open-1,2026-10-10,fct_claims_open,lob,8956,0,0.0000,5,,"{""Commercial Auto"":0.0966,""Commercial Property"":0.1831,""General Liability"":0.1073,""Homeowners"":0.3174,""Personal Auto"":0.2956}"
+20261010-fct_claims_open-1,2026-10-10,fct_claims_open,incurred_amount,8956,0,0.0000,8937,19788.5400,
+20261010-fct_fnol-1,2026-10-10,fct_fnol,lob,239,0,0.0000,5,,"{""Commercial Auto"":0.0837,""Commercial Property"":0.1004,""General Liability"":0.0753,""Homeowners"":0.3264,""Personal Auto"":0.4142}"
+20261011-raw_policies-1,2026-10-11,raw_policies,policy_status,1457,0,0.0000,3,,"{""ACTIVE"":0.9616,""CANCELLED"":0.0137,""LAPSED"":0.0247}"
+20261011-raw_policies-1,2026-10-11,raw_policies,lob,1457,0,0.0000,5,,"{""Commercial Auto"":0.0769,""Commercial Property"":0.1126,""General Liability"":0.059,""Homeowners"":0.2999,""Personal Auto"":0.4516}"
+20261011-stg_policies-1,2026-10-11,stg_policies,policy_status,167052,0,0.0000,3,,"{""ACTIVE"":0.9686,""CANCELLED"":0.0118,""LAPSED"":0.0196}"
+20261011-stg_policies-1,2026-10-11,stg_policies,lob,167052,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1196,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261011-stg_claims-1,2026-10-11,stg_claims,lob,62483,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1191,""General Liability"":0.05,""Homeowners"":0.3013,""Personal Auto"":0.4504}"
+20261011-stg_claims-1,2026-10-11,stg_claims,incurred_amount,62483,0,0.0000,61547,15426.6500,
+20261011-stg_claims-1,2026-10-11,stg_claims,claim_status,62483,0,0.0000,2,,"{""CLOSED"":0.8498,""OPEN"":0.1502}"
+20261011-int_claims_enriched-1,2026-10-11,int_claims_enriched,policy_status,10540,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261011-int_claims_enriched-1,2026-10-11,int_claims_enriched,lob,10540,0,0.0000,5,,"{""Commercial Auto"":0.0925,""Commercial Property"":0.1725,""General Liability"":0.0981,""Homeowners"":0.3153,""Personal Auto"":0.3216}"
+20261011-int_claims_enriched-1,2026-10-11,int_claims_enriched,incurred_amount,10540,0,0.0000,10509,19030.7300,
+20261011-int_claims_enriched-1,2026-10-11,int_claims_enriched,claim_status,10540,0,0.0000,2,,"{""CLOSED"":0.1381,""OPEN"":0.8619}"
+20261011-fct_claims_closed-1,2026-10-11,fct_claims_closed,lob,1456,0,0.0000,5,,"{""Commercial Auto"":0.0721,""Commercial Property"":0.1078,""General Liability"":0.046,""Homeowners"":0.3036,""Personal Auto"":0.4705}"
+20261011-fct_claims_closed-1,2026-10-11,fct_claims_closed,incurred_amount,1456,0,0.0000,1456,14797.5800,
+20261011-fct_claims_open-1,2026-10-11,fct_claims_open,lob,9084,0,0.0000,5,,"{""Commercial Auto"":0.0958,""Commercial Property"":0.1828,""General Liability"":0.1065,""Homeowners"":0.3172,""Personal Auto"":0.2978}"
+20261011-fct_claims_open-1,2026-10-11,fct_claims_open,incurred_amount,9084,0,0.0000,9065,19709.2200,
+20261011-fct_fnol-1,2026-10-11,fct_fnol,lob,166,0,0.0000,5,,"{""Commercial Auto"":0.0422,""Commercial Property"":0.1627,""General Liability"":0.0422,""Homeowners"":0.3193,""Personal Auto"":0.4337}"
+20261012-raw_policies-1,2026-10-12,raw_policies,policy_status,1858,0,0.0000,3,,"{""ACTIVE"":0.9736,""CANCELLED"":0.0108,""LAPSED"":0.0156}"
+20261012-raw_policies-1,2026-10-12,raw_policies,lob,1858,0,0.0000,5,,"{""Commercial Auto"":0.0807,""Commercial Property"":0.1082,""General Liability"":0.0495,""Homeowners"":0.2998,""Personal Auto"":0.4618}"
+20261012-stg_policies-1,2026-10-12,stg_policies,policy_status,167103,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261012-stg_policies-1,2026-10-12,stg_policies,lob,167103,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261012-stg_claims-1,2026-10-12,stg_claims,lob,62621,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1191,""General Liability"":0.0501,""Homeowners"":0.3011,""Personal Auto"":0.4505}"
+20261012-stg_claims-1,2026-10-12,stg_claims,incurred_amount,62621,0,0.0000,61682,15437.3600,
+20261012-stg_claims-1,2026-10-12,stg_claims,claim_status,62621,0,0.0000,2,,"{""CLOSED"":0.8486,""OPEN"":0.1514}"
+20261012-int_claims_enriched-1,2026-10-12,int_claims_enriched,policy_status,10641,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261012-int_claims_enriched-1,2026-10-12,int_claims_enriched,lob,10641,0,0.0000,5,,"{""Commercial Auto"":0.0923,""Commercial Property"":0.172,""General Liability"":0.0983,""Homeowners"":0.314,""Personal Auto"":0.3235}"
+20261012-int_claims_enriched-1,2026-10-12,int_claims_enriched,incurred_amount,10641,0,0.0000,10608,19050.2200,
+20261012-int_claims_enriched-1,2026-10-12,int_claims_enriched,claim_status,10641,0,0.0000,2,,"{""CLOSED"":0.1379,""OPEN"":0.8621}"
+20261012-fct_claims_closed-1,2026-10-12,fct_claims_closed,lob,1467,0,0.0000,5,,"{""Commercial Auto"":0.075,""Commercial Property"":0.1111,""General Liability"":0.0477,""Homeowners"":0.2972,""Personal Auto"":0.469}"
+20261012-fct_claims_closed-1,2026-10-12,fct_claims_closed,incurred_amount,1467,0,0.0000,1467,14753.0000,
+20261012-fct_claims_open-1,2026-10-12,fct_claims_open,lob,9174,0,0.0000,5,,"{""Commercial Auto"":0.0951,""Commercial Property"":0.1817,""General Liability"":0.1064,""Homeowners"":0.3167,""Personal Auto"":0.3002}"
+20261012-fct_claims_open-1,2026-10-12,fct_claims_open,incurred_amount,9174,0,0.0000,9154,19737.3900,
+20261012-fct_fnol-1,2026-10-12,fct_fnol,lob,139,0,0.0000,5,,"{""Commercial Auto"":0.0647,""Commercial Property"":0.1151,""General Liability"":0.0935,""Homeowners"":0.2302,""Personal Auto"":0.4964}"
+20261013-raw_policies-1,2026-10-13,raw_policies,policy_status,3232,0,0.0000,3,,"{""ACTIVE"":0.9759,""CANCELLED"":0.0084,""LAPSED"":0.0158}"
+20261013-raw_policies-1,2026-10-13,raw_policies,lob,3232,0,0.0000,5,,"{""Commercial Auto"":0.0681,""Commercial Property"":0.1151,""General Liability"":0.0492,""Homeowners"":0.3094,""Personal Auto"":0.4582}"
+20261013-stg_policies-2,2026-10-13,stg_policies,policy_status,167158,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261013-stg_policies-2,2026-10-13,stg_policies,lob,167158,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261013-stg_claims-1,2026-10-13,stg_claims,lob,62869,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.119,""General Liability"":0.0501,""Homeowners"":0.301,""Personal Auto"":0.4507}"
+20261013-stg_claims-1,2026-10-13,stg_claims,incurred_amount,62869,0,0.0000,61926,15436.3500,
+20261013-stg_claims-1,2026-10-13,stg_claims,claim_status,62869,0,0.0000,2,,"{""CLOSED"":0.8549,""OPEN"":0.1451}"
+20261013-int_claims_enriched-1,2026-10-13,int_claims_enriched,policy_status,10292,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261013-int_claims_enriched-1,2026-10-13,int_claims_enriched,lob,10292,0,0.0000,5,,"{""Commercial Auto"":0.0935,""Commercial Property"":0.1732,""General Liability"":0.1,""Homeowners"":0.3137,""Personal Auto"":0.3196}"
+20261013-int_claims_enriched-1,2026-10-13,int_claims_enriched,incurred_amount,10292,0,0.0000,10264,19161.6700,
+20261013-int_claims_enriched-1,2026-10-13,int_claims_enriched,claim_status,10292,0,0.0000,2,,"{""CLOSED"":0.143,""OPEN"":0.857}"
+20261013-fct_claims_closed-1,2026-10-13,fct_claims_closed,lob,1472,0,0.0000,5,,"{""Commercial Auto"":0.0727,""Commercial Property"":0.1073,""General Liability"":0.0503,""Homeowners"":0.2921,""Personal Auto"":0.4776}"
+20261013-fct_claims_closed-1,2026-10-13,fct_claims_closed,incurred_amount,1472,0,0.0000,1471,14657.0700,
+20261013-fct_claims_open-1,2026-10-13,fct_claims_open,lob,8820,0,0.0000,5,,"{""Commercial Auto"":0.0969,""Commercial Property"":0.1842,""General Liability"":0.1083,""Homeowners"":0.3173,""Personal Auto"":0.2932}"
+20261013-fct_claims_open-1,2026-10-13,fct_claims_open,incurred_amount,8820,0,0.0000,8802,19913.4600,
+20261013-fct_fnol-1,2026-10-13,fct_fnol,lob,249,0,0.0000,5,,"{""Commercial Auto"":0.1044,""Commercial Property"":0.0843,""General Liability"":0.0402,""Homeowners"":0.2771,""Personal Auto"":0.494}"
+20261014-raw_policies-1,2026-10-14,raw_policies,policy_status,2902,0,0.0000,3,,"{""ACTIVE"":0.9735,""CANCELLED"":0.0083,""LAPSED"":0.0183}"
+20261014-raw_policies-1,2026-10-14,raw_policies,lob,2902,0,0.0000,5,,"{""Commercial Auto"":0.0786,""Commercial Property"":0.1285,""General Liability"":0.05,""Homeowners"":0.2957,""Personal Auto"":0.4473}"
+20261014-stg_policies-1,2026-10-14,stg_policies,policy_status,167220,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261014-stg_policies-1,2026-10-14,stg_policies,lob,167220,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261014-stg_claims-1,2026-10-14,stg_claims,lob,63137,0,0.0000,5,,"{""Commercial Auto"":0.0793,""Commercial Property"":0.119,""General Liability"":0.05,""Homeowners"":0.3008,""Personal Auto"":0.4509}"
+20261014-stg_claims-1,2026-10-14,stg_claims,incurred_amount,63137,0,0.0000,62189,15433.9600,
+20261014-stg_claims-1,2026-10-14,stg_claims,claim_status,63137,0,0.0000,2,,"{""CLOSED"":0.8547,""OPEN"":0.1453}"
+20261014-int_claims_enriched-1,2026-10-14,int_claims_enriched,policy_status,10349,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261014-int_claims_enriched-1,2026-10-14,int_claims_enriched,lob,10349,0,0.0000,5,,"{""Commercial Auto"":0.0938,""Commercial Property"":0.1739,""General Liability"":0.0991,""Homeowners"":0.3119,""Personal Auto"":0.3212}"
+20261014-int_claims_enriched-1,2026-10-14,int_claims_enriched,incurred_amount,10349,0,0.0000,10321,19192.1400,
+20261014-int_claims_enriched-1,2026-10-14,int_claims_enriched,claim_status,10349,0,0.0000,2,,"{""CLOSED"":0.1426,""OPEN"":0.8574}"
+20261014-fct_claims_closed-1,2026-10-14,fct_claims_closed,lob,1476,0,0.0000,5,,"{""Commercial Auto"":0.0732,""Commercial Property"":0.1138,""General Liability"":0.0474,""Homeowners"":0.2879,""Personal Auto"":0.4776}"
+20261014-fct_claims_closed-1,2026-10-14,fct_claims_closed,incurred_amount,1476,0,0.0000,1475,14878.1400,
+20261014-fct_claims_open-1,2026-10-14,fct_claims_open,lob,8873,0,0.0000,5,,"{""Commercial Auto"":0.0973,""Commercial Property"":0.1839,""General Liability"":0.1077,""Homeowners"":0.3159,""Personal Auto"":0.2952}"
+20261014-fct_claims_open-1,2026-10-14,fct_claims_open,incurred_amount,8873,0,0.0000,8855,19909.7600,
+20261014-fct_fnol-1,2026-10-14,fct_fnol,lob,268,0,0.0000,5,,"{""Commercial Auto"":0.1007,""Commercial Property"":0.1306,""General Liability"":0.0373,""Homeowners"":0.2388,""Personal Auto"":0.4925}"
+20261015-raw_policies-1,2026-10-15,raw_policies,policy_status,2886,0,0.0000,3,,"{""ACTIVE"":0.9671,""CANCELLED"":0.0128,""LAPSED"":0.0201}"
+20261015-raw_policies-1,2026-10-15,raw_policies,lob,2886,0,0.0000,5,,"{""Commercial Auto"":0.0849,""Commercial Property"":0.1091,""General Liability"":0.0506,""Homeowners"":0.2942,""Personal Auto"":0.4612}"
+20261015-stg_policies-1,2026-10-15,stg_policies,policy_status,167288,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261015-stg_policies-1,2026-10-15,stg_policies,lob,167288,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261015-stg_claims-1,2026-10-15,stg_claims,lob,63414,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.1189,""General Liability"":0.05,""Homeowners"":0.3008,""Personal Auto"":0.4511}"
+20261015-stg_claims-1,2026-10-15,stg_claims,incurred_amount,63414,0,0.0000,62460,15429.5300,
+20261015-stg_claims-1,2026-10-15,stg_claims,claim_status,63414,0,0.0000,2,,"{""CLOSED"":0.8543,""OPEN"":0.1457}"
+20261015-int_claims_enriched-1,2026-10-15,int_claims_enriched,policy_status,10422,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261015-int_claims_enriched-1,2026-10-15,int_claims_enriched,lob,10422,0,0.0000,5,,"{""Commercial Auto"":0.0932,""Commercial Property"":0.1732,""General Liability"":0.0988,""Homeowners"":0.3126,""Personal Auto"":0.3222}"
+20261015-int_claims_enriched-1,2026-10-15,int_claims_enriched,incurred_amount,10422,0,0.0000,10395,19169.2300,
+20261015-int_claims_enriched-1,2026-10-15,int_claims_enriched,claim_status,10422,0,0.0000,2,,"{""CLOSED"":0.1423,""OPEN"":0.8577}"
+20261015-fct_claims_closed-1,2026-10-15,fct_claims_closed,lob,1483,0,0.0000,5,,"{""Commercial Auto"":0.0742,""Commercial Property"":0.1194,""General Liability"":0.0452,""Homeowners"":0.294,""Personal Auto"":0.4673}"
+20261015-fct_claims_closed-1,2026-10-15,fct_claims_closed,incurred_amount,1483,0,0.0000,1482,15446.7900,
+20261015-fct_claims_open-1,2026-10-15,fct_claims_open,lob,8939,0,0.0000,5,,"{""Commercial Auto"":0.0963,""Commercial Property"":0.1821,""General Liability"":0.1077,""Homeowners"":0.3157,""Personal Auto"":0.2981}"
+20261015-fct_claims_open-1,2026-10-15,fct_claims_open,incurred_amount,8939,0,0.0000,8920,19786.7900,
+20261015-fct_fnol-1,2026-10-15,fct_fnol,lob,275,0,0.0000,5,,"{""Commercial Auto"":0.0582,""Commercial Property"":0.0982,""General Liability"":0.0436,""Homeowners"":0.3091,""Personal Auto"":0.4909}"
+20261016-raw_policies-1,2026-10-16,raw_policies,policy_status,2886,0,0.0000,3,,"{""ACTIVE"":0.9685,""CANCELLED"":0.0135,""LAPSED"":0.018}"
+20261016-raw_policies-1,2026-10-16,raw_policies,lob,2886,0,0.0000,5,,"{""Commercial Auto"":0.0769,""Commercial Property"":0.1119,""General Liability"":0.0506,""Homeowners"":0.2904,""Personal Auto"":0.4702}"
+20261016-stg_policies-1,2026-10-16,stg_policies,policy_status,167357,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261016-stg_policies-1,2026-10-16,stg_policies,lob,167357,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261016-stg_claims-1,2026-10-16,stg_claims,lob,63660,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1188,""General Liability"":0.05,""Homeowners"":0.301,""Personal Auto"":0.451}"
+20261016-stg_claims-1,2026-10-16,stg_claims,incurred_amount,63660,0,0.0000,62698,15425.4000,
+20261016-stg_claims-1,2026-10-16,stg_claims,claim_status,63660,0,0.0000,2,,"{""CLOSED"":0.8541,""OPEN"":0.1459}"
+20261016-int_claims_enriched-1,2026-10-16,int_claims_enriched,policy_status,10457,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261016-int_claims_enriched-1,2026-10-16,int_claims_enriched,lob,10457,0,0.0000,5,,"{""Commercial Auto"":0.093,""Commercial Property"":0.1726,""General Liability"":0.0988,""Homeowners"":0.3136,""Personal Auto"":0.3221}"
+20261016-int_claims_enriched-1,2026-10-16,int_claims_enriched,incurred_amount,10457,0,0.0000,10432,19150.8500,
+20261016-int_claims_enriched-1,2026-10-16,int_claims_enriched,claim_status,10457,0,0.0000,2,,"{""CLOSED"":0.1407,""OPEN"":0.8593}"
+20261016-fct_claims_closed-1,2026-10-16,fct_claims_closed,lob,1471,0,0.0000,5,,"{""Commercial Auto"":0.0782,""Commercial Property"":0.1176,""General Liability"":0.0483,""Homeowners"":0.2923,""Personal Auto"":0.4636}"
+20261016-fct_claims_closed-1,2026-10-16,fct_claims_closed,incurred_amount,1471,0,0.0000,1471,15329.5700,
+20261016-fct_claims_open-1,2026-10-16,fct_claims_open,lob,8986,0,0.0000,5,,"{""Commercial Auto"":0.0954,""Commercial Property"":0.1816,""General Liability"":0.1071,""Homeowners"":0.317,""Personal Auto"":0.2989}"
+20261016-fct_claims_open-1,2026-10-16,fct_claims_open,incurred_amount,8986,0,0.0000,8968,19776.3900,
+20261016-fct_fnol-1,2026-10-16,fct_fnol,lob,247,0,0.0000,5,,"{""Commercial Auto"":0.0607,""Commercial Property"":0.0972,""General Liability"":0.0405,""Homeowners"":0.3522,""Personal Auto"":0.4494}"
+20261017-raw_policies-1,2026-10-17,raw_policies,policy_status,2896,0,0.0000,3,,"{""ACTIVE"":0.9717,""CANCELLED"":0.0104,""LAPSED"":0.018}"
+20261017-raw_policies-1,2026-10-17,raw_policies,lob,2896,0,0.0000,5,,"{""Commercial Auto"":0.0767,""Commercial Property"":0.1098,""General Liability"":0.0511,""Homeowners"":0.3118,""Personal Auto"":0.4506}"
+20261017-stg_policies-1,2026-10-17,stg_policies,policy_status,167426,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261017-stg_policies-1,2026-10-17,stg_policies,lob,167426,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4504}"
+20261017-stg_claims-1,2026-10-17,stg_claims,lob,63893,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1188,""General Liability"":0.05,""Homeowners"":0.3011,""Personal Auto"":0.451}"
+20261017-stg_claims-1,2026-10-17,stg_claims,incurred_amount,63893,0,0.0000,62921,15423.2500,
+20261017-stg_claims-1,2026-10-17,stg_claims,claim_status,63893,0,0.0000,2,,"{""CLOSED"":0.8543,""OPEN"":0.1457}"
+20261017-int_claims_enriched-1,2026-10-17,int_claims_enriched,policy_status,10489,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261017-int_claims_enriched-1,2026-10-17,int_claims_enriched,lob,10489,0,0.0000,5,,"{""Commercial Auto"":0.0932,""Commercial Property"":0.1721,""General Liability"":0.0987,""Homeowners"":0.3142,""Personal Auto"":0.3218}"
+20261017-int_claims_enriched-1,2026-10-17,int_claims_enriched,incurred_amount,10489,0,0.0000,10463,19114.9000,
+20261017-int_claims_enriched-1,2026-10-17,int_claims_enriched,claim_status,10489,0,0.0000,2,,"{""CLOSED"":0.1405,""OPEN"":0.8595}"
+20261017-fct_claims_closed-1,2026-10-17,fct_claims_closed,lob,1474,0,0.0000,5,,"{""Commercial Auto"":0.078,""Commercial Property"":0.1167,""General Liability"":0.0495,""Homeowners"":0.2944,""Personal Auto"":0.4613}"
+20261017-fct_claims_closed-1,2026-10-17,fct_claims_closed,incurred_amount,1474,0,0.0000,1473,15277.6200,
+20261017-fct_claims_open-1,2026-10-17,fct_claims_open,lob,9015,0,0.0000,5,,"{""Commercial Auto"":0.0957,""Commercial Property"":0.1811,""General Liability"":0.1067,""Homeowners"":0.3175,""Personal Auto"":0.2989}"
+20261017-fct_claims_open-1,2026-10-17,fct_claims_open,incurred_amount,9015,0,0.0000,8995,19742.3100,
+20261017-fct_fnol-1,2026-10-17,fct_fnol,lob,234,0,0.0000,5,,"{""Commercial Auto"":0.0769,""Commercial Property"":0.0983,""General Liability"":0.0513,""Homeowners"":0.3333,""Personal Auto"":0.4402}"
+20261018-raw_policies-1,2026-10-18,raw_policies,policy_status,1394,0,0.0000,3,,"{""ACTIVE"":0.962,""CANCELLED"":0.0143,""LAPSED"":0.0237}"
+20261018-raw_policies-1,2026-10-18,raw_policies,lob,1394,0,0.0000,5,,"{""Commercial Auto"":0.0868,""Commercial Property"":0.1105,""General Liability"":0.0459,""Homeowners"":0.3156,""Personal Auto"":0.4412}"
+20261018-stg_policies-1,2026-10-18,stg_policies,policy_status,167479,0,0.0000,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261018-stg_policies-1,2026-10-18,stg_policies,lob,167479,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3008,""Personal Auto"":0.4503}"
+20261018-stg_claims-1,2026-10-18,stg_claims,lob,64023,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1187,""General Liability"":0.05,""Homeowners"":0.3011,""Personal Auto"":0.4511}"
+20261018-stg_claims-1,2026-10-18,stg_claims,incurred_amount,64023,0,0.0000,63043,15423.7000,
+20261018-stg_claims-1,2026-10-18,stg_claims,claim_status,64023,0,0.0000,2,,"{""CLOSED"":0.8531,""OPEN"":0.1469}"
+20261018-int_claims_enriched-1,2026-10-18,int_claims_enriched,policy_status,10584,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261018-int_claims_enriched-1,2026-10-18,int_claims_enriched,lob,10584,0,0.0000,5,,"{""Commercial Auto"":0.0929,""Commercial Property"":0.1716,""General Liability"":0.0983,""Homeowners"":0.3137,""Personal Auto"":0.3236}"
+20261018-int_claims_enriched-1,2026-10-18,int_claims_enriched,incurred_amount,10584,0,0.0000,10557,19078.6200,
+20261018-int_claims_enriched-1,2026-10-18,int_claims_enriched,claim_status,10584,0,0.0000,2,,"{""CLOSED"":0.1396,""OPEN"":0.8604}"
+20261018-fct_claims_closed-1,2026-10-18,fct_claims_closed,lob,1478,0,0.0000,5,,"{""Commercial Auto"":0.0792,""Commercial Property"":0.115,""General Liability"":0.0487,""Homeowners"":0.295,""Personal Auto"":0.4621}"
+20261018-fct_claims_closed-1,2026-10-18,fct_claims_closed,incurred_amount,1478,0,0.0000,1477,15197.4100,
+20261018-fct_claims_open-1,2026-10-18,fct_claims_open,lob,9106,0,0.0000,5,,"{""Commercial Auto"":0.0951,""Commercial Property"":0.1808,""General Liability"":0.1063,""Homeowners"":0.3167,""Personal Auto"":0.3011}"
+20261018-fct_claims_open-1,2026-10-18,fct_claims_open,incurred_amount,9106,0,0.0000,9085,19708.5800,
+20261018-fct_fnol-1,2026-10-18,fct_fnol,lob,131,0,0.0000,5,,"{""Commercial Auto"":0.0534,""Commercial Property"":0.1069,""General Liability"":0.0534,""Homeowners"":0.3053,""Personal Auto"":0.4809}"
+20261019-raw_policies-1,2026-10-19,raw_policies,policy_status,1961,1480,0.7547,3,,"{""ACTIVE"":0.973,""CANCELLED"":0.0166,""LAPSED"":0.0104}"
+20261019-raw_policies-1,2026-10-19,raw_policies,pol_status_cd,1961,481,0.2453,3,,"{""A"":0.9676,""C"":0.0108,""L"":0.0216}"
+20261019-raw_policies-1,2026-10-19,raw_policies,lob,1961,0,0.0000,5,,"{""Commercial Auto"":0.0801,""Commercial Property"":0.1214,""General Liability"":0.0423,""Homeowners"":0.2998,""Personal Auto"":0.4564}"
+20261019-stg_policies-1,2026-10-19,stg_policies,policy_status,167538,1474,0.0088,3,,"{""ACTIVE"":0.9687,""CANCELLED"":0.0118,""LAPSED"":0.0195}"
+20261019-stg_policies-1,2026-10-19,stg_policies,lob,167538,0,0.0000,5,,"{""Commercial Auto"":0.0798,""Commercial Property"":0.1195,""General Liability"":0.0496,""Homeowners"":0.3007,""Personal Auto"":0.4503}"
+20261019-stg_claims-1,2026-10-19,stg_claims,lob,64150,0,0.0000,5,,"{""Commercial Auto"":0.0791,""Commercial Property"":0.1187,""General Liability"":0.0499,""Homeowners"":0.3012,""Personal Auto"":0.451}"
+20261019-stg_claims-1,2026-10-19,stg_claims,incurred_amount,64150,0,0.0000,63166,15419.1600,
+20261019-stg_claims-1,2026-10-19,stg_claims,claim_status,64150,0,0.0000,2,,"{""CLOSED"":0.8519,""OPEN"":0.1481}"
+20261019-int_claims_enriched-1,2026-10-19,int_claims_enriched,policy_status,10052,0,0.0000,1,,"{""ACTIVE"":1.0}"
+20261019-int_claims_enriched-1,2026-10-19,int_claims_enriched,lob,10052,0,0.0000,5,,"{""Commercial Auto"":0.0931,""Commercial Property"":0.1731,""General Liability"":0.101,""Homeowners"":0.3155,""Personal Auto"":0.3173}"
+20261019-int_claims_enriched-1,2026-10-19,int_claims_enriched,incurred_amount,10052,0,0.0000,10028,19209.2700,
+20261019-int_claims_enriched-1,2026-10-19,int_claims_enriched,claim_status,10052,0,0.0000,2,,"{""CLOSED"":0.0921,""OPEN"":0.9079}"
+20261019-fct_claims_closed-1,2026-10-19,fct_claims_closed,lob,926,0,0.0000,5,,"{""Commercial Auto"":0.0691,""Commercial Property"":0.1037,""General Liability"":0.0508,""Homeowners"":0.3056,""Personal Auto"":0.4708}"
+20261019-fct_claims_closed-1,2026-10-19,fct_claims_closed,incurred_amount,926,0,0.0000,926,14776.4600,
+20261019-fct_claims_open-1,2026-10-19,fct_claims_open,lob,9126,0,0.0000,5,,"{""Commercial Auto"":0.0956,""Commercial Property"":0.1801,""General Liability"":0.1061,""Homeowners"":0.3165,""Personal Auto"":0.3018}"
+20261019-fct_claims_open-1,2026-10-19,fct_claims_open,incurred_amount,9126,0,0.0000,9106,19659.0600,
+20261019-fct_fnol-1,2026-10-19,fct_fnol,lob,126,0,0.0000,5,,"{""Commercial Auto"":0.1032,""Commercial Property"":0.119,""General Liability"":0.0317,""Homeowners"":0.3254,""Personal Auto"":0.4206}"

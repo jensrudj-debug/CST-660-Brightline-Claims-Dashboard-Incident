@@ -1,0 +1,315 @@
+{
+  "edges": [
+    {
+      "columns": [
+        "*"
+      ],
+      "predicate": "CDC since last sync",
+      "source": "CC.CLAIM",
+      "target": "raw_claims"
+    },
+    {
+      "columns": [
+        "*"
+      ],
+      "predicate": "daily roster file",
+      "source": "HR.ADJUSTER_ROSTER",
+      "target": "raw_adjuster_hr"
+    },
+    {
+      "columns": [
+        "*"
+      ],
+      "predicate": "CDC since last sync",
+      "source": "PAS.POLICY_MASTER",
+      "target": "raw_policies"
+    },
+    {
+      "columns": [
+        "claim_id",
+        "policy_id",
+        "lob",
+        "reported_at",
+        "closed_at",
+        "incurred_amount"
+      ],
+      "predicate": "latest row per claim_id",
+      "source": "raw_claims",
+      "target": "stg_claims"
+    },
+    {
+      "columns": [
+        "policy_id",
+        "policy_status",
+        "lob"
+      ],
+      "predicate": "latest row per policy_id",
+      "source": "raw_policies",
+      "target": "stg_policies"
+    },
+    {
+      "columns": [
+        "claim_id",
+        "policy_id",
+        "lob",
+        "reported_at",
+        "closed_at",
+        "incurred_amount"
+      ],
+      "predicate": "closed_at is null or closed in trailing 7 days",
+      "source": "stg_claims",
+      "target": "int_claims_enriched"
+    },
+    {
+      "columns": [
+        "policy_id",
+        "policy_status"
+      ],
+      "predicate": "join on policy_id where policy_status = 'ACTIVE'",
+      "source": "stg_policies",
+      "target": "int_claims_enriched"
+    },
+    {
+      "columns": [
+        "claim_id",
+        "lob",
+        "closed_at",
+        "incurred_amount"
+      ],
+      "predicate": "closed_at in trailing 7 days",
+      "source": "int_claims_enriched",
+      "target": "fct_claims_closed"
+    },
+    {
+      "columns": [
+        "claim_id",
+        "lob",
+        "incurred_amount"
+      ],
+      "predicate": "closed_at is null",
+      "source": "int_claims_enriched",
+      "target": "fct_claims_open"
+    },
+    {
+      "columns": [
+        "claim_id",
+        "lob",
+        "reported_at"
+      ],
+      "predicate": "reported_at on run_date - 1",
+      "source": "stg_claims",
+      "target": "fct_fnol"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "fct_claims_closed",
+      "target": "dash_claims_severity"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "fct_claims_open",
+      "target": "dash_claims_severity"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "fct_fnol",
+      "target": "dash_claims_severity"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "raw_adjuster_hr",
+      "target": "dash_adjuster_staffing"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "dash_adjuster_staffing",
+      "target": "tile_adjuster_staffing"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "dash_claims_severity",
+      "target": "tile_closed_claims"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "dash_claims_severity",
+      "target": "tile_fnol_volume"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "dash_claims_severity",
+      "target": "tile_mean_severity"
+    },
+    {
+      "columns": [],
+      "predicate": null,
+      "source": "dash_claims_severity",
+      "target": "tile_open_inventory"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "CC.CLAIM",
+      "label": "CC.CLAIM",
+      "layer": "source",
+      "owner": "Claims Systems",
+      "system": "ClaimCenter"
+    },
+    {
+      "id": "HR.ADJUSTER_ROSTER",
+      "label": "HR.ADJUSTER_ROSTER",
+      "layer": "source",
+      "owner": "People Systems (vendor feed)",
+      "system": "Workday HR"
+    },
+    {
+      "id": "PAS.POLICY_MASTER",
+      "label": "PAS.POLICY_MASTER",
+      "layer": "source",
+      "owner": "Policy Admin Engineering",
+      "system": "PAS"
+    },
+    {
+      "id": "raw_adjuster_hr",
+      "label": "raw_adjuster_hr",
+      "layer": "ingest",
+      "owner": "Data Platform",
+      "schedule": "02:45",
+      "sla": "03:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "raw_claims",
+      "label": "raw_claims",
+      "layer": "ingest",
+      "owner": "Data Platform",
+      "schedule": "02:00",
+      "sla": "03:00",
+      "system": "warehouse"
+    },
+    {
+      "id": "raw_policies",
+      "label": "raw_policies",
+      "layer": "ingest",
+      "owner": "Data Platform",
+      "schedule": "02:00",
+      "sla": "03:00",
+      "system": "warehouse"
+    },
+    {
+      "id": "stg_claims",
+      "label": "stg_claims",
+      "layer": "staging",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "stg_policies",
+      "label": "stg_policies",
+      "layer": "staging",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "int_claims_enriched",
+      "label": "int_claims_enriched",
+      "layer": "intermediate",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "fct_claims_closed",
+      "label": "fct_claims_closed",
+      "layer": "mart",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "fct_claims_open",
+      "label": "fct_claims_open",
+      "layer": "mart",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "fct_fnol",
+      "label": "fct_fnol",
+      "layer": "mart",
+      "owner": "Data Platform",
+      "schedule": "04:00",
+      "sla": "05:30",
+      "system": "warehouse"
+    },
+    {
+      "id": "dash_adjuster_staffing",
+      "label": "dash_adjuster_staffing",
+      "layer": "dashboard",
+      "owner": "Claims Analytics (BI)",
+      "schedule": "05:45",
+      "sla": "06:30",
+      "system": "BI extract"
+    },
+    {
+      "id": "dash_claims_severity",
+      "label": "dash_claims_severity",
+      "layer": "dashboard",
+      "owner": "Claims Analytics (BI)",
+      "schedule": "05:45",
+      "sla": "06:30",
+      "system": "BI extract"
+    },
+    {
+      "id": "tile_adjuster_staffing",
+      "label": "Adjuster staffing",
+      "layer": "tile",
+      "owner": "Claims Analytics (BI)",
+      "system": "dashboard"
+    },
+    {
+      "id": "tile_closed_claims",
+      "label": "Closed claims (7-day)",
+      "layer": "tile",
+      "owner": "Claims Analytics (BI)",
+      "system": "dashboard"
+    },
+    {
+      "id": "tile_fnol_volume",
+      "label": "FNOL volume",
+      "layer": "tile",
+      "owner": "Claims Analytics (BI)",
+      "system": "dashboard"
+    },
+    {
+      "id": "tile_mean_severity",
+      "label": "Mean severity",
+      "layer": "tile",
+      "owner": "Claims Analytics (BI)",
+      "system": "dashboard"
+    },
+    {
+      "id": "tile_open_inventory",
+      "label": "Open inventory",
+      "layer": "tile",
+      "owner": "Claims Analytics (BI)",
+      "system": "dashboard"
+    }
+  ]
+}

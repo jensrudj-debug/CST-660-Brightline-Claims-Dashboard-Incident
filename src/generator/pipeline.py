@@ -5,7 +5,8 @@ after the release has policy_status NULL in the ingest snapshot, and
 int_claims_enriched keeps only policy_status = 'ACTIVE'.
 """
 
-from datetime import timedelta
+from dataclasses import dataclass
+from datetime import date, timedelta
 
 import numpy as np
 import pandas as pd
@@ -17,6 +18,44 @@ from .world import World
 
 NULL_STATUS = -1
 ACTIVE = C.POLICY_STATUSES.index("ACTIVE")
+
+
+@dataclass(frozen=True)
+class RunState:
+    """Row-level state of one run, shared by row counts and column profiles."""
+    ingest: int
+    prev: int
+    n_policies: int
+    policy_status: np.ndarray  # per policy, as ingested (NULL_STATUS = NULL)
+    reported: np.ndarray       # per claim masks from here on
+    is_open: np.ndarray
+    closed_window: np.ndarray
+    active: np.ndarray         # passes int_claims_enriched's policy_status = 'ACTIVE'
+    fnol_day: np.ndarray
+
+    @property
+    def in_int(self) -> np.ndarray:
+        return (self.is_open | self.closed_window) & self.active
+
+
+def run_state(world: World, d: date) -> RunState:
+    ingest = hhmm_s(d, C.INGEST_AT)
+    reported = world.claim_reported_s <= ingest
+    status = policy_status_at(world, ingest)
+    return RunState(
+        ingest=ingest,
+        prev=ingest - DAY,
+        n_policies=int(np.searchsorted(world.policy_created_s, ingest, side="right")),
+        policy_status=status,
+        reported=reported,
+        is_open=reported & (world.claim_closed_s > ingest),
+        closed_window=((world.claim_closed_s >= day_s(d - timedelta(days=C.CLOSED_WINDOW_DAYS)))
+                       & (world.claim_closed_s < day_s(d))),
+        # int_claims_enriched: WHERE policy_status = 'ACTIVE' (NULL fails the predicate)
+        active=status[world.claim_policy] == ACTIVE,
+        fnol_day=((world.claim_reported_s >= day_s(d - timedelta(days=1)))
+                  & (world.claim_reported_s < day_s(d))),
+    )
 
 
 def policy_status_at(world: World, ingest_s: int) -> np.ndarray:
@@ -43,31 +82,24 @@ def table_counts(world: World) -> pd.DataFrame:
 
     records = []
     for i, d in enumerate(dates):
-        ingest = hhmm_s(d, C.INGEST_AT)
-        prev = ingest - DAY
+        st = run_state(world, d)
         prev_weekday = (d - timedelta(days=1)).weekday() < 5
 
-        n_policies = int(np.searchsorted(world.policy_created_s, ingest, side="right"))
-        lo, hi = np.searchsorted(world.touch_s, [prev, ingest], side="right")
+        lo, hi = np.searchsorted(world.touch_s, [st.prev, st.ingest], side="right")
         policy_cdc = int(hi - lo)
 
-        reported = world.claim_reported_s <= ingest
-        is_open = reported & (world.claim_closed_s > ingest)
-        closed_window = ((world.claim_closed_s >= day_s(d - timedelta(days=C.CLOSED_WINDOW_DAYS)))
-                         & (world.claim_closed_s < day_s(d)))
-        new_fnol = (world.claim_reported_s > prev) & reported
-        new_close = (world.claim_closed_s > prev) & (world.claim_closed_s <= ingest)
+        new_fnol = (world.claim_reported_s > st.prev) & st.reported
+        new_close = (world.claim_closed_s > st.prev) & (world.claim_closed_s <= st.ingest)
         update_rate = C.CLAIM_UPDATE_RATE * (1 if prev_weekday else C.CLAIM_UPDATE_WEEKEND_FACTOR)
-        claim_cdc = int(new_fnol.sum() + new_close.sum() + upd_rng.poisson(update_rate * is_open.sum()))
+        claim_cdc = int(new_fnol.sum() + new_close.sum()
+                        + upd_rng.poisson(update_rate * st.is_open.sum()))
 
-        # int_claims_enriched: WHERE policy_status = 'ACTIVE' (NULL fails the predicate)
-        active = policy_status_at(world, ingest)[world.claim_policy] == ACTIVE
-        n_int = int(((is_open | closed_window) & active).sum())
-        n_closed = int((closed_window & active).sum())
-        n_open = int((is_open & active).sum())
-
-        fnol_day = int(((world.claim_reported_s >= day_s(d - timedelta(days=1)))
-                        & (world.claim_reported_s < day_s(d))).sum())
+        n_int = int(st.in_int.sum())
+        n_closed = int((st.closed_window & st.active).sum())
+        n_open = int((st.is_open & st.active).sum())
+        n_policies = st.n_policies
+        reported = st.reported
+        fnol_day = int(st.fnol_day.sum())
         fnol_total = int((world.claim_reported_s < day_s(d)).sum())
 
         raw_policies_rows += policy_cdc
