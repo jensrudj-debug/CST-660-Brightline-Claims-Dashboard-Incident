@@ -125,32 +125,43 @@
       "target": "dash_adjuster_staffing"
     },
     {
-      "columns": [],
-      "predicate": null,
+      "columns": [
+        "raw_adjuster_hr.adjuster_id"
+      ],
+      "predicate": "count(adjuster_id) by team",
       "source": "dash_adjuster_staffing",
       "target": "tile_adjuster_staffing"
     },
     {
-      "columns": [],
-      "predicate": null,
+      "columns": [
+        "fct_claims_closed.claim_id"
+      ],
+      "predicate": "count(claim_id)",
       "source": "dash_claims_severity",
       "target": "tile_closed_claims"
     },
     {
-      "columns": [],
-      "predicate": null,
+      "columns": [
+        "fct_fnol.claim_id",
+        "fct_fnol.reported_at"
+      ],
+      "predicate": "count(claim_id) by reported_at",
       "source": "dash_claims_severity",
       "target": "tile_fnol_volume"
     },
     {
-      "columns": [],
-      "predicate": null,
+      "columns": [
+        "fct_claims_closed.incurred_amount"
+      ],
+      "predicate": "avg(incurred_amount)",
       "source": "dash_claims_severity",
       "target": "tile_mean_severity"
     },
     {
-      "columns": [],
-      "predicate": null,
+      "columns": [
+        "fct_claims_open.claim_id"
+      ],
+      "predicate": "count(claim_id)",
       "source": "dash_claims_severity",
       "target": "tile_open_inventory"
     }

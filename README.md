@@ -84,6 +84,14 @@ The other test files check structural consistency across outputs.
    them. The tile showed 926 closed claims against a true 1,462 (−38.0% vs the
    prior-Monday median of 1,494) while every job ran green and on time.
 
+   **Investigation demo.** `make demo` (or `python -m generator.demo`) loads
+   `telemetry/` into an in-memory SQLite database and steps through the
+   investigation, one query per Enter: the symptom, freshness, row volume by
+   layer, severity and line-of-business mix, recent schema changes,
+   `policy_status` column profiles, and finally lineage, which separates the PAS
+   rename from the late HR feed and the Friday dbt deploy. Each finding is
+   computed from the query result. Use `--no-pause` to run it straight through.
+
 2. **[Value stream map](deliverables/value_stream_map.png)** (`make deliverables`):
    the nightly delivery path measured from `freshness.csv`, then the incident
    response from the timeline, with process and lead time per stage, wait

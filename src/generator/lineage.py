@@ -24,12 +24,19 @@ SOURCES = (
     ("CC.CLAIM", "ClaimCenter", "Claims Systems", "raw_claims"),
     ("HR.ADJUSTER_ROSTER", "Workday HR", "People Systems (vendor feed)", "raw_adjuster_hr"),
 )
+# id, label, dashboard, columns read (table-qualified, as BI column lineage records them),
+# tile expression
 TILES = (
-    ("tile_closed_claims", "Closed claims (7-day)", "dash_claims_severity"),
-    ("tile_mean_severity", "Mean severity", "dash_claims_severity"),
-    ("tile_open_inventory", "Open inventory", "dash_claims_severity"),
-    ("tile_fnol_volume", "FNOL volume", "dash_claims_severity"),
-    ("tile_adjuster_staffing", "Adjuster staffing", "dash_adjuster_staffing"),
+    ("tile_closed_claims", "Closed claims (7-day)", "dash_claims_severity",
+     ["fct_claims_closed.claim_id"], "count(claim_id)"),
+    ("tile_mean_severity", "Mean severity", "dash_claims_severity",
+     ["fct_claims_closed.incurred_amount"], "avg(incurred_amount)"),
+    ("tile_open_inventory", "Open inventory", "dash_claims_severity",
+     ["fct_claims_open.claim_id"], "count(claim_id)"),
+    ("tile_fnol_volume", "FNOL volume", "dash_claims_severity",
+     ["fct_fnol.claim_id", "fct_fnol.reported_at"], "count(claim_id) by reported_at"),
+    ("tile_adjuster_staffing", "Adjuster staffing", "dash_adjuster_staffing",
+     ["raw_adjuster_hr.adjuster_id"], "count(adjuster_id) by team"),
 )
 # (upstream, downstream): columns read, SQL predicate
 EDGE_DETAIL = {
@@ -52,7 +59,7 @@ EDGE_DETAIL = {
                                                  "closed_at is null"),
     ("stg_claims", "fct_fnol"): (["claim_id", "lob", "reported_at"],
                                  "reported_at on run_date - 1"),
-}
+} | {(dash, tile): (columns, expr) for tile, _, dash, columns, expr in TILES}
 OWNER_DATA_PLATFORM = "Data Platform"
 OWNER_BI = "Claims Analytics (BI)"
 
@@ -74,7 +81,7 @@ def build_graph() -> nx.DiGraph:
             g.add_edge(up, job)
     for node_id, _, _, job in SOURCES:
         g.add_edge(node_id, job)
-    for tile, label, dash in TILES:
+    for tile, label, dash, _, _ in TILES:
         g.add_node(tile, layer="tile", system="dashboard", owner=OWNER_BI, label=label)
         g.add_edge(dash, tile)
     assert nx.is_directed_acyclic_graph(g)

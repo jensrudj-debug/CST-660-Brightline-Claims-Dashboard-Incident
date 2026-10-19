@@ -100,3 +100,19 @@ def test_weekend_fnol_dip_within_normal_range(rv):
                   & pd.to_datetime(rv.run_date).dt.dayofweek.between(1, 5)].rows_written
     assert sunday < weekdays.mean()                             # a visible dip...
     assert abs(sunday - prior.mean()) < 2 * prior.std()         # ...within normal range
+
+
+def test_deploy_reaches_only_fnol_tile_through_column_lineage(lineage):
+    tile_reads = {e["target"]: {c.split(".")[0] for c in e["columns"]}
+                  for e in lineage["edges"] if e["target"].startswith("tile_")}
+    assert {t for t, tables in tile_reads.items() if "fct_fnol" in tables} == {"tile_fnol_volume"}
+
+
+def test_investigation_demo_runs_and_names_the_root_cause(out, capsys):
+    from generator import demo
+
+    demo.main(["--telemetry", str(out), "--no-pause"])
+    text = capsys.readouterr().out
+    assert "ROOT CAUSE" in text
+    assert "int_claims_enriched applies `join on policy_id where policy_status = 'ACTIVE'`" in text
+    assert "Only PAS.POLICY_MASTER reaches the Closed claims tile" in text

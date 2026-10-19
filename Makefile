@@ -6,7 +6,7 @@ VENV_PYTHON := .venv/bin/python
 endif
 PYTHON ?= $(if $(wildcard $(VENV_PYTHON)),$(VENV_PYTHON),python)
 
-.PHONY: generate deliverables test
+.PHONY: generate deliverables demo test
 
 generate:  ## Regenerate every file in telemetry/
 	$(PYTHON) -m generator --out telemetry
@@ -14,6 +14,9 @@ generate:  ## Regenerate every file in telemetry/
 deliverables:  ## Render deliverables/ from telemetry/
 	$(PYTHON) -m generator.value_stream --telemetry telemetry --out deliverables/value_stream_map.png
 	$(PYTHON) -m generator.cost_drivers --telemetry telemetry --out deliverables/cost_driver_table.md
+
+demo:  ## Step through the investigation queries (Enter between steps)
+	$(PYTHON) -m generator.demo --telemetry telemetry
 
 test:  ## Run the answer-key and structural tests
 	$(PYTHON) -m pytest
