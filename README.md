@@ -1,8 +1,8 @@
 # Brightline Claims-Dashboard Incident
 
-CST-660 assignment. At 6:40 a.m. the VP of Claims Operations reports that the daily
-claims-severity dashboard shows a 38% drop in closed claims, and staffing decisions
-are due in two hours. This repo generates the observability evidence for that
+At 6:40 a.m. the VP of Claims Operations reports that the daily claims-severity
+dashboard shows a 38% drop in closed claims, and staffing decisions are due in two
+hours. This repo generates the observability evidence for that
 incident as reproducible synthetic telemetry, then uses it to investigate.
 
 ## Quick start
